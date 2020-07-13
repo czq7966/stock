@@ -1,0 +1,25 @@
+{
+  "name": "stock",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "main.js",
+  "dependencies": {
+    "bufferhelper": "^0.2.1",
+    "iconv-lite": "^0.6.2",
+    "superagent": "^5.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/czq7966/stock.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/czq7966/stock/issues"
+  },
+  "homepage": "https://github.com/czq7966/stock#readme"
+}
