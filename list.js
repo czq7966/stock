@@ -4,7 +4,7 @@ const page = await browser.newPage();
 var Lists = {}
 
 
-var getLists = async (code, pageIdx) => {
+var _getLists = async (code, pageIdx) => {
     var pageIdx = pageIdx || 1;
     var url = 'http://app.finance.ifeng.com/list/stock.php?t={code}&f=chg_pct&o=desc&p={page}';
     // http://app.finance.ifeng.com/list/stock.php?t=hs&f=chg_pct&o=desc&p=2
@@ -32,26 +32,36 @@ var getLists = async (code, pageIdx) => {
     
     var i = 0;
     var count = 0;
+
     while (i < data.length) {
         var key = data[i++]
         var value = data[i++]
     
         if (parseInt(key)) {
             Lists[key] = value
-            // console.log(key)
+            console.log(`"${key}":"",`)
             count++;
         }    
     }
-    console.log(code, pageIdx)
-    if (pageIdx < 50 ) {
-        await getLists(code, pageIdx + 1)
+
+    if (count > 0 ) {
+        await _getLists(code, pageIdx + 1)
     }
     
 
 }
 
+var getLists = async (code, pageIdx) => {
+    console.log(`module.exports = ${code}Lists;`)
+    console.log(`export var ${code}Lists = {`);
+    await _getLists(code)
+    console.log(`}`)
+}
+
 await getLists('ha')
-await getLists('sa')
+
+
+// await getLists('sa')
 console.log(Object.keys(Lists).length)
 
 
