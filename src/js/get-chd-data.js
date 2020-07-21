@@ -13,7 +13,7 @@ var onData = (items) => {
         var i = 0;
         record.DATE         = item[i++]
         record.CODE         = item[i++]
-        record.Name         = item[i++] && null
+        record.NAME         = item[i++] && null
         record.TCLOSE       = parseFloat(item[i++])
         record.HIGH         = parseFloat(item[i++])
         record.LOW          = parseFloat(item[i++])

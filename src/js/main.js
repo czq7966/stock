@@ -1,12 +1,22 @@
 require('./date-format')
+const Lowdb =  require("lowdb");
+const FileSync = require("lowdb/adapters/FileSync");
+const adapter = new FileSync("db.json");
+const db = Lowdb(adapter);
+
+
 var getChdData = require('./get-chd-data')
 var checkChdData = require('./check-chd-data')
 
 
 var CalDays = 365 * 1;
-var Capital = 3000;
+var CapHigh = 5000;
+var capLow  = 3000; 
+var Capital = 4000;
 var Earning = 100;
 var EarnRate = 0.7;
+
+db.defaults({code: {}, data: {}});
 
 
 
