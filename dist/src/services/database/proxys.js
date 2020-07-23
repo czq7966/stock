@@ -88,17 +88,25 @@ var Proxys = /** @class */ (function () {
             });
         });
     };
-    Proxys.checkProxy = function (host, port) {
+    Proxys.checkProxy = function (host, port, logBody, checkKey) {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
                 return [2 /*return*/, new Promise(function (resolve, reject) {
                         request({
                             'url': 'http://www.baidu.com',
                             'method': "GET",
-                            'proxy': "http://" + host + ":" + port
+                            'proxy': "http://" + host + ":" + port,
+                            'timeout': 10 * 1000
                         }, function (error, response, body) {
                             if (!error && response.statusCode == 200) {
-                                resolve(true);
+                                if (logBody)
+                                    console.log(body);
+                                if (body.indexOf('百度首页') >= 0) {
+                                    resolve(true);
+                                }
+                                else {
+                                    resolve(false);
+                                }
                             }
                             else {
                                 if (!error && response) {
@@ -115,7 +123,7 @@ var Proxys = /** @class */ (function () {
     };
     Proxys.checkValid = function (proxys) {
         return __awaiter(this, void 0, void 0, function () {
-            var count, checkIndex, host, port, error_1;
+            var count, checkIndex, host, port, result, error_1;
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
@@ -132,12 +140,14 @@ var Proxys = /** @class */ (function () {
                         _a.trys.push([2, 4, , 5]);
                         return [4 /*yield*/, this.checkProxy(host, port)];
                     case 3:
-                        _a.sent();
+                        result = _a.sent();
                         this.FinishCount++;
-                        this.ProxyValids[host] = port;
-                        proxys.addValid(host, port);
-                        // proxys.db.set(`proxys.${host}`, port).write();
-                        console.log("-----------------------------" + checkIndex + " / " + count + "----- " + host + " : " + port);
+                        if (result) {
+                            this.ProxyValids[host] = port;
+                            proxys.addValid(host, port);
+                            // proxys.db.set(`proxys.${host}`, port).write();
+                            console.log("-----------------------------" + checkIndex + " / " + count + "----- " + host + " : " + port);
+                        }
                         return [3 /*break*/, 5];
                     case 4:
                         error_1 = _a.sent();
@@ -170,7 +180,7 @@ var Proxys = /** @class */ (function () {
                         if (!(i < threadCount)) return [3 /*break*/, 4];
                         promise = this.checkValid(proxys);
                         promises.push(promise);
-                        return [4 /*yield*/, Polyfills.sleep(200)];
+                        return [4 /*yield*/, Polyfills.sleep(100)];
                     case 2:
                         _a.sent();
                         _a.label = 3;
@@ -259,6 +269,67 @@ var Proxys = /** @class */ (function () {
                     case 4:
                         error_2 = _a.sent();
                         console.error(error_2.message);
+                        return [3 /*break*/, 5];
+                    case 5: return [3 /*break*/, 1];
+                    case 6: return [2 /*return*/];
+                }
+            });
+        });
+    };
+    Proxys._collectProxyFrom89IP = function (proxys, url) {
+        return __awaiter(this, void 0, void 0, function () {
+            return __generator(this, function (_a) {
+                return [2 /*return*/, new Promise(function (resolve, reject) {
+                        var req = http.get('http://www.89ip.cn/', function (response) {
+                            var bufferHelper = new BufferHelper();
+                            response.on('data', function (chunk) {
+                                bufferHelper.concat(chunk);
+                            });
+                            response.on('end', function () {
+                                var strBuffer = iconv.decode(bufferHelper.toBuffer(), 'GBK');
+                                if (strBuffer) {
+                                    console.log('1111111111', strBuffer);
+                                    resolve(true);
+                                }
+                                else {
+                                    resolve(false);
+                                }
+                            });
+                        });
+                        req.end();
+                    })];
+            });
+        });
+    };
+    Proxys.collectProxyFromK89IP = function (proxys) {
+        return __awaiter(this, void 0, void 0, function () {
+            var URL, startCount, endCount, count, page, url, hosts, error_3;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        URL = "http://www.89ip.cn/";
+                        startCount = 1;
+                        endCount = 1;
+                        count = 0;
+                        page = startCount;
+                        _a.label = 1;
+                    case 1:
+                        if (!(page <= endCount)) return [3 /*break*/, 6];
+                        _a.label = 2;
+                    case 2:
+                        _a.trys.push([2, 4, , 5]);
+                        url = URL.replace('{page}', page);
+                        return [4 /*yield*/, this._collectProxyFrom89IP(proxys, url)];
+                    case 3:
+                        hosts = _a.sent();
+                        count = count + Object.keys(hosts).length;
+                        console.log(count + " / " + page + " / " + endCount);
+                        // Polyfills.sleep(1000);
+                        page++;
+                        return [3 /*break*/, 5];
+                    case 4:
+                        error_3 = _a.sent();
+                        console.error(error_3.message);
                         return [3 /*break*/, 5];
                     case 5: return [3 /*break*/, 1];
                     case 6: return [2 /*return*/];

@@ -45,7 +45,7 @@ var Proxys = /** @class */ (function () {
     function Proxys() {
         this.filename = path.resolve(__dirname, '../../../../database/proxys.json');
         this.db = Lowdb(new FileSync(this.filename));
-        this.db.defaults({ valids: {}, proxys: {} }).write();
+        this.db.defaults({ valids: {}, valids2: {}, proxys: {} }).write();
     }
     Proxys.prototype.destroy = function () {
     };
@@ -64,12 +64,17 @@ var Proxys = /** @class */ (function () {
         return __awaiter(this, void 0, void 0, function () {
             var valids;
             return __generator(this, function (_a) {
-                valids = this.db.get('valids').value();
+                valids = this.getValids();
                 valids[host] = port;
-                this.db.set('valids', valids).write();
+                this.setValids(valids);
                 return [2 /*return*/];
             });
         });
+    };
+    Proxys.prototype.delValid = function (host) {
+        var valids = this.getValids();
+        delete valids[host];
+        this.setValids(valids);
     };
     Proxys.prototype.checkValids = function () {
         return __awaiter(this, void 0, void 0, function () {
@@ -82,23 +87,10 @@ var Proxys = /** @class */ (function () {
         });
     };
     Proxys.prototype.getValids = function () {
-        return __awaiter(this, void 0, void 0, function () {
-            var _a;
-            return __generator(this, function (_b) {
-                switch (_b.label) {
-                    case 0:
-                        if (!(this.valids && Object.keys(this.valids).length > 0)) return [3 /*break*/, 1];
-                        return [2 /*return*/, this.valids];
-                    case 1:
-                        _a = this;
-                        return [4 /*yield*/, this.checkValids()];
-                    case 2:
-                        _a.valids = _b.sent();
-                        _b.label = 3;
-                    case 3: return [2 /*return*/, this.valids];
-                }
-            });
-        });
+        return this.db.get('valids').value();
+    };
+    Proxys.prototype.setValids = function (value) {
+        this.db.set('valids', value).write();
     };
     return Proxys;
 }());

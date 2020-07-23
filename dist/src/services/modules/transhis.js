@@ -41,6 +41,7 @@ var http = require("http");
 var iconv = require("iconv-lite");
 var BufferHelper = require("bufferhelper");
 var GlobalTunnel = require("global-tunnel-ng");
+var request = require("request");
 var Options = {
     host: 'market.finance.sina.com.cn',
     path: '/transHis.php?symbol={symbol}&date={date}&page={page}'
@@ -48,7 +49,44 @@ var Options = {
 var TransHis = /** @class */ (function () {
     function TransHis() {
     }
-    TransHis._getTransHis = function (symbol, date, page, proxyHost, proxyPort) {
+    TransHis._onRequestEnd = function (items) {
+        var result = [];
+        if (items.length > 1) {
+            var count = items.length;
+            for (var i = count - 1; i >= 0; i--) {
+                var item = items[i] || '';
+                if (item.indexOf("<tr ><th>") >= 0 && item.indexOf("</th></tr>") > 0) {
+                }
+                else {
+                    items.splice(i, 1);
+                }
+            }
+            if (items.length > 0) {
+                items = items[0].split('</th></tr>');
+                result = this._onRequestData(items);
+            }
+        }
+        return result;
+    };
+    TransHis._onRequestData = function (items) {
+        var records = [];
+        items.forEach(function (item) {
+            var itemArr = item.replace(/<tr ><th>/g, '\r\n').replace(/<\/td><td>/g, '\r\n').replace(/<\/th><td>/g, '\r\n').replace(/<\/td><th>/g, '\r\n').split('\r\n');
+            var i = 1;
+            var record = {
+                time: itemArr[i++],
+                price: parseFloat(itemArr[i++]) || 0,
+                change: parseFloat(itemArr[i++]) || 0,
+                voturnover: parseFloat(itemArr[i++]) || 0,
+                vaturnover: parseFloat((itemArr[i++] || '').replace(',', '')) || 0
+            };
+            if (record.time) {
+                records.push(record);
+            }
+        });
+        return records;
+    };
+    TransHis._getTransHis1 = function (symbol, date, page, proxyHost, proxyPort) {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
                 return [2 /*return*/, new Promise(function (resolve, reject) {
@@ -106,11 +144,16 @@ var TransHis = /** @class */ (function () {
                             });
                             response.on('end', function () {
                                 var strBuffer = iconv.decode(bufferHelper.toBuffer(), 'GBK');
-                                var items = strBuffer.split('\r\n');
-                                var records = onEnd(items);
-                                if (proxyHost && proxyPort)
-                                    GlobalTunnel.end();
-                                resolve(records);
+                                if (strBuffer.indexOf('<a href="downxls.php?date=') > 0) {
+                                    var items = strBuffer.split('\r\n');
+                                    var records = onEnd(items);
+                                    if (proxyHost && proxyPort)
+                                        GlobalTunnel.end();
+                                    resolve(records);
+                                }
+                                else {
+                                    reject(new Error('error page'));
+                                }
                             });
                             response.on('error', function (err) {
                                 console.error('error: ', err.message);
@@ -130,15 +173,56 @@ var TransHis = /** @class */ (function () {
             });
         });
     };
-    TransHis.getTransHis = function (code, date, page) {
+    TransHis._getTransHis = function (symbol, date, page, proxyHost, proxyPort) {
         return __awaiter(this, void 0, void 0, function () {
-            var dateStr, symbol, records, _records, startTime, error_1, endTime;
+            var _this = this;
+            return __generator(this, function (_a) {
+                return [2 /*return*/, new Promise(function (resolve, reject) {
+                        page = page || 1;
+                        var dateStr = date.format('yyyy-MM-dd');
+                        var options = {
+                            'url': 'http://' + Options.host + Options.path.replace('{symbol}', symbol).replace('{date}', dateStr).replace('{page}', page),
+                            'method': "GET",
+                            'timeout': 10 * 1000
+                        };
+                        if (proxyHost && proxyPort)
+                            options['proxy'] = "http://" + proxyHost + ":" + proxyPort;
+                        request(options, function (error, response, body) {
+                            if (!error && response.statusCode == 200) {
+                                var strBuffer = body;
+                                if (strBuffer.indexOf('<a href="downxls.php?date=') > 0) {
+                                    var items = strBuffer.split('\r\n');
+                                    var records = _this._onRequestEnd(items);
+                                    resolve(records);
+                                }
+                                else {
+                                    reject(new Error('error page'));
+                                }
+                            }
+                            else {
+                                if (!error && response) {
+                                    reject(new Error(response.statusCode));
+                                }
+                                else {
+                                    reject(error);
+                                }
+                            }
+                        });
+                    })];
+            });
+        });
+    };
+    TransHis.getTransHis = function (transHis, code, date, page) {
+        return __awaiter(this, void 0, void 0, function () {
+            var symbol, proxys, proxyHosts, proxysCount, records, _records, startTime, index, host, port, error_1, endTime;
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
                         page = page || 1;
-                        dateStr = date.format('yyyyMMdd');
                         symbol = (parseInt(code) >= 600000 && parseInt(code) < 700000 ? 'sh' : 'sz') + code;
+                        proxys = transHis.database.proxys.getValids();
+                        proxyHosts = Object.keys(proxys);
+                        proxysCount = proxyHosts.length;
                         records = [];
                         _records = [];
                         startTime = new Date();
@@ -146,15 +230,18 @@ var TransHis = /** @class */ (function () {
                         _a.label = 1;
                     case 1:
                         if (!true) return [3 /*break*/, 6];
+                        index = Math.floor(Math.random() * proxysCount);
+                        host = proxyHosts[index];
+                        port = proxys[host];
                         _a.label = 2;
                     case 2:
                         _a.trys.push([2, 4, , 5]);
-                        return [4 /*yield*/, this._getTransHis(symbol, date, page, "123.1.170.138", 3128)];
+                        return [4 /*yield*/, this._getTransHis(symbol, date, page, host, port)];
                     case 3:
                         _records = _a.sent();
                         if (_records && _records.length > 0) {
                             records = records.concat(_records);
-                            console.log("got page " + page);
+                            console.log("got page " + page + " of " + code + " " + date.format('yyyy-MM-dd'));
                             // await Polyfills.sleep(1000);
                             page++;
                         }
@@ -164,7 +251,7 @@ var TransHis = /** @class */ (function () {
                         return [3 /*break*/, 5];
                     case 4:
                         error_1 = _a.sent();
-                        console.error("got error: " + error_1.message);
+                        console.error("got " + code + " error: " + error_1.message);
                         return [3 /*break*/, 5];
                     case 5: return [3 /*break*/, 1];
                     case 6:
@@ -180,7 +267,7 @@ var TransHis = /** @class */ (function () {
             var records;
             return __generator(this, function (_a) {
                 switch (_a.label) {
-                    case 0: return [4 /*yield*/, this.getTransHis(code, date)];
+                    case 0: return [4 /*yield*/, this.getTransHis(transHis, code, date)];
                     case 1:
                         records = _a.sent();
                         if (!(records && records.length > 0)) return [3 /*break*/, 3];

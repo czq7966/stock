@@ -63,15 +63,23 @@ export class Proxys {
     }    
 
 
-    static async checkProxy(host: string, port: number): Promise<boolean>  {
+    static async checkProxy(host: string, port: number, logBody?: boolean, checkKey?: string): Promise<boolean>  {
         return new Promise((resolve, reject) => {
             request({
               'url':'http://www.baidu.com',
               'method': "GET",
-              'proxy':`http://${host}:${port}`
+              'proxy':`http://${host}:${port}`,
+              'timeout': 10 * 1000
             },function (error, response, body) {
               if (!error && response.statusCode == 200) {
-                resolve(true)
+                if (logBody) console.log(body);
+
+                if ((body as string).indexOf('百度首页') >= 0) {
+                    resolve(true)
+                } else {
+                    resolve(false)
+                }                
+                
               } else {
                   if (!error && response) {
                       reject(new Error(response.statusCode))
@@ -92,12 +100,14 @@ export class Proxys {
             let port = this.CheckProxys[host] as number;
             // console.log(`${checkIndex} / ${count}`)
             try {
-                await this.checkProxy(host, port); 
+                let result = await this.checkProxy(host, port); 
                 this.FinishCount++;
-                this.ProxyValids[host] = port;
-                proxys.addValid(host, port)
-                // proxys.db.set(`proxys.${host}`, port).write();
-                console.log(`-----------------------------${checkIndex} / ${count}----- ${host} : ${port}`)      
+                if (result) {
+                    this.ProxyValids[host] = port;
+                    proxys.addValid(host, port)
+                    // proxys.db.set(`proxys.${host}`, port).write();
+                    console.log(`-----------------------------${checkIndex} / ${count}----- ${host} : ${port}`)      
+                }
             } catch (error) {
                 this.FinishCount++;
                 // console.error(`${checkIndex} / ${count} :` + error.message)                
@@ -121,7 +131,7 @@ export class Proxys {
         for (let i = 0; i < threadCount; i++) {
             let promise = this.checkValid(proxys);                        
             promises.push(promise);
-            await Polyfills.sleep(200);
+            await Polyfills.sleep(100);
         }
         await Promise.all(promises);
 
@@ -194,8 +204,8 @@ export class Proxys {
               }
             })        
         })  
-        return;
     }
+
 
     static async collectProxyFromKDL(proxys: Modules.Database.Proxys): Promise<any> {
         let URL =  "http://www.kuaidaili.com/free/inha/{page}/";
@@ -207,6 +217,75 @@ export class Proxys {
             try {
                 let url = URL.replace('{page}', page as any);
                 let hosts = await this._collectProxyFromKDL(proxys, url);
+                count = count + Object.keys(hosts).length;
+                console.log(`${count} / ${page} / ${endCount}`);
+                // Polyfills.sleep(1000);
+                page++;                    
+            } catch (error) {
+                console.error(error.message);                
+            }
+        }
+    }
+
+    static async _collectProxyFrom89IP(proxys: Modules.Database.Proxys, url: string): Promise<any> {
+        return new Promise((resolve, reject) => {
+            let req = http.get('http://www.89ip.cn/', (response) => {
+                var bufferHelper = new BufferHelper();
+                response.on('data', function (chunk) {
+                    bufferHelper.concat(chunk);
+                });
+            
+                response.on('end', function () {
+                    var strBuffer =  iconv.decode(bufferHelper.toBuffer(),'GBK');
+                    if (strBuffer) {
+                        console.log('1111111111', strBuffer)
+                        resolve(true);
+                    } else {
+                        resolve(false);
+                    }                    
+
+                });           
+
+            });   
+            
+            req.end()
+        })
+        
+        return;
+        return new Promise((resolve, reject) => {
+            request({
+              'url': url,
+              'method': "GET"
+            },function (error, response, body) {
+              if (!error && response.statusCode == 200) {
+                  let hosts = {}
+                //   console.log(url, response)
+                  let lines = (body as string).split('\n');
+                  console.log('1111111111', body, lines)
+
+
+                  resolve(hosts)
+              } else {
+                  if (!error && response) {
+                      reject(new Error(response.statusCode))
+                  } else {
+                      reject(error)
+                  }
+              }
+            })        
+        })  
+    }
+    static async collectProxyFromK89IP(proxys: Modules.Database.Proxys): Promise<any> {
+        // let URL =  "http://www.89ip.cn/index_{page}.html";
+        let URL =  "http://www.89ip.cn/";
+        let startCount = 1;
+        let endCount = 1;
+        let count = 0;
+        let page = startCount;
+        while(page <= endCount) {
+            try {
+                let url = URL.replace('{page}', page as any);
+                let hosts = await this._collectProxyFrom89IP(proxys, url);
                 count = count + Object.keys(hosts).length;
                 console.log(`${count} / ${page} / ${endCount}`);
                 // Polyfills.sleep(1000);

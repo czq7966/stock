@@ -80,19 +80,62 @@ function start() {
 // start();
 function test() {
     return __awaiter(this, void 0, void 0, function () {
-        var proxys;
+        var proxys, hosts, valids;
+        var _this = this;
+        return __generator(this, function (_a) {
+            proxys = Modules.Database.database.proxys.getValids();
+            hosts = Object.keys(proxys);
+            valids = {};
+            hosts.forEach(function (host) { return __awaiter(_this, void 0, void 0, function () {
+                var port, result, error_1;
+                return __generator(this, function (_a) {
+                    switch (_a.label) {
+                        case 0:
+                            port = proxys[host];
+                            _a.label = 1;
+                        case 1:
+                            _a.trys.push([1, 3, , 4]);
+                            return [4 /*yield*/, Services.Database.Proxys.checkProxy(host, port)];
+                        case 2:
+                            result = _a.sent();
+                            if (result) {
+                                valids[host] = port;
+                                console.log("---------------succeed " + host + " " + port);
+                            }
+                            else {
+                                Modules.Database.database.proxys.delValid(host);
+                                console.log("============= delete " + host + " " + port);
+                            }
+                            return [3 /*break*/, 4];
+                        case 3:
+                            error_1 = _a.sent();
+                            Modules.Database.database.proxys.delValid(host);
+                            console.error("error " + host + " " + port + " " + error_1.message);
+                            return [3 /*break*/, 4];
+                        case 4: return [2 /*return*/];
+                    }
+                });
+            }); });
+            return [2 /*return*/, valids];
+        });
+    });
+}
+function test2() {
+    return __awaiter(this, void 0, void 0, function () {
+        var valids;
         return __generator(this, function (_a) {
             switch (_a.label) {
-                case 0: return [4 /*yield*/, Modules.Database.database.proxys.checkValids()];
+                case 0: return [4 /*yield*/, test()];
                 case 1:
-                    proxys = _a.sent();
-                    console.log(proxys, '有效个数：' + proxys.length);
+                    valids = _a.sent();
+                    console.log(valids);
                     return [2 /*return*/];
             }
         });
     });
 }
-Services.Database.Proxys.collectProxyFromKDL(Modules.Database.database.proxys);
+// test2()
+Services.Database.Proxys.collectProxyFromK89IP(Modules.Database.database.proxys);
 // test();
 // Object.keys(codes).forEach(async (code) => {
 //     await transHis.update(code, new Date());

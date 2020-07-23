@@ -76,6 +76,11 @@ export class TransHis {
         return db;
     }
 
+    existTransHisDB(code: string, date: Date): boolean {
+        let filename = this.getTransHisFilename(code, date);
+        return fs.existsSync(filename);
+    }
+
     async update(code: string, date: Date, records: ITransHisRecord[]) {
         await Services.Database.TransHis.update(this, code, date, records);
     }

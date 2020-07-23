@@ -34,8 +34,10 @@
     "dev": "npm run clean && cross-env NODE_MODULE=stock webpack --progress --env.cjs",
     "build": "npm run clean && cross-env NODE_MODULE=stock webpack --progress --env.cjs --env.production",
     "compile": "npm run clean && tsc",
-    "collect-proxy": "tsc && node ./dist/src/services/collect-proxy.js",
-    "check-proxy": "tsc && node ./dist/src/services/check-proxy.js"
+
+    "collect-proxy": "tsc && node ./dist/src/entries/collect-proxy.js",
+    "check-proxy": "tsc && node ./dist/src/entries/check-proxy.js",
+    "update-transhis": "tsc && node ./dist/src/entries/update-transhis.js"
   },
   "repository": {
     "type": "git",

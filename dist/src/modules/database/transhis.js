@@ -41,6 +41,7 @@ var Lowdb = require("lowdb");
 var FileSync = require("lowdb/adapters/FileSync");
 var Services = require("../../services");
 var path = require("path");
+var fs = require("fs");
 var polyfills = require("../../polyfills");
 var TransHis = /** @class */ (function () {
     function TransHis() {
@@ -82,6 +83,10 @@ var TransHis = /** @class */ (function () {
             this.dbs[filename] = db;
         }
         return db;
+    };
+    TransHis.prototype.existTransHisDB = function (code, date) {
+        var filename = this.getTransHisFilename(code, date);
+        return fs.existsSync(filename);
     };
     TransHis.prototype.update = function (code, date, records) {
         return __awaiter(this, void 0, void 0, function () {

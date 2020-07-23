@@ -33,12 +33,44 @@ async function start()  {
 
 // start();
 async function test() {
-    let proxys = await Modules.Database.database.proxys.checkValids();
-    console.log(proxys, '有效个数：' + proxys.length );
-    
+    let proxys = Modules.Database.database.proxys.getValids();
+    let hosts = Object.keys(proxys);
+
+    let valids = {}
+    hosts.forEach(async host => {
+        let port = proxys[host]
+        try {
+            let result = await Services.Database.Proxys.checkProxy(host, port); 
+            if (result) {
+                valids[host] = port;
+                console.log(`---------------succeed ${host} ${port}`)            
+            } else {
+                Modules.Database.database.proxys.delValid(host);
+                console.log(`============= delete ${host} ${port}`)            
+
+            }
+            
+        } catch (error) {
+            Modules.Database.database.proxys.delValid(host);
+            console.error(`error ${host} ${port} ${error.message}`)
+        }
+    })
+
+    return valids;
+   
 }
 
-Services.Database.Proxys.collectProxyFromKDL(Modules.Database.database.proxys)
+async function test2() {
+    let valids = await test()
+    console.log(valids)
+}
+
+// test2()
+
+
+Services.Database.Proxys.collectProxyFromK89IP(Modules.Database.database.proxys)
+
+
 
 // test();
 

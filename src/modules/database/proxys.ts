@@ -8,11 +8,10 @@ import { threadId } from 'worker_threads';
 export class Proxys {
     db: Lowdb.LowdbSync<any>;
     filename: string;
-    valids: {[host: string]: number}
     constructor() {
         this.filename = path.resolve(__dirname, '../../../../database/proxys.json')
         this.db = Lowdb(new FileSync(this.filename));
-        this.db.defaults({valids:{}, proxys: {}}).write();
+        this.db.defaults({valids:{}, valids2: {}, proxys: {}}).write();
     }
 
     destroy() {
@@ -26,22 +25,27 @@ export class Proxys {
     }
 
     async addValid(host: string, port: number) {
-        let valids = this.db.get('valids').value() as {};
+        let valids = this.getValids();
         valids[host] = port;
-        this.db.set('valids', valids).write();
+        this.setValids(valids);
+    }
+
+    delValid(host: string) {
+        let valids = this.getValids();
+        delete valids[host];
+        this.setValids(valids);
     }
 
     async checkValids(): Promise<{[host: string]: number}> {
         return await Services.Database.Proxys.checkValids(this)
     }
 
-    async getValids(): Promise<{[host: string]: number}> {
-        if (this.valids && Object.keys(this.valids).length > 0) {
-            return this.valids;
-        } else {
-            this.valids = await this.checkValids();
-        }
-        return this.valids;
+    getValids(): {[host: string]: number} {
+        return this.db.get('valids').value();
     }
+
+    setValids(value: {}) {
+        this.db.set('valids', value).write();
+    }    
 
 }
