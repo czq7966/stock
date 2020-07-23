@@ -13,4 +13,8 @@ export class Codes {
     destroy() {
 
     }
+
+    getSHCodes(): {[code: string]: string} {
+        return this.db.get('sh').value()
+    }
 }

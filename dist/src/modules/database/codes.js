@@ -11,6 +11,9 @@ var Codes = /** @class */ (function () {
     }
     Codes.prototype.destroy = function () {
     };
+    Codes.prototype.getSHCodes = function () {
+        return this.db.get('sh').value();
+    };
     return Codes;
 }());
 exports.Codes = Codes;

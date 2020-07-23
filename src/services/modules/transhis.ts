@@ -3,6 +3,8 @@ import * as iconv from 'iconv-lite'
 import * as BufferHelper from 'bufferhelper'
 
 import * as Modules from '../../modules'
+import * as Polyfills from '../../polyfills'
+import * as GlobalTunnel from 'global-tunnel-ng';
 
 
 var Options = {
@@ -12,8 +14,12 @@ var Options = {
 
 
 export class TransHis {
-    static async _getTransHis(symbol: string, date: Date, page: number): Promise<Modules.Database.ITransHisRecord[]> {
+    static async _getTransHis(symbol: string, date: Date, page: number, proxyHost?: string, proxyPort?: number): Promise<Modules.Database.ITransHisRecord[]> {
         return new Promise((resolve, reject) => {
+            if (proxyHost && proxyPort) {
+                GlobalTunnel.initialize({host: proxyHost, port: proxyPort });    
+            }
+
             page = page || 1;
             let dateStr = date.format('yyyy-MM-dd')
             let options = {
@@ -68,12 +74,25 @@ export class TransHis {
                     let strBuffer =  iconv.decode(bufferHelper.toBuffer(),'GBK');
                     let items = strBuffer.split('\r\n')
                     let records = onEnd(items);
+                    if (proxyHost && proxyPort) GlobalTunnel.end();
                     resolve(records)
                 });
+
+                response.on('error', function(err: Error) {
+                    console.error('error: ', err.message)
+                    if (proxyHost && proxyPort) GlobalTunnel.end();
+                    reject(err)
+                })
                 
             }
         
-            http.request(options, callback).end();
+            let request = http.request(options, callback);
+            request.on('error', (err) => {
+                if (proxyHost && proxyPort) GlobalTunnel.end();
+
+                reject(err)
+            })
+            request.end();
         })
     }
 
@@ -86,20 +105,38 @@ export class TransHis {
         let records: Modules.Database.ITransHisRecord[] = [];
         let _records: Modules.Database.ITransHisRecord[] = [];
 
+        let startTime = new Date();
+        console.log(`getting: ${code} ${date.format('yyyy-MM-dd')}`);
         while (true) {
-            _records = await this._getTransHis(symbol, date, page);   
-            if (_records && _records.length > 0) {
-                records = records.concat(_records);
-                page++;
-            } else {
-                break;
+            try {
+                _records = await this._getTransHis(symbol, date, page, "123.1.170.138", 3128);   
+                if (_records && _records.length > 0) {
+                    records = records.concat(_records);
+                    console.log(`got page ${page}`)
+                    // await Polyfills.sleep(1000);
+                    page++;
+                } else {
+                    break;
+                }                
+            } catch (error) {
+                console.error(`got error: ` + error.message)
+                
             }
+
         } 
+        let endTime = new Date()
+        console.log(`end get: ${code} ${((endTime as any) - (startTime as any)) / 1000} Secs`);
         return records;
     }
     
     static async update(transHis: Modules.TransHis, code, date: Date) {
         let records = await this.getTransHis(code, date);
-        await transHis.database.transhis.update(code, date, records);
+        if (records && records.length > 0) {
+            await transHis.database.transhis.update(code, date, records);
+        } else {
+            console.error('222222222', code + ':' + date.format('yyyy-MM-dd') +' records empty')
+        }
+
+
     }
 }

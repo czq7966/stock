@@ -9,8 +9,11 @@
     "copy-webpack-plugin": "^6.0.3",
     "cross-env": "^7.0.2",
     "css-loader": "^3.6.0",
+    "global-tunnel-ng": "^2.7.1",
     "iconv-lite": "^0.6.2",
     "lowdb": "^1.0.0",
+    "node-global-proxy": "^1.0.1",
+    "request": "^2.88.2",
     "rimraf": "^3.0.2",
     "style-loader": "^1.2.1",
     "superagent": "^5.3.1",
@@ -30,7 +33,9 @@
     "watch": "npm run clean && cross-env NODE_MODULE=stock webpack --progress --env.cjs --watch ",
     "dev": "npm run clean && cross-env NODE_MODULE=stock webpack --progress --env.cjs",
     "build": "npm run clean && cross-env NODE_MODULE=stock webpack --progress --env.cjs --env.production",
-    "compile": "npm run clean && tsc"
+    "compile": "npm run clean && tsc",
+    "collect-proxy": "tsc && node ./dist/src/services/collect-proxy.js",
+    "check-proxy": "tsc && node ./dist/src/services/check-proxy.js"
   },
   "repository": {
     "type": "git",

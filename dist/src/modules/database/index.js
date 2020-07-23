@@ -13,3 +13,4 @@ Object.defineProperty(exports, "__esModule", { value: true });
 __exportStar(require("./database"), exports);
 __exportStar(require("./codes"), exports);
 __exportStar(require("./transhis"), exports);
+__exportStar(require("./proxys"), exports);

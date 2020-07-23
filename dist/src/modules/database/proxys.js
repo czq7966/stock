@@ -36,68 +36,70 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-require("./polyfills");
-var Modules = require("./modules");
-var Services = require("./services");
-var transHis = new Modules.TransHis();
-var codes = transHis.database.codes.getSHCodes();
-function Delay(timeout) {
-    return new Promise(function (resolve, reject) {
-        setTimeout(function () {
-            resolve();
-        }, timeout);
-    });
-}
-codes = {
-    "603993": "",
-};
-var keys = Object.keys(codes);
-var StartNow = new Date(new Date().setDate(new Date().getDate() - 365));
-function start() {
-    return __awaiter(this, void 0, void 0, function () {
-        var index, code;
-        return __generator(this, function (_a) {
-            switch (_a.label) {
-                case 0:
-                    index = 0;
-                    _a.label = 1;
-                case 1:
-                    if (!(index < keys.length)) return [3 /*break*/, 4];
-                    code = keys[index];
-                    return [4 /*yield*/, transHis.update(code, StartNow)];
-                case 2:
-                    _a.sent();
-                    console.log('1111111: ' + code);
-                    _a.label = 3;
-                case 3:
-                    index++;
-                    return [3 /*break*/, 1];
-                case 4: return [2 /*return*/];
-            }
+exports.Proxys = void 0;
+var path = require("path");
+var Lowdb = require("lowdb");
+var FileSync = require("lowdb/adapters/FileSync");
+var Services = require("../../services");
+var Proxys = /** @class */ (function () {
+    function Proxys() {
+        this.filename = path.resolve(__dirname, '../../../../database/proxys.json');
+        this.db = Lowdb(new FileSync(this.filename));
+        this.db.defaults({ valids: {}, proxys: {} }).write();
+    }
+    Proxys.prototype.destroy = function () {
+    };
+    Proxys.prototype.addProxy = function (host, port) {
+        return __awaiter(this, void 0, void 0, function () {
+            var proxys;
+            return __generator(this, function (_a) {
+                proxys = this.db.get('proxys').value();
+                proxys[host] = port;
+                this.db.set('proxys', proxys).write();
+                return [2 /*return*/];
+            });
         });
-    });
-}
-// start();
-function test() {
-    return __awaiter(this, void 0, void 0, function () {
-        var proxys;
-        return __generator(this, function (_a) {
-            switch (_a.label) {
-                case 0: return [4 /*yield*/, Modules.Database.database.proxys.checkValids()];
-                case 1:
-                    proxys = _a.sent();
-                    console.log(proxys, '有效个数：' + proxys.length);
-                    return [2 /*return*/];
-            }
+    };
+    Proxys.prototype.addValid = function (host, port) {
+        return __awaiter(this, void 0, void 0, function () {
+            var valids;
+            return __generator(this, function (_a) {
+                valids = this.db.get('valids').value();
+                valids[host] = port;
+                this.db.set('valids', valids).write();
+                return [2 /*return*/];
+            });
         });
-    });
-}
-Services.Database.Proxys.collectProxyFromKDL(Modules.Database.database.proxys);
-// test();
-// Object.keys(codes).forEach(async (code) => {
-//     await transHis.update(code, new Date());
-//     await Delay(30 * 1000)
-//     console.log('1111111: ' + code);
-// })
-// transHis.update('603993', new Date());
-// Modules.Database.database.transhis.update('123456', new Date(), [])
+    };
+    Proxys.prototype.checkValids = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, Services.Database.Proxys.checkValids(this)];
+                    case 1: return [2 /*return*/, _a.sent()];
+                }
+            });
+        });
+    };
+    Proxys.prototype.getValids = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            var _a;
+            return __generator(this, function (_b) {
+                switch (_b.label) {
+                    case 0:
+                        if (!(this.valids && Object.keys(this.valids).length > 0)) return [3 /*break*/, 1];
+                        return [2 /*return*/, this.valids];
+                    case 1:
+                        _a = this;
+                        return [4 /*yield*/, this.checkValids()];
+                    case 2:
+                        _a.valids = _b.sent();
+                        _b.label = 3;
+                    case 3: return [2 /*return*/, this.valids];
+                }
+            });
+        });
+    };
+    return Proxys;
+}());
+exports.Proxys = Proxys;

@@ -40,6 +40,7 @@ exports.TransHis = void 0;
 var http = require("http");
 var iconv = require("iconv-lite");
 var BufferHelper = require("bufferhelper");
+var GlobalTunnel = require("global-tunnel-ng");
 var Options = {
     host: 'market.finance.sina.com.cn',
     path: '/transHis.php?symbol={symbol}&date={date}&page={page}'
@@ -47,10 +48,13 @@ var Options = {
 var TransHis = /** @class */ (function () {
     function TransHis() {
     }
-    TransHis._getTransHis = function (symbol, date, page) {
+    TransHis._getTransHis = function (symbol, date, page, proxyHost, proxyPort) {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
                 return [2 /*return*/, new Promise(function (resolve, reject) {
+                        if (proxyHost && proxyPort) {
+                            GlobalTunnel.initialize({ host: proxyHost, port: proxyPort });
+                        }
                         page = page || 1;
                         var dateStr = date.format('yyyy-MM-dd');
                         var options = {
@@ -104,17 +108,31 @@ var TransHis = /** @class */ (function () {
                                 var strBuffer = iconv.decode(bufferHelper.toBuffer(), 'GBK');
                                 var items = strBuffer.split('\r\n');
                                 var records = onEnd(items);
+                                if (proxyHost && proxyPort)
+                                    GlobalTunnel.end();
                                 resolve(records);
                             });
+                            response.on('error', function (err) {
+                                console.error('error: ', err.message);
+                                if (proxyHost && proxyPort)
+                                    GlobalTunnel.end();
+                                reject(err);
+                            });
                         };
-                        http.request(options, callback).end();
+                        var request = http.request(options, callback);
+                        request.on('error', function (err) {
+                            if (proxyHost && proxyPort)
+                                GlobalTunnel.end();
+                            reject(err);
+                        });
+                        request.end();
                     })];
             });
         });
     };
     TransHis.getTransHis = function (code, date, page) {
         return __awaiter(this, void 0, void 0, function () {
-            var dateStr, symbol, records, _records;
+            var dateStr, symbol, records, _records, startTime, error_1, endTime;
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
@@ -123,21 +141,36 @@ var TransHis = /** @class */ (function () {
                         symbol = (parseInt(code) >= 600000 && parseInt(code) < 700000 ? 'sh' : 'sz') + code;
                         records = [];
                         _records = [];
+                        startTime = new Date();
+                        console.log("getting: " + code + " " + date.format('yyyy-MM-dd'));
                         _a.label = 1;
                     case 1:
-                        if (!true) return [3 /*break*/, 3];
-                        return [4 /*yield*/, this._getTransHis(symbol, date, page)];
+                        if (!true) return [3 /*break*/, 6];
+                        _a.label = 2;
                     case 2:
+                        _a.trys.push([2, 4, , 5]);
+                        return [4 /*yield*/, this._getTransHis(symbol, date, page, "123.1.170.138", 3128)];
+                    case 3:
                         _records = _a.sent();
                         if (_records && _records.length > 0) {
                             records = records.concat(_records);
+                            console.log("got page " + page);
+                            // await Polyfills.sleep(1000);
                             page++;
                         }
                         else {
-                            return [3 /*break*/, 3];
+                            return [3 /*break*/, 6];
                         }
-                        return [3 /*break*/, 1];
-                    case 3: return [2 /*return*/, records];
+                        return [3 /*break*/, 5];
+                    case 4:
+                        error_1 = _a.sent();
+                        console.error("got error: " + error_1.message);
+                        return [3 /*break*/, 5];
+                    case 5: return [3 /*break*/, 1];
+                    case 6:
+                        endTime = new Date();
+                        console.log("end get: " + code + " " + (endTime - startTime) / 1000 + " Secs");
+                        return [2 /*return*/, records];
                 }
             });
         });
@@ -150,10 +183,15 @@ var TransHis = /** @class */ (function () {
                     case 0: return [4 /*yield*/, this.getTransHis(code, date)];
                     case 1:
                         records = _a.sent();
+                        if (!(records && records.length > 0)) return [3 /*break*/, 3];
                         return [4 /*yield*/, transHis.database.transhis.update(code, date, records)];
                     case 2:
                         _a.sent();
-                        return [2 /*return*/];
+                        return [3 /*break*/, 4];
+                    case 3:
+                        console.error('222222222', code + ':' + date.format('yyyy-MM-dd') + ' records empty');
+                        _a.label = 4;
+                    case 4: return [2 /*return*/];
                 }
             });
         });
