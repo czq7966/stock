@@ -5,6 +5,7 @@
   "main": "main.js",
   "dependencies": {
     "@types/lowdb": "^1.0.9",
+    "@types/request": "^2.48.5",
     "bufferhelper": "^0.2.1",
     "copy-webpack-plugin": "^6.0.3",
     "cross-env": "^7.0.2",
@@ -34,7 +35,6 @@
     "dev": "npm run clean && cross-env NODE_MODULE=stock webpack --progress --env.cjs",
     "build": "npm run clean && cross-env NODE_MODULE=stock webpack --progress --env.cjs --env.production",
     "compile": "npm run clean && tsc",
-
     "collect-proxy": "tsc && node ./dist/src/entries/collect-proxy.js",
     "check-proxy": "tsc && node ./dist/src/entries/check-proxy.js",
     "update-transhis": "tsc && node ./dist/src/entries/update-transhis.js"

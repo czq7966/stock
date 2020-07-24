@@ -82,7 +82,7 @@ export class Proxys {
                 
               } else {
                   if (!error && response) {
-                      reject(new Error(response.statusCode))
+                      reject(new Error(response.statusCode as any))
                   } else {
                       reject(error)
                   }
@@ -197,7 +197,7 @@ export class Proxys {
                 resolve(hosts)
               } else {
                   if (!error && response) {
-                      reject(new Error(response.statusCode))
+                      reject(new Error(response.statusCode as any))
                   } else {
                       reject(error)
                   }
@@ -249,31 +249,8 @@ export class Proxys {
             });   
             
             req.end()
-        })
-        
-        return;
-        return new Promise((resolve, reject) => {
-            request({
-              'url': url,
-              'method': "GET"
-            },function (error, response, body) {
-              if (!error && response.statusCode == 200) {
-                  let hosts = {}
-                //   console.log(url, response)
-                  let lines = (body as string).split('\n');
-                  console.log('1111111111', body, lines)
-
-
-                  resolve(hosts)
-              } else {
-                  if (!error && response) {
-                      reject(new Error(response.statusCode))
-                  } else {
-                      reject(error)
-                  }
-              }
-            })        
-        })  
+        })        
+ 
     }
     static async collectProxyFromK89IP(proxys: Modules.Database.Proxys): Promise<any> {
         // let URL =  "http://www.89ip.cn/index_{page}.html";

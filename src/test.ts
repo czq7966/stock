@@ -68,7 +68,9 @@ async function test2() {
 // test2()
 
 
-Services.Database.Proxys.collectProxyFromK89IP(Modules.Database.database.proxys)
+// Services.Database.Proxys.collectProxyFromK89IP(Modules.Database.database.proxys)
+
+Services.Database.Codes.updateSZCodes(Modules.Database.database.codes)
 
 
 

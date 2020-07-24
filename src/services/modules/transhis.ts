@@ -162,7 +162,7 @@ export class TransHis {
                 }          
               } else {
                   if (!error && response) {
-                      reject(new Error(response.statusCode))
+                      reject(new Error(response.statusCode as any))
                   } else {
                       reject(error)
                   }

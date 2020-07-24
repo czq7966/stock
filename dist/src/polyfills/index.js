@@ -13,3 +13,4 @@ Object.defineProperty(exports, "__esModule", { value: true });
 require("./date-format");
 __exportStar(require("./fs"), exports);
 __exportStar(require("./sleep"), exports);
+__exportStar(require("./request-page"), exports);

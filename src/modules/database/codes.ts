@@ -8,6 +8,7 @@ export class Codes {
     constructor() {
         this.filename = './database/codes.json';
         this.db = Lowdb(new FileSync(this.filename));
+        this.db.defaults({sh: {}, sz: {}}).write();
     }
 
     destroy() {
@@ -16,5 +17,16 @@ export class Codes {
 
     getSHCodes(): {[code: string]: string} {
         return this.db.get('sh').value()
+    }
+    getSZCodes(): {[code: string]: string} {
+        return this.db.get('sz').value()
+    }
+
+    setSHCodes(codes: {}) {
+        this.db.set('sh', codes).write();
+    }
+
+    setSZCodes(codes: {}) {
+        this.db.set('sz', codes).write();
     }
 }
