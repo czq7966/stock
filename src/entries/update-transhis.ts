@@ -10,6 +10,7 @@ let codes = transHis.database.codes.getSHCodes()
 
 let keys = Object.keys(codes);
 let keysIndex = 0;
+let threadCount = 30;
 
 async function  update(date?: Date) {    
     date = date || new Date();
@@ -23,6 +24,6 @@ async function  update(date?: Date) {
     }
 }
 
-for (let i = 0; i < 10; i++) {
+for (let i = 0; i < 30; i++) {
     update();    
 }

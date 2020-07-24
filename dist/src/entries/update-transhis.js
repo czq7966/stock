@@ -44,6 +44,7 @@ var codes = transHis.database.codes.getSHCodes();
 // }
 var keys = Object.keys(codes);
 var keysIndex = 0;
+var threadCount = 30;
 function update(date) {
     return __awaiter(this, void 0, void 0, function () {
         var index, code;
@@ -68,6 +69,6 @@ function update(date) {
         });
     });
 }
-for (var i = 0; i < 10; i++) {
+for (var i = 0; i < 30; i++) {
     update();
 }
