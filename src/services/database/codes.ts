@@ -57,13 +57,13 @@ export class Codes {
                     break;                
                 }
             } catch (error) {
-                console.log(`get page ${page} error: ${error.message}` )
+                console.log(`get page ${code} ${page} error: ${error.message}` )
                 
             }
 
 
         }
-        console.log(Object.keys(codes).length)
+
         return codes;
 
     }
@@ -77,5 +77,17 @@ export class Codes {
         }
 
         return false;
-    }   
+    }  
+    
+    static async updateSHCodes(codesDB: Modules.Database.Codes): Promise<boolean>  {
+        let codes = codesDB.getSHCodes();
+        let _codes = await this.requestCodeList('ha');
+        codes = Object.assign(codes, _codes);
+        if (codes && Object.keys(codes).length > 0) {
+            codesDB.setSHCodes(codes);
+            return true
+        }
+
+        return false;
+    }       
 } 

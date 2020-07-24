@@ -37,7 +37,8 @@
     "compile": "npm run clean && tsc",
     "collect-proxy": "tsc && node ./dist/src/entries/collect-proxy.js",
     "check-proxy": "tsc && node ./dist/src/entries/check-proxy.js",
-    "update-transhis": "tsc && node ./dist/src/entries/update-transhis.js"
+    "update-transhis": "tsc && node ./dist/src/entries/update-transhis.js",
+    "update-codes": "tsc && node ./dist/src/entries/update-codes.js"
   },
   "repository": {
     "type": "git",

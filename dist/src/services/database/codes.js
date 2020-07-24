@@ -112,12 +112,10 @@ var Codes = /** @class */ (function () {
                         return [3 /*break*/, 5];
                     case 4:
                         error_1 = _a.sent();
-                        console.log("get page " + page + " error: " + error_1.message);
+                        console.log("get page " + code + " " + page + " error: " + error_1.message);
                         return [3 /*break*/, 5];
                     case 5: return [3 /*break*/, 1];
-                    case 6:
-                        console.log(Object.keys(codes).length);
-                        return [2 /*return*/, codes];
+                    case 6: return [2 /*return*/, codes];
                 }
             });
         });
@@ -135,6 +133,26 @@ var Codes = /** @class */ (function () {
                         codes = Object.assign(codes, _codes);
                         if (codes && Object.keys(codes).length > 0) {
                             codesDB.setSZCodes(codes);
+                            return [2 /*return*/, true];
+                        }
+                        return [2 /*return*/, false];
+                }
+            });
+        });
+    };
+    Codes.updateSHCodes = function (codesDB) {
+        return __awaiter(this, void 0, void 0, function () {
+            var codes, _codes;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        codes = codesDB.getSHCodes();
+                        return [4 /*yield*/, this.requestCodeList('ha')];
+                    case 1:
+                        _codes = _a.sent();
+                        codes = Object.assign(codes, _codes);
+                        if (codes && Object.keys(codes).length > 0) {
+                            codesDB.setSHCodes(codes);
                             return [2 /*return*/, true];
                         }
                         return [2 /*return*/, false];
