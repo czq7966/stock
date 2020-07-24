@@ -4,6 +4,7 @@ import * as Services from '../../services'
 import * as path from 'path'
 import * as fs from 'fs';
 import * as polyfills from '../../polyfills'
+import { Database } from './database';
 
 export interface ITransHisRecord {
     time: string
@@ -23,10 +24,10 @@ export interface ITransHisRecords {
 }
 
 export class TransHis {
-    // db: Lowdb.LowdbSync<any>;
-    // filename: string;
     dbs: {[filename: string]: Lowdb.LowdbSync<any>};
-    constructor() {
+    database: Database;
+    constructor(database: Database) {
+        this.database = database;
         this.init();
     }
 
@@ -41,19 +42,11 @@ export class TransHis {
         return path.resolve(__dirname, '../../../../database')
     }
 
-    getDBCodePath(): string {
-        return path.resolve(this.getDBPath(), 'code')
-    }
-
     getDBDataPath(): string {
         return path.resolve(this.getDBPath(), 'data')
     }    
 
-    getTransHisFilename(code: string, date: Date): string {
-        return path.resolve(this.getDBDataPath(),  code +'/transhis/' + this.getDateKey(date) + '.json' )
-    }
-
-    getChdDataKey(code?: string): string {
+    getChdDataKey(): string {
         return 'chddata';
     }
     getTransHisKey(code?: string): string {
@@ -61,6 +54,13 @@ export class TransHis {
     }
     getDateKey(date: Date): string {
         return  date.format('yyyyMMdd');
+    }    
+
+    getTransHisFilename(code: string, date: Date): string {
+        return path.resolve(this.getDBDataPath(),  `${code}/${this.getTransHisKey()}/${this.getDateKey(date)}.json` )
+    }
+    getChdDataFilename(code: string): string {
+        return path.resolve(this.getDBDataPath(),  `${code}/${this.getChdDataKey()}/${code}.json` )
     }
 
     getTransHisDB(code: string, date: Date) {
@@ -76,10 +76,28 @@ export class TransHis {
         return db;
     }
 
+    getChdDataDB(code: string) {
+        let filename = this.getChdDataFilename(code);
+        polyfills.mkdirsSync(path.dirname(filename));
+
+        let db = this.dbs[filename];
+        if (!db) {
+            db = Lowdb(new FileSync(filename));
+            db.defaults({}).write();
+            this.dbs[filename] = db;            
+        }
+        return db;
+    }    
+
     existTransHisDB(code: string, date: Date): boolean {
         let filename = this.getTransHisFilename(code, date);
         return fs.existsSync(filename);
     }
+
+    existChdDataDB(code: string): boolean {
+        let filename = this.getChdDataFilename(code);
+        return fs.existsSync(filename);
+    }    
 
     async update(code: string, date: Date, records: ITransHisRecord[]) {
         await Services.Database.TransHis.update(this, code, date, records);

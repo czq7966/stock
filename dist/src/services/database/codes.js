@@ -160,6 +160,25 @@ var Codes = /** @class */ (function () {
             });
         });
     };
+    Codes.update = function (codesDB) {
+        return __awaiter(this, void 0, void 0, function () {
+            var shCodes, szCodes;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, this.updateSHCodes(codesDB)];
+                    case 1:
+                        _a.sent();
+                        return [4 /*yield*/, this.updateSZCodes(codesDB)];
+                    case 2:
+                        _a.sent();
+                        shCodes = codesDB.getSHCodes();
+                        szCodes = codesDB.getSZCodes();
+                        console.log("sh " + Object.keys(shCodes).length + ", sz " + Object.keys(szCodes).length + " ");
+                        return [2 /*return*/];
+                }
+            });
+        });
+    };
     return Codes;
 }());
 exports.Codes = Codes;

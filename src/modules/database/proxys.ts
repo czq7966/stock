@@ -4,11 +4,14 @@ import FileSync  = require('lowdb/adapters/FileSync')
 
 import * as Services from '../../services'
 import { threadId } from 'worker_threads';
+import { Database } from './database';
 
 export class Proxys {
     db: Lowdb.LowdbSync<any>;
     filename: string;
-    constructor() {
+    database: Database;
+    constructor(database: Database) {
+        this.database = database;
         this.filename = path.resolve(__dirname, '../../../../database/proxys.json')
         this.db = Lowdb(new FileSync(this.filename));
         this.db.defaults({valids:{}, valids2: {}, proxys: {}}).write();

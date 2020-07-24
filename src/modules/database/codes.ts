@@ -1,11 +1,14 @@
-// const Lowdb = require('lowdb');
 import * as Lowdb from 'lowdb'
 import FileSync  = require('lowdb/adapters/FileSync')
+import * as Services from '../../services'
+import { Database } from './database';
 
 export class Codes {
     db: Lowdb.LowdbSync<any>;
     filename: string;
-    constructor() {
+    database: Database;
+    constructor(database: Database) {
+        this.database = database;
         this.filename = './database/codes.json';
         this.db = Lowdb(new FileSync(this.filename));
         this.db.defaults({sh: {}, sz: {}}).write();
@@ -28,5 +31,9 @@ export class Codes {
 
     setSZCodes(codes: {}) {
         this.db.set('sz', codes).write();
+    }
+
+    async update() {
+        await Services.Database.Codes.update(this);
     }
 }

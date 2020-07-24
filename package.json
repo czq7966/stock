@@ -4,6 +4,7 @@
   "description": "test",
   "main": "main.js",
   "dependencies": {
+    "@types/bufferhelper": "^0.2.0",
     "@types/lowdb": "^1.0.9",
     "@types/request": "^2.48.5",
     "bufferhelper": "^0.2.1",
@@ -38,7 +39,8 @@
     "collect-proxy": "tsc && node ./dist/src/entries/collect-proxy.js",
     "check-proxy": "tsc && node ./dist/src/entries/check-proxy.js",
     "update-transhis": "tsc && node ./dist/src/entries/update-transhis.js",
-    "update-codes": "tsc && node ./dist/src/entries/update-codes.js"
+    "update-codes": "tsc && node ./dist/src/entries/update-codes.js",
+    "update-chddata": "tsc && node ./dist/src/entries/update-chddata.js"
   },
   "repository": {
     "type": "git",

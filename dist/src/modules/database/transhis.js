@@ -44,7 +44,8 @@ var path = require("path");
 var fs = require("fs");
 var polyfills = require("../../polyfills");
 var TransHis = /** @class */ (function () {
-    function TransHis() {
+    function TransHis(database) {
+        this.database = database;
         this.init();
     }
     TransHis.prototype.destroy = function () {
@@ -55,16 +56,10 @@ var TransHis = /** @class */ (function () {
     TransHis.prototype.getDBPath = function () {
         return path.resolve(__dirname, '../../../../database');
     };
-    TransHis.prototype.getDBCodePath = function () {
-        return path.resolve(this.getDBPath(), 'code');
-    };
     TransHis.prototype.getDBDataPath = function () {
         return path.resolve(this.getDBPath(), 'data');
     };
-    TransHis.prototype.getTransHisFilename = function (code, date) {
-        return path.resolve(this.getDBDataPath(), code + '/transhis/' + this.getDateKey(date) + '.json');
-    };
-    TransHis.prototype.getChdDataKey = function (code) {
+    TransHis.prototype.getChdDataKey = function () {
         return 'chddata';
     };
     TransHis.prototype.getTransHisKey = function (code) {
@@ -72,6 +67,12 @@ var TransHis = /** @class */ (function () {
     };
     TransHis.prototype.getDateKey = function (date) {
         return date.format('yyyyMMdd');
+    };
+    TransHis.prototype.getTransHisFilename = function (code, date) {
+        return path.resolve(this.getDBDataPath(), code + "/" + this.getTransHisKey() + "/" + this.getDateKey(date) + ".json");
+    };
+    TransHis.prototype.getChdDataFilename = function (code) {
+        return path.resolve(this.getDBDataPath(), code + "/" + this.getChdDataKey() + "/" + code + ".json");
     };
     TransHis.prototype.getTransHisDB = function (code, date) {
         var filename = this.getTransHisFilename(code, date);
@@ -84,8 +85,23 @@ var TransHis = /** @class */ (function () {
         }
         return db;
     };
+    TransHis.prototype.getChdDataDB = function (code) {
+        var filename = this.getChdDataFilename(code);
+        polyfills.mkdirsSync(path.dirname(filename));
+        var db = this.dbs[filename];
+        if (!db) {
+            db = Lowdb(new FileSync(filename));
+            db.defaults({}).write();
+            this.dbs[filename] = db;
+        }
+        return db;
+    };
     TransHis.prototype.existTransHisDB = function (code, date) {
         var filename = this.getTransHisFilename(code, date);
+        return fs.existsSync(filename);
+    };
+    TransHis.prototype.existChdDataDB = function (code) {
+        var filename = this.getChdDataFilename(code);
         return fs.existsSync(filename);
     };
     TransHis.prototype.update = function (code, date, records) {

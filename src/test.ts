@@ -70,8 +70,12 @@ async function test2() {
 
 // Services.Database.Proxys.collectProxyFromK89IP(Modules.Database.database.proxys)
 
-Services.Database.Codes.updateSZCodes(Modules.Database.database.codes)
+// Services.Database.Codes.updateSZCodes(Modules.Database.database.codes)
+// Services.Database.ChdData.requestCodeData('600000', 10)
+// Services.Database.ChdData.updateChdData(Modules.Database.database.chddata, 'sz', 10);
 
+// console.log(Modules.Database.database.chddata.setData('600000', {123: 345}))
+// console.log(Modules.Database.database.chddata.getData('600000'))
 
 
 // test();

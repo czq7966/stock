@@ -42,7 +42,8 @@ var Lowdb = require("lowdb");
 var FileSync = require("lowdb/adapters/FileSync");
 var Services = require("../../services");
 var Proxys = /** @class */ (function () {
-    function Proxys() {
+    function Proxys(database) {
+        this.database = database;
         this.filename = path.resolve(__dirname, '../../../../database/proxys.json');
         this.db = Lowdb(new FileSync(this.filename));
         this.db.defaults({ valids: {}, valids2: {}, proxys: {} }).write();

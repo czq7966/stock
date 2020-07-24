@@ -89,5 +89,14 @@ export class Codes {
         }
 
         return false;
-    }       
+    }   
+    
+    static async  update(codesDB: Modules.Database.Codes) {    
+        await this.updateSHCodes(codesDB);
+        await this.updateSZCodes(codesDB);
+        let shCodes = codesDB.getSHCodes();
+        let szCodes = codesDB.getSZCodes();
+        console.log(`sh ${Object.keys(shCodes).length}, sz ${Object.keys(szCodes).length} `)
+    
+    }
 } 

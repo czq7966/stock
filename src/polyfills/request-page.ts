@@ -1,4 +1,7 @@
 import * as request from 'request'
+import * as http from 'http';
+import * as iconv from 'iconv-lite'; 
+import * as BufferHelper from 'bufferhelper';
 
 export function requestPage(options): Promise<any> {
     return new Promise((resolve, reject) => {
@@ -16,3 +19,29 @@ export function requestPage(options): Promise<any> {
         })
     })
 }
+
+
+export function requestBuffer(options): Promise<Buffer> {
+    return new Promise((resolve, reject) => {
+        let callback = (response) => {
+            var bufferHelper = new BufferHelper();
+            response.on('data', function (chunk) {
+                bufferHelper.concat(chunk);
+            });
+        
+            response.on('end', () => {
+                resolve(bufferHelper.toBuffer())
+            });
+            response.on('error', (err) => {
+                reject(err)
+            })
+        }
+    
+        let req = http.request(options, callback);
+        req.on('error', (err) => {
+            reject(err)
+        })
+        req.end();     
+    })
+}
+
