@@ -38,28 +38,87 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var Modules = require("../modules");
 var transHis = new Modules.TransHis();
-var codes = transHis.database.codes.getSHCodes();
-// codes = {
-//     "60000":""
+// let codes = transHis.database.codes.getSHCodes()
+// // codes = {
+// //     "60000":""
+// // }
+var Progress = /** @class */ (function () {
+    function Progress() {
+        this.Codes = Object.keys(Modules.Database.database.codes.getSHCodes());
+        this.CodesIndex = 0;
+        this.Dates = {};
+    }
+    Progress.prototype.destroy = function () {
+    };
+    Progress.prototype.getCodeDates = function (code) {
+        var dates = {};
+        var chddata = Modules.Database.database.chddata.getData(code);
+        Object.keys(chddata).forEach(function (date) {
+            var exists = Modules.Database.database.transhis.existTransHisDB(code, new Date(date));
+            dates[date] = exists;
+        });
+        return dates;
+    };
+    Progress.prototype.getCodeNextDate = function (code) {
+        var dates = this.Dates[code];
+        dates = dates || this.getCodeDates(code);
+        this.Dates[code] = dates;
+        var dateKeys = Object.keys(dates);
+        for (var i = 0; i < dateKeys.length; i++) {
+            var date = dateKeys[i];
+            if (!dates[date]) {
+                dates[date] = true;
+                return new Date(date);
+            }
+        }
+        return null;
+    };
+    Progress.prototype.getNext = function () {
+        if (this.CodesIndex < this.Codes.length) {
+            var code = this.Codes[this.CodesIndex];
+            var dates = this.Dates[code];
+            dates = dates || this.getCodeDates(code);
+            this.Dates[code] = dates;
+            var date = this.getCodeNextDate(code);
+            if (date) {
+                return { code: code, date: date };
+            }
+            else {
+                delete this.Dates[code];
+                this.CodesIndex++;
+                return this.getNext();
+            }
+        }
+    };
+    return Progress;
+}());
+// let codeKeys = Object.keys(codes);
+// let codeKeysIndex = 0;
+var progress = new Progress();
+var threadCount = 100;
+// async function  update(date?: Date) {    
+//     date = date || new Date();
+//     while(codeKeysIndex < codeKeys.length) {
+//         let index = codeKeysIndex;
+//         codeKeysIndex++;
+//         let code = codeKeys[index];
+//         if (!transHis.database.transhis.existTransHisDB(code, date)) {
+//             await transHis.update(code, date);
+//         }
+//     }
 // }
-var keys = Object.keys(codes);
-var keysIndex = 0;
-var threadCount = 30;
-function update(date) {
+function update2() {
     return __awaiter(this, void 0, void 0, function () {
-        var index, code;
+        var code;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
-                    date = date || new Date();
+                    code = progress.getNext();
                     _a.label = 1;
                 case 1:
-                    if (!(keysIndex < keys.length)) return [3 /*break*/, 4];
-                    index = keysIndex;
-                    keysIndex++;
-                    code = keys[index];
-                    if (!!transHis.database.transhis.existTransHisDB(code, date)) return [3 /*break*/, 3];
-                    return [4 /*yield*/, transHis.update(code, date)];
+                    if (!code) return [3 /*break*/, 4];
+                    if (!!transHis.database.transhis.existTransHisDB(code.code, code.date)) return [3 /*break*/, 3];
+                    return [4 /*yield*/, transHis.update(code.code, code.date)];
                 case 2:
                     _a.sent();
                     _a.label = 3;
@@ -69,6 +128,6 @@ function update(date) {
         });
     });
 }
-for (var i = 0; i < 30; i++) {
-    update();
+for (var i = 0; i < threadCount; i++) {
+    update2();
 }
