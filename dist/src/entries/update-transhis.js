@@ -95,7 +95,7 @@ var Progress = /** @class */ (function () {
 // let codeKeys = Object.keys(codes);
 // let codeKeysIndex = 0;
 var progress = new Progress();
-var threadCount = 100;
+var threadCount = 200;
 // async function  update(date?: Date) {    
 //     date = date || new Date();
 //     while(codeKeysIndex < codeKeys.length) {
@@ -113,17 +113,18 @@ function update2() {
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
+                    if (!true) return [3 /*break*/, 5];
                     code = progress.getNext();
-                    _a.label = 1;
-                case 1:
-                    if (!code) return [3 /*break*/, 4];
-                    if (!!transHis.database.transhis.existTransHisDB(code.code, code.date)) return [3 /*break*/, 3];
+                    if (!code) return [3 /*break*/, 3];
+                    if (!!transHis.database.transhis.existTransHisDB(code.code, code.date)) return [3 /*break*/, 2];
                     return [4 /*yield*/, transHis.update(code.code, code.date)];
-                case 2:
+                case 1:
                     _a.sent();
-                    _a.label = 3;
-                case 3: return [3 /*break*/, 1];
-                case 4: return [2 /*return*/];
+                    _a.label = 2;
+                case 2: return [3 /*break*/, 4];
+                case 3: return [3 /*break*/, 5];
+                case 4: return [3 /*break*/, 0];
+                case 5: return [2 /*return*/];
             }
         });
     });

@@ -74,7 +74,7 @@ class Progress {
 
 
 let progress = new Progress()
-let threadCount = 100;
+let threadCount = 200;
 
 
 // async function  update(date?: Date) {    
@@ -90,12 +90,16 @@ let threadCount = 100;
 // }
 
 
-async function  update2() {    
-    let code = progress.getNext();
-    while (code) {
-        if (!transHis.database.transhis.existTransHisDB(code.code, code.date)) {
-            await transHis.update(code.code, code.date);
-        }        
+async function  update2() { 
+    while (true) {
+        let code = progress.getNext();
+        if (code) {
+            if (!transHis.database.transhis.existTransHisDB(code.code, code.date)) {
+                await transHis.update(code.code, code.date);
+            }     
+        } else {
+            break;
+        }   
     }
 }
 
