@@ -219,4 +219,61 @@ export class TransHis {
             console.error('222222222', code + ':' + date.format('yyyy-MM-dd') +' records empty')
         }
     }
+
+    static async getPrices(transHis: Modules.TransHis, code: string) {
+
+    }
+
+    static async getDateRecords(transHis: Modules.TransHis, code: string, date: Date):  Promise<Modules.Database.ITransHisRecord[]> {
+        let prices: []
+        let dateKey =  date.format('yyyy-MM-dd');
+        let db = transHis.database.transhis.existTransHisDB(code, date) ? transHis.database.transhis.getTransHisDB(code, date): null;
+        if (db) {
+            prices = db.get("transhis").value() as []
+        }
+        return prices;
+    }
+
+    static async checkDateRecords(transHis: Modules.TransHis, prices: Modules.Database.ITransHisRecord[]): Promise<boolean> {
+        //Todo        
+        return true;
+    }
+
+    static async getAndCheckDateRecords(transHis: Modules.TransHis, code: string, date: Date) {
+        let prices = await this.getDateRecords(transHis, code, date);
+        if (prices && this.checkDateRecords(transHis, prices)) {
+            return prices;
+        } else {
+            return [];
+        }
+    }
+
+    static async trimPrices(transHis: Modules.TransHis, records: Modules.Database.ITransHisRecord[]): Promise<number[]> {        
+        let prices = [];
+        records.forEach(record => {
+            prices.push(record.price)
+        })
+        return prices;
+    }
+
+    static async reversePrices(transHis: Modules.TransHis, prices: number[]): Promise<number[]> {        
+        let temp = [];
+        for (let i = prices.length - 1; i >= 0; i--) {
+            temp.push(prices[i])            
+        }
+        return temp;
+    }    
+
+    static async getDatePrices(transHis: Modules.TransHis, code: string, date: Date, reverse?: boolean) {
+        let records = await this.getAndCheckDateRecords(transHis, code, date);
+        let prices = await this.trimPrices(transHis, records);
+        prices = reverse ? await this.reversePrices(transHis, prices) : prices;
+        return prices;
+    }
+    static async getTrimDatesPrices(transHis: Modules.TransHis, code: string, days: number, end?: Date) {
+        // let date = start 
+        // let prices = await this.getDatePrices(transHis, code, )
+
+        
+    }   
 }

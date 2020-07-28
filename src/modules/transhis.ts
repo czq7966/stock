@@ -15,4 +15,10 @@ export class TransHis {
     async update(code: string, date: Date) {        
         await Services.Modules.TransHis.update(this, code, date);
     }
+
+    getPrices(code): number[] {
+        return;
+
+
+    }
 }

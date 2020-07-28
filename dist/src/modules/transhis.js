@@ -57,6 +57,9 @@ var TransHis = /** @class */ (function () {
             });
         });
     };
+    TransHis.prototype.getPrices = function (code) {
+        return;
+    };
     return TransHis;
 }());
 exports.TransHis = TransHis;

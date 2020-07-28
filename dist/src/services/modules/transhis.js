@@ -283,6 +283,110 @@ var TransHis = /** @class */ (function () {
             });
         });
     };
+    TransHis.getPrices = function (transHis, code) {
+        return __awaiter(this, void 0, void 0, function () {
+            return __generator(this, function (_a) {
+                return [2 /*return*/];
+            });
+        });
+    };
+    TransHis.getDateRecords = function (transHis, code, date) {
+        return __awaiter(this, void 0, void 0, function () {
+            var prices, dateKey, db;
+            return __generator(this, function (_a) {
+                dateKey = date.format('yyyy-MM-dd');
+                db = transHis.database.transhis.existTransHisDB(code, date) ? transHis.database.transhis.getTransHisDB(code, date) : null;
+                if (db) {
+                    prices = db.get("transhis").value();
+                }
+                return [2 /*return*/, prices];
+            });
+        });
+    };
+    TransHis.checkDateRecords = function (transHis, prices) {
+        return __awaiter(this, void 0, void 0, function () {
+            return __generator(this, function (_a) {
+                //Todo        
+                return [2 /*return*/, true];
+            });
+        });
+    };
+    TransHis.getAndCheckDateRecords = function (transHis, code, date) {
+        return __awaiter(this, void 0, void 0, function () {
+            var prices;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, this.getDateRecords(transHis, code, date)];
+                    case 1:
+                        prices = _a.sent();
+                        if (prices && this.checkDateRecords(transHis, prices)) {
+                            return [2 /*return*/, prices];
+                        }
+                        else {
+                            return [2 /*return*/, []];
+                        }
+                        return [2 /*return*/];
+                }
+            });
+        });
+    };
+    TransHis.trimPrices = function (transHis, records) {
+        return __awaiter(this, void 0, void 0, function () {
+            var prices;
+            return __generator(this, function (_a) {
+                prices = [];
+                records.forEach(function (record) {
+                    prices.push(record.price);
+                });
+                return [2 /*return*/, prices];
+            });
+        });
+    };
+    TransHis.reversePrices = function (transHis, prices) {
+        return __awaiter(this, void 0, void 0, function () {
+            var temp, i;
+            return __generator(this, function (_a) {
+                temp = [];
+                for (i = prices.length - 1; i >= 0; i--) {
+                    temp.push(prices[i]);
+                }
+                return [2 /*return*/, temp];
+            });
+        });
+    };
+    TransHis.getDatePrices = function (transHis, code, date, reverse) {
+        return __awaiter(this, void 0, void 0, function () {
+            var records, prices, _a;
+            return __generator(this, function (_b) {
+                switch (_b.label) {
+                    case 0: return [4 /*yield*/, this.getAndCheckDateRecords(transHis, code, date)];
+                    case 1:
+                        records = _b.sent();
+                        return [4 /*yield*/, this.trimPrices(transHis, records)];
+                    case 2:
+                        prices = _b.sent();
+                        if (!reverse) return [3 /*break*/, 4];
+                        return [4 /*yield*/, this.reversePrices(transHis, prices)];
+                    case 3:
+                        _a = _b.sent();
+                        return [3 /*break*/, 5];
+                    case 4:
+                        _a = prices;
+                        _b.label = 5;
+                    case 5:
+                        prices = _a;
+                        return [2 /*return*/, prices];
+                }
+            });
+        });
+    };
+    TransHis.getTrimDatesPrices = function (transHis, code, days, end) {
+        return __awaiter(this, void 0, void 0, function () {
+            return __generator(this, function (_a) {
+                return [2 /*return*/];
+            });
+        });
+    };
     return TransHis;
 }());
 exports.TransHis = TransHis;
