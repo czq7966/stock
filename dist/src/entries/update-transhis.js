@@ -41,7 +41,7 @@ var transHis = new Modules.TransHis();
 var Progress = /** @class */ (function () {
     function Progress() {
         this.Codes = Object.keys(Modules.Database.database.codes.getSHCodes());
-        this.Codes = ["603993"];
+        // this.Codes = ["603993"];
         this.CodesIndex = 0;
         this.Dates = {};
     }
