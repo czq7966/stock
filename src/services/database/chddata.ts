@@ -40,7 +40,7 @@ export class ChdData {
                 let record:  Modules.Database.IChdDataRecord = {} as any;
                 var i = 0;
                 record.date         = item[i++]
-                record.code         = item[i++].replace('\'', '')
+                record.code         = (item[i++] || '').replace('\'', '')
                 record.name         = item[i++] && null
                 record.tclose       = parseFloat(item[i++])
                 record.high         = parseFloat(item[i++])
@@ -109,4 +109,31 @@ export class ChdData {
         await this.updateChdData(chdDataDB, 'sh', days, end);
         // await this.updateChdData(chdDataDB, 'sz', days, end);    
     }
+
+    static async averagePrice(chdDataDB: Modules.Database.ChdData, code: string): Promise<number> {
+        let records = chdDataDB.getData(code);
+        let vaturnover = 0;
+        let voturnover= 0;
+        Object.values(records).forEach(record => {
+            vaturnover += record.vaturnover;
+            voturnover += record.voturnover;
+        })
+
+        return vaturnover / voturnover;
+    }
+
+    static async averagePrices(chdDataDB: Modules.Database.ChdData, codes?: string[]): Promise<{[code: string]: number}> {
+        let results = {};
+        if (!codes) {
+            let shCodes = chdDataDB.database.codes.getSHCodes();
+            codes = Object.keys(shCodes);
+        }
+
+        codes.forEach(async code => {
+            let price = await this.averagePrice(chdDataDB, code);
+            results[code] = price;
+        })
+
+        return results;
+    }    
 } 

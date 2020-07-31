@@ -1,13 +1,9 @@
 import * as Modules from '../modules'
 import * as Services from '../services'
 import { threadId } from 'worker_threads';
+import { timingSafeEqual } from 'crypto';
 
 let transHis = new Modules.TransHis();
-// let codes = transHis.database.codes.getSHCodes()
-
-// // codes = {
-// //     "60000":""
-// // }
 
 class Progress {
     Codes: string[]
@@ -16,6 +12,7 @@ class Progress {
 
     constructor() {
         this.Codes = Object.keys(Modules.Database.database.codes.getSHCodes());
+        this.Codes = ["603993"];
         this.CodesIndex = 0;
         this.Dates = {}
     }

@@ -38,13 +38,10 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var Modules = require("../modules");
 var transHis = new Modules.TransHis();
-// let codes = transHis.database.codes.getSHCodes()
-// // codes = {
-// //     "60000":""
-// // }
 var Progress = /** @class */ (function () {
     function Progress() {
         this.Codes = Object.keys(Modules.Database.database.codes.getSHCodes());
+        this.Codes = ["603993"];
         this.CodesIndex = 0;
         this.Dates = {};
     }

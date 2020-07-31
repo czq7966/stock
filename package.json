@@ -40,7 +40,8 @@
     "check-proxy": "tsc && node ./dist/src/entries/check-proxy.js",
     "update-transhis": "tsc && node ./dist/src/entries/update-transhis.js",
     "update-codes": "tsc && node ./dist/src/entries/update-codes.js",
-    "update-chddata": "tsc && node ./dist/src/entries/update-chddata.js"
+    "update-chddata": "tsc && node ./dist/src/entries/update-chddata.js",
+    "average-chddata": "tsc && node ./dist/src/entries/average-chddata.js"
   },
   "repository": {
     "type": "git",

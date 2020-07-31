@@ -52,12 +52,12 @@ export class ChdData {
         return this.database.transhis.existChdDataDB(code);
     }
 
-    getData(code: string): {[date: string]: {}} {
+    getData(code: string): IChdDataDateRecords {
         let db = this.getChdDataDB(code);
         return db.getState()
     }
 
-    setData(code: string, data: {[date: string]: {}}) {
+    setData(code: string, data: IChdDataDateRecords ) {
         let db = this.getChdDataDB(code);
         return db.setState(data).write();
     }
@@ -67,5 +67,13 @@ export class ChdData {
         await Services.Database.ChdData.update(this, days, end);
         console.log('update end!')
     }
+
+    async averagePrice(code: string ): Promise<number> {
+        return await Services.Database.ChdData.averagePrice(this, code);
+    }
+
+    async averagePrices(codes?: string[]): Promise<{[code: string]: number}> {
+        return await Services.Database.ChdData.averagePrices(this, codes)
+    }    
 }
 

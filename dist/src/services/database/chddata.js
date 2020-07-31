@@ -77,7 +77,7 @@ var ChdData = /** @class */ (function () {
                                 var record = {};
                                 var i = 0;
                                 record.date = item[i++];
-                                record.code = item[i++].replace('\'', '');
+                                record.code = (item[i++] || '').replace('\'', '');
                                 record.name = item[i++] && null;
                                 record.tclose = parseFloat(item[i++]);
                                 record.high = parseFloat(item[i++]);
@@ -174,6 +174,47 @@ var ChdData = /** @class */ (function () {
                         _a.sent();
                         return [2 /*return*/];
                 }
+            });
+        });
+    };
+    ChdData.averagePrice = function (chdDataDB, code) {
+        return __awaiter(this, void 0, void 0, function () {
+            var records, vaturnover, voturnover;
+            return __generator(this, function (_a) {
+                records = chdDataDB.getData(code);
+                vaturnover = 0;
+                voturnover = 0;
+                Object.values(records).forEach(function (record) {
+                    vaturnover += record.vaturnover;
+                    voturnover += record.voturnover;
+                });
+                return [2 /*return*/, vaturnover / voturnover];
+            });
+        });
+    };
+    ChdData.averagePrices = function (chdDataDB, codes) {
+        return __awaiter(this, void 0, void 0, function () {
+            var results, shCodes;
+            var _this = this;
+            return __generator(this, function (_a) {
+                results = {};
+                if (!codes) {
+                    shCodes = chdDataDB.database.codes.getSHCodes();
+                    codes = Object.keys(shCodes);
+                }
+                codes.forEach(function (code) { return __awaiter(_this, void 0, void 0, function () {
+                    var price;
+                    return __generator(this, function (_a) {
+                        switch (_a.label) {
+                            case 0: return [4 /*yield*/, this.averagePrice(chdDataDB, code)];
+                            case 1:
+                                price = _a.sent();
+                                results[code] = price;
+                                return [2 /*return*/];
+                        }
+                    });
+                }); });
+                return [2 /*return*/, results];
             });
         });
     };

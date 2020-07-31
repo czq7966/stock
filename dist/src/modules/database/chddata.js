@@ -73,6 +73,26 @@ var ChdData = /** @class */ (function () {
             });
         });
     };
+    ChdData.prototype.averagePrice = function (code) {
+        return __awaiter(this, void 0, void 0, function () {
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, Services.Database.ChdData.averagePrice(this, code)];
+                    case 1: return [2 /*return*/, _a.sent()];
+                }
+            });
+        });
+    };
+    ChdData.prototype.averagePrices = function (codes) {
+        return __awaiter(this, void 0, void 0, function () {
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, Services.Database.ChdData.averagePrices(this, codes)];
+                    case 1: return [2 /*return*/, _a.sent()];
+                }
+            });
+        });
+    };
     return ChdData;
 }());
 exports.ChdData = ChdData;
