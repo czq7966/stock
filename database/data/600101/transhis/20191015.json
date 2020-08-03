@@ -1,0 +1,4400 @@
+{
+  "transhis": [
+    {
+      "time": "15:00:00",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 0,
+      "vaturnover": 0
+    },
+    {
+      "time": "15:00:00",
+      "price": 6.44,
+      "change": -0.01,
+      "voturnover": 27,
+      "vaturnover": 17388
+    },
+    {
+      "time": "14:59:14",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 0,
+      "vaturnover": 0
+    },
+    {
+      "time": "14:57:35",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 0,
+      "vaturnover": 0
+    },
+    {
+      "time": "14:57:23",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 0,
+      "vaturnover": 0
+    },
+    {
+      "time": "14:57:01",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 0,
+      "vaturnover": 0
+    },
+    {
+      "time": "14:56:52",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 8,
+      "vaturnover": 5160
+    },
+    {
+      "time": "14:56:40",
+      "price": 6.45,
+      "change": -0.01,
+      "voturnover": 0,
+      "vaturnover": 323
+    },
+    {
+      "time": "14:56:34",
+      "price": 6.46,
+      "change": 0.01,
+      "voturnover": 50,
+      "vaturnover": 32300
+    },
+    {
+      "time": "14:56:28",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 645
+    },
+    {
+      "time": "14:56:04",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 15,
+      "vaturnover": 9675
+    },
+    {
+      "time": "14:55:28",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 183,
+      "vaturnover": 118035
+    },
+    {
+      "time": "14:55:16",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 23,
+      "vaturnover": 14835
+    },
+    {
+      "time": "14:55:07",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 40,
+      "vaturnover": 25800
+    },
+    {
+      "time": "14:55:04",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 96,
+      "vaturnover": 62243
+    },
+    {
+      "time": "14:55:01",
+      "price": 6.45,
+      "change": 0.01,
+      "voturnover": 188,
+      "vaturnover": 121260
+    },
+    {
+      "time": "14:54:52",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 6,
+      "vaturnover": 3864
+    },
+    {
+      "time": "14:54:13",
+      "price": 6.44,
+      "change": -0.01,
+      "voturnover": 9,
+      "vaturnover": 5796
+    },
+    {
+      "time": "14:53:16",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 10,
+      "vaturnover": 6450
+    },
+    {
+      "time": "14:53:13",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 0,
+      "vaturnover": 0
+    },
+    {
+      "time": "14:52:34",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 109,
+      "vaturnover": 70305
+    },
+    {
+      "time": "14:52:04",
+      "price": 6.45,
+      "change": 0.01,
+      "voturnover": 2,
+      "vaturnover": 1290
+    },
+    {
+      "time": "14:52:01",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 0,
+      "vaturnover": 0
+    },
+    {
+      "time": "14:51:55",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 10,
+      "vaturnover": 6440
+    },
+    {
+      "time": "14:50:04",
+      "price": 6.44,
+      "change": -0.01,
+      "voturnover": 286,
+      "vaturnover": 184184
+    },
+    {
+      "time": "14:46:10",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 100,
+      "vaturnover": 64952
+    },
+    {
+      "time": "14:45:55",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 839
+    },
+    {
+      "time": "14:44:55",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 10,
+      "vaturnover": 6450
+    },
+    {
+      "time": "14:43:25",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 10,
+      "vaturnover": 6450
+    },
+    {
+      "time": "14:42:58",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 20,
+      "vaturnover": 12900
+    },
+    {
+      "time": "14:42:49",
+      "price": 6.45,
+      "change": -0.01,
+      "voturnover": 10,
+      "vaturnover": 6450
+    },
+    {
+      "time": "14:42:04",
+      "price": 6.46,
+      "change": 0.01,
+      "voturnover": 11,
+      "vaturnover": 7106
+    },
+    {
+      "time": "14:41:19",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 5,
+      "vaturnover": 3225
+    },
+    {
+      "time": "14:41:10",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 14,
+      "vaturnover": 9030
+    },
+    {
+      "time": "14:41:07",
+      "price": 6.45,
+      "change": -0.01,
+      "voturnover": 15,
+      "vaturnover": 9675
+    },
+    {
+      "time": "14:39:43",
+      "price": 6.46,
+      "change": 0,
+      "voturnover": 24,
+      "vaturnover": 16085
+    },
+    {
+      "time": "14:38:46",
+      "price": 6.46,
+      "change": 6.46,
+      "voturnover": 19,
+      "vaturnover": 12339
+    },
+    {
+      "time": "14:36:55",
+      "price": 6.46,
+      "change": 0,
+      "voturnover": 86,
+      "vaturnover": 55556
+    },
+    {
+      "time": "14:36:37",
+      "price": 6.46,
+      "change": 0,
+      "voturnover": 27,
+      "vaturnover": 17442
+    },
+    {
+      "time": "14:36:07",
+      "price": 6.46,
+      "change": 0,
+      "voturnover": 10,
+      "vaturnover": 6460
+    },
+    {
+      "time": "14:31:52",
+      "price": 6.46,
+      "change": -0.01,
+      "voturnover": 35,
+      "vaturnover": 22610
+    },
+    {
+      "time": "14:27:16",
+      "price": 6.47,
+      "change": 0,
+      "voturnover": 9,
+      "vaturnover": 5823
+    },
+    {
+      "time": "14:26:58",
+      "price": 6.47,
+      "change": 0,
+      "voturnover": 92,
+      "vaturnover": 59524
+    },
+    {
+      "time": "14:25:58",
+      "price": 6.47,
+      "change": 0.01,
+      "voturnover": 1,
+      "vaturnover": 647
+    },
+    {
+      "time": "14:24:52",
+      "price": 6.46,
+      "change": 0,
+      "voturnover": 50,
+      "vaturnover": 32300
+    },
+    {
+      "time": "14:23:01",
+      "price": 6.46,
+      "change": 0,
+      "voturnover": 2,
+      "vaturnover": 1292
+    },
+    {
+      "time": "14:21:55",
+      "price": 6.46,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 646
+    },
+    {
+      "time": "14:21:19",
+      "price": 6.46,
+      "change": 0,
+      "voturnover": 5,
+      "vaturnover": 3230
+    },
+    {
+      "time": "14:19:52",
+      "price": 6.46,
+      "change": 0,
+      "voturnover": 3,
+      "vaturnover": 1938
+    },
+    {
+      "time": "14:18:28",
+      "price": 6.46,
+      "change": 0,
+      "voturnover": 0,
+      "vaturnover": 0
+    },
+    {
+      "time": "14:18:22",
+      "price": 6.46,
+      "change": 0,
+      "voturnover": 0,
+      "vaturnover": 0
+    },
+    {
+      "time": "14:18:13",
+      "price": 6.46,
+      "change": 0,
+      "voturnover": 46,
+      "vaturnover": 29716
+    },
+    {
+      "time": "14:17:54",
+      "price": 6.46,
+      "change": 0.01,
+      "voturnover": 1,
+      "vaturnover": 646
+    },
+    {
+      "time": "14:15:55",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 3,
+      "vaturnover": 1935
+    },
+    {
+      "time": "14:15:40",
+      "price": 6.45,
+      "change": 6.45,
+      "voturnover": 5,
+      "vaturnover": 3225
+    },
+    {
+      "time": "14:14:34",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 0,
+      "vaturnover": 0
+    },
+    {
+      "time": "14:14:16",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 0,
+      "vaturnover": 0
+    },
+    {
+      "time": "14:14:07",
+      "price": 6.45,
+      "change": -0.01,
+      "voturnover": 50,
+      "vaturnover": 32250
+    },
+    {
+      "time": "14:13:51",
+      "price": 6.46,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 646
+    },
+    {
+      "time": "14:12:43",
+      "price": 6.46,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 646
+    },
+    {
+      "time": "14:11:19",
+      "price": 6.46,
+      "change": -0.01,
+      "voturnover": 2,
+      "vaturnover": 1292
+    },
+    {
+      "time": "14:09:52",
+      "price": 6.47,
+      "change": 0.01,
+      "voturnover": 1,
+      "vaturnover": 647
+    },
+    {
+      "time": "14:09:16",
+      "price": 6.46,
+      "change": 0,
+      "voturnover": 40,
+      "vaturnover": 25840
+    },
+    {
+      "time": "14:08:43",
+      "price": 6.46,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 646
+    },
+    {
+      "time": "14:08:10",
+      "price": 6.46,
+      "change": 0,
+      "voturnover": 5,
+      "vaturnover": 3230
+    },
+    {
+      "time": "14:07:28",
+      "price": 6.46,
+      "change": 0,
+      "voturnover": 5,
+      "vaturnover": 3230
+    },
+    {
+      "time": "14:07:04",
+      "price": 6.46,
+      "change": -0.01,
+      "voturnover": 10,
+      "vaturnover": 6460
+    },
+    {
+      "time": "14:05:46",
+      "price": 6.47,
+      "change": 0,
+      "voturnover": 0,
+      "vaturnover": 0
+    },
+    {
+      "time": "14:04:25",
+      "price": 6.47,
+      "change": 0,
+      "voturnover": 7,
+      "vaturnover": 4529
+    },
+    {
+      "time": "14:03:52",
+      "price": 6.47,
+      "change": 0,
+      "voturnover": 15,
+      "vaturnover": 9705
+    },
+    {
+      "time": "14:03:49",
+      "price": 6.47,
+      "change": 0,
+      "voturnover": 25,
+      "vaturnover": 16175
+    },
+    {
+      "time": "14:03:45",
+      "price": 6.47,
+      "change": 0,
+      "voturnover": 2,
+      "vaturnover": 1294
+    },
+    {
+      "time": "14:03:34",
+      "price": 6.47,
+      "change": 0.02,
+      "voturnover": 27,
+      "vaturnover": 17469
+    },
+    {
+      "time": "14:01:25",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 0,
+      "vaturnover": 0
+    },
+    {
+      "time": "14:01:13",
+      "price": 6.45,
+      "change": -0.01,
+      "voturnover": 5,
+      "vaturnover": 3225
+    },
+    {
+      "time": "14:01:04",
+      "price": 6.46,
+      "change": 0.01,
+      "voturnover": 200,
+      "vaturnover": 129200
+    },
+    {
+      "time": "14:00:52",
+      "price": 6.45,
+      "change": -0.01,
+      "voturnover": 40,
+      "vaturnover": 25800
+    },
+    {
+      "time": "14:00:16",
+      "price": 6.46,
+      "change": 0,
+      "voturnover": 5,
+      "vaturnover": 3230
+    },
+    {
+      "time": "13:59:40",
+      "price": 6.46,
+      "change": 0.01,
+      "voturnover": 1,
+      "vaturnover": 646
+    },
+    {
+      "time": "13:59:36",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 264,
+      "vaturnover": 170280
+    },
+    {
+      "time": "13:59:27",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 15,
+      "vaturnover": 9675
+    },
+    {
+      "time": "13:58:48",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 10,
+      "vaturnover": 6450
+    },
+    {
+      "time": "13:58:19",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 2,
+      "vaturnover": 1290
+    },
+    {
+      "time": "13:57:48",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 645
+    },
+    {
+      "time": "13:57:22",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 70,
+      "vaturnover": 45150
+    },
+    {
+      "time": "13:56:57",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 645
+    },
+    {
+      "time": "13:53:46",
+      "price": 6.45,
+      "change": 0.01,
+      "voturnover": 1,
+      "vaturnover": 645
+    },
+    {
+      "time": "13:53:19",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 129,
+      "vaturnover": 83076
+    },
+    {
+      "time": "13:53:15",
+      "price": 6.44,
+      "change": 6.44,
+      "voturnover": 30,
+      "vaturnover": 19320
+    },
+    {
+      "time": "13:52:21",
+      "price": 6.45,
+      "change": 0.01,
+      "voturnover": 1,
+      "vaturnover": 645
+    },
+    {
+      "time": "13:52:13",
+      "price": 6.44,
+      "change": -0.01,
+      "voturnover": 1,
+      "vaturnover": 644
+    },
+    {
+      "time": "13:49:46",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 645
+    },
+    {
+      "time": "13:47:21",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 5,
+      "vaturnover": 3225
+    },
+    {
+      "time": "13:45:45",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 645
+    },
+    {
+      "time": "13:45:24",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 645
+    },
+    {
+      "time": "13:43:48",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 7,
+      "vaturnover": 4515
+    },
+    {
+      "time": "13:43:30",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 100,
+      "vaturnover": 64500
+    },
+    {
+      "time": "13:42:54",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 100,
+      "vaturnover": 64500
+    },
+    {
+      "time": "13:42:03",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 173,
+      "vaturnover": 111585
+    },
+    {
+      "time": "13:41:42",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 645
+    },
+    {
+      "time": "13:40:24",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 56,
+      "vaturnover": 36120
+    },
+    {
+      "time": "13:40:21",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 10,
+      "vaturnover": 6450
+    },
+    {
+      "time": "13:38:24",
+      "price": 6.45,
+      "change": 0.01,
+      "voturnover": 1,
+      "vaturnover": 645
+    },
+    {
+      "time": "13:38:21",
+      "price": 6.44,
+      "change": -0.01,
+      "voturnover": 10,
+      "vaturnover": 6440
+    },
+    {
+      "time": "13:37:42",
+      "price": 6.45,
+      "change": 0.01,
+      "voturnover": 1,
+      "vaturnover": 645
+    },
+    {
+      "time": "13:37:30",
+      "price": 6.44,
+      "change": -0.01,
+      "voturnover": 5,
+      "vaturnover": 3220
+    },
+    {
+      "time": "13:37:24",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 645
+    },
+    {
+      "time": "13:33:45",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 2,
+      "vaturnover": 1290
+    },
+    {
+      "time": "13:33:42",
+      "price": 6.45,
+      "change": -0.01,
+      "voturnover": 1,
+      "vaturnover": 645
+    },
+    {
+      "time": "13:31:54",
+      "price": 6.46,
+      "change": 6.46,
+      "voturnover": 0,
+      "vaturnover": 0
+    },
+    {
+      "time": "13:30:51",
+      "price": 6.46,
+      "change": 0,
+      "voturnover": 0,
+      "vaturnover": 0
+    },
+    {
+      "time": "13:30:42",
+      "price": 6.46,
+      "change": 0,
+      "voturnover": 0,
+      "vaturnover": 0
+    },
+    {
+      "time": "13:28:57",
+      "price": 6.46,
+      "change": 0.02,
+      "voturnover": 50,
+      "vaturnover": 32300
+    },
+    {
+      "time": "13:27:45",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 8,
+      "vaturnover": 5152
+    },
+    {
+      "time": "13:26:45",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 12,
+      "vaturnover": 7728
+    },
+    {
+      "time": "13:25:30",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 22,
+      "vaturnover": 14168
+    },
+    {
+      "time": "13:24:45",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 0,
+      "vaturnover": 0
+    },
+    {
+      "time": "13:24:30",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 644
+    },
+    {
+      "time": "13:24:27",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 4,
+      "vaturnover": 2962
+    },
+    {
+      "time": "13:24:00",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 21,
+      "vaturnover": 13524
+    },
+    {
+      "time": "13:23:15",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 18,
+      "vaturnover": 11850
+    },
+    {
+      "time": "13:21:03",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 5,
+      "vaturnover": 3220
+    },
+    {
+      "time": "13:20:51",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 14,
+      "vaturnover": 9016
+    },
+    {
+      "time": "13:20:03",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 0,
+      "vaturnover": 0
+    },
+    {
+      "time": "13:19:36",
+      "price": 6.44,
+      "change": -0.01,
+      "voturnover": 20,
+      "vaturnover": 12880
+    },
+    {
+      "time": "13:19:09",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 300,
+      "vaturnover": 193500
+    },
+    {
+      "time": "13:17:36",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 645
+    },
+    {
+      "time": "13:17:30",
+      "price": 6.45,
+      "change": 0.01,
+      "voturnover": 1,
+      "vaturnover": 645
+    },
+    {
+      "time": "13:17:24",
+      "price": 6.44,
+      "change": 0.01,
+      "voturnover": 29,
+      "vaturnover": 18676
+    },
+    {
+      "time": "13:16:27",
+      "price": 6.43,
+      "change": 0,
+      "voturnover": 0,
+      "vaturnover": 0
+    },
+    {
+      "time": "13:15:00",
+      "price": 6.43,
+      "change": -0.01,
+      "voturnover": 1,
+      "vaturnover": 643
+    },
+    {
+      "time": "13:12:30",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 100,
+      "vaturnover": 64400
+    },
+    {
+      "time": "13:10:33",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 644
+    },
+    {
+      "time": "13:09:36",
+      "price": 6.44,
+      "change": 6.44,
+      "voturnover": 1,
+      "vaturnover": 644
+    },
+    {
+      "time": "13:06:27",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 3,
+      "vaturnover": 1932
+    },
+    {
+      "time": "13:05:36",
+      "price": 6.44,
+      "change": 0.01,
+      "voturnover": 1,
+      "vaturnover": 644
+    },
+    {
+      "time": "13:05:33",
+      "price": 6.43,
+      "change": -0.01,
+      "voturnover": 20,
+      "vaturnover": 12860
+    },
+    {
+      "time": "13:01:33",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 644
+    },
+    {
+      "time": "13:00:03",
+      "price": 6.44,
+      "change": 0.01,
+      "voturnover": 5,
+      "vaturnover": 3220
+    },
+    {
+      "time": "13:00:00",
+      "price": 6.43,
+      "change": -0.01,
+      "voturnover": 3,
+      "vaturnover": 1929
+    },
+    {
+      "time": "11:27:09",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 3,
+      "vaturnover": 1932
+    },
+    {
+      "time": "11:25:18",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 50,
+      "vaturnover": 32200
+    },
+    {
+      "time": "11:23:06",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 0,
+      "vaturnover": 0
+    },
+    {
+      "time": "11:20:12",
+      "price": 6.44,
+      "change": 0.02,
+      "voturnover": 2,
+      "vaturnover": 1288
+    },
+    {
+      "time": "11:19:45",
+      "price": 6.42,
+      "change": -0.02,
+      "voturnover": 20,
+      "vaturnover": 12840
+    },
+    {
+      "time": "11:19:09",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 21,
+      "vaturnover": 13524
+    },
+    {
+      "time": "11:18:57",
+      "price": 6.44,
+      "change": 6.44,
+      "voturnover": 10,
+      "vaturnover": 6440
+    },
+    {
+      "time": "11:15:57",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 5,
+      "vaturnover": 3220
+    },
+    {
+      "time": "11:15:27",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 644
+    },
+    {
+      "time": "11:14:57",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 644
+    },
+    {
+      "time": "11:14:27",
+      "price": 6.44,
+      "change": 0.01,
+      "voturnover": 1,
+      "vaturnover": 644
+    },
+    {
+      "time": "11:14:12",
+      "price": 6.43,
+      "change": 0,
+      "voturnover": 0,
+      "vaturnover": 0
+    },
+    {
+      "time": "11:14:09",
+      "price": 6.43,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 643
+    },
+    {
+      "time": "11:14:06",
+      "price": 6.43,
+      "change": -0.01,
+      "voturnover": 15,
+      "vaturnover": 9645
+    },
+    {
+      "time": "11:13:54",
+      "price": 6.44,
+      "change": 0.01,
+      "voturnover": 1,
+      "vaturnover": 644
+    },
+    {
+      "time": "11:13:30",
+      "price": 6.43,
+      "change": -0.01,
+      "voturnover": 7,
+      "vaturnover": 4501
+    },
+    {
+      "time": "11:13:24",
+      "price": 6.44,
+      "change": 0.01,
+      "voturnover": 2,
+      "vaturnover": 1288
+    },
+    {
+      "time": "11:13:12",
+      "price": 6.43,
+      "change": -0.01,
+      "voturnover": 17,
+      "vaturnover": 10931
+    },
+    {
+      "time": "11:12:57",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 0,
+      "vaturnover": 0
+    },
+    {
+      "time": "11:12:54",
+      "price": 6.44,
+      "change": 0.02,
+      "voturnover": 1,
+      "vaturnover": 644
+    },
+    {
+      "time": "11:12:39",
+      "price": 6.42,
+      "change": -0.02,
+      "voturnover": 212,
+      "vaturnover": 136104
+    },
+    {
+      "time": "11:12:24",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 644
+    },
+    {
+      "time": "11:11:54",
+      "price": 6.44,
+      "change": 0.02,
+      "voturnover": 1,
+      "vaturnover": 644
+    },
+    {
+      "time": "11:11:51",
+      "price": 6.42,
+      "change": 0,
+      "voturnover": 0,
+      "vaturnover": 0
+    },
+    {
+      "time": "11:11:33",
+      "price": 6.42,
+      "change": -0.02,
+      "voturnover": 7,
+      "vaturnover": 4494
+    },
+    {
+      "time": "11:11:24",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 644
+    },
+    {
+      "time": "11:11:21",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 0,
+      "vaturnover": 0
+    },
+    {
+      "time": "11:11:03",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 0,
+      "vaturnover": 0
+    },
+    {
+      "time": "11:10:54",
+      "price": 6.44,
+      "change": 0.03,
+      "voturnover": 1,
+      "vaturnover": 644
+    },
+    {
+      "time": "11:10:45",
+      "price": 6.41,
+      "change": -0.01,
+      "voturnover": 10,
+      "vaturnover": 6410
+    },
+    {
+      "time": "11:10:36",
+      "price": 6.42,
+      "change": 0,
+      "voturnover": 0,
+      "vaturnover": 0
+    },
+    {
+      "time": "11:10:24",
+      "price": 6.42,
+      "change": 0.01,
+      "voturnover": 2,
+      "vaturnover": 1284
+    },
+    {
+      "time": "11:09:57",
+      "price": 6.41,
+      "change": -0.01,
+      "voturnover": 13,
+      "vaturnover": 8333
+    },
+    {
+      "time": "11:09:54",
+      "price": 6.42,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 642
+    },
+    {
+      "time": "11:09:24",
+      "price": 6.42,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 642
+    },
+    {
+      "time": "11:09:18",
+      "price": 6.42,
+      "change": -0.01,
+      "voturnover": 286,
+      "vaturnover": 183869
+    },
+    {
+      "time": "11:09:09",
+      "price": 6.43,
+      "change": 0,
+      "voturnover": 25,
+      "vaturnover": 16075
+    },
+    {
+      "time": "11:08:54",
+      "price": 6.43,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 643
+    },
+    {
+      "time": "11:08:33",
+      "price": 6.43,
+      "change": 0.01,
+      "voturnover": 1,
+      "vaturnover": 643
+    },
+    {
+      "time": "11:08:21",
+      "price": 6.42,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 642
+    },
+    {
+      "time": "11:08:15",
+      "price": 6.42,
+      "change": -0.01,
+      "voturnover": 1,
+      "vaturnover": 835
+    },
+    {
+      "time": "11:08:00",
+      "price": 6.43,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 643
+    },
+    {
+      "time": "11:07:57",
+      "price": 6.43,
+      "change": 0,
+      "voturnover": 8,
+      "vaturnover": 5658
+    },
+    {
+      "time": "11:07:51",
+      "price": 6.43,
+      "change": -0.01,
+      "voturnover": 105,
+      "vaturnover": 67515
+    },
+    {
+      "time": "11:07:30",
+      "price": 6.44,
+      "change": 0.01,
+      "voturnover": 1,
+      "vaturnover": 644
+    },
+    {
+      "time": "11:07:18",
+      "price": 6.43,
+      "change": 0,
+      "voturnover": 10,
+      "vaturnover": 6430
+    },
+    {
+      "time": "11:07:12",
+      "price": 6.43,
+      "change": -0.01,
+      "voturnover": 1,
+      "vaturnover": 643
+    },
+    {
+      "time": "11:07:00",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 644
+    },
+    {
+      "time": "11:06:30",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 644
+    },
+    {
+      "time": "11:06:00",
+      "price": 6.44,
+      "change": 0.01,
+      "voturnover": 2,
+      "vaturnover": 1288
+    },
+    {
+      "time": "11:05:51",
+      "price": 6.43,
+      "change": -0.01,
+      "voturnover": 1,
+      "vaturnover": 836
+    },
+    {
+      "time": "11:05:30",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 644
+    },
+    {
+      "time": "11:05:12",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 10,
+      "vaturnover": 6440
+    },
+    {
+      "time": "11:05:00",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 644
+    },
+    {
+      "time": "11:04:30",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 644
+    },
+    {
+      "time": "11:04:06",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 5,
+      "vaturnover": 3220
+    },
+    {
+      "time": "11:04:00",
+      "price": 6.44,
+      "change": 0.01,
+      "voturnover": 1,
+      "vaturnover": 644
+    },
+    {
+      "time": "11:03:48",
+      "price": 6.43,
+      "change": -0.01,
+      "voturnover": 7,
+      "vaturnover": 5015
+    },
+    {
+      "time": "11:03:30",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 644
+    },
+    {
+      "time": "11:03:00",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 644
+    },
+    {
+      "time": "11:02:27",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 2,
+      "vaturnover": 1288
+    },
+    {
+      "time": "11:01:57",
+      "price": 6.44,
+      "change": 0.01,
+      "voturnover": 1,
+      "vaturnover": 644
+    },
+    {
+      "time": "11:01:42",
+      "price": 6.43,
+      "change": -0.01,
+      "voturnover": 1,
+      "vaturnover": 836
+    },
+    {
+      "time": "11:01:27",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 644
+    },
+    {
+      "time": "11:00:57",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 644
+    },
+    {
+      "time": "11:00:30",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 644
+    },
+    {
+      "time": "11:00:00",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 2,
+      "vaturnover": 1288
+    },
+    {
+      "time": "10:59:30",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 644
+    },
+    {
+      "time": "10:59:00",
+      "price": 6.44,
+      "change": 0.01,
+      "voturnover": 1,
+      "vaturnover": 644
+    },
+    {
+      "time": "10:58:56",
+      "price": 6.43,
+      "change": -0.01,
+      "voturnover": 2,
+      "vaturnover": 1800
+    },
+    {
+      "time": "10:58:30",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 644
+    },
+    {
+      "time": "10:58:00",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 644
+    },
+    {
+      "time": "10:57:30",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 644
+    },
+    {
+      "time": "10:57:00",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 644
+    },
+    {
+      "time": "10:56:30",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 2,
+      "vaturnover": 1288
+    },
+    {
+      "time": "10:56:00",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 644
+    },
+    {
+      "time": "10:55:30",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 644
+    },
+    {
+      "time": "10:55:00",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 644
+    },
+    {
+      "time": "10:54:30",
+      "price": 6.44,
+      "change": 6.44,
+      "voturnover": 1,
+      "vaturnover": 644
+    },
+    {
+      "time": "10:54:00",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 644
+    },
+    {
+      "time": "10:53:30",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 644
+    },
+    {
+      "time": "10:53:26",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 20,
+      "vaturnover": 12880
+    },
+    {
+      "time": "10:53:00",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 2,
+      "vaturnover": 1288
+    },
+    {
+      "time": "10:52:30",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 644
+    },
+    {
+      "time": "10:52:00",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 644
+    },
+    {
+      "time": "10:51:30",
+      "price": 6.44,
+      "change": 0.01,
+      "voturnover": 1,
+      "vaturnover": 644
+    },
+    {
+      "time": "10:51:24",
+      "price": 6.43,
+      "change": -0.01,
+      "voturnover": 14,
+      "vaturnover": 9002
+    },
+    {
+      "time": "10:51:00",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 644
+    },
+    {
+      "time": "10:50:30",
+      "price": 6.44,
+      "change": 0.01,
+      "voturnover": 1,
+      "vaturnover": 644
+    },
+    {
+      "time": "10:50:00",
+      "price": 6.43,
+      "change": 0,
+      "voturnover": 0,
+      "vaturnover": 0
+    },
+    {
+      "time": "10:49:54",
+      "price": 6.43,
+      "change": 0,
+      "voturnover": 0,
+      "vaturnover": 0
+    },
+    {
+      "time": "10:49:45",
+      "price": 6.43,
+      "change": 0,
+      "voturnover": 0,
+      "vaturnover": 0
+    },
+    {
+      "time": "10:49:42",
+      "price": 6.43,
+      "change": 0,
+      "voturnover": 0,
+      "vaturnover": 0
+    },
+    {
+      "time": "10:49:30",
+      "price": 6.43,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 643
+    },
+    {
+      "time": "10:49:27",
+      "price": 6.43,
+      "change": 0,
+      "voturnover": 0,
+      "vaturnover": 386
+    },
+    {
+      "time": "10:49:00",
+      "price": 6.43,
+      "change": 0,
+      "voturnover": 0,
+      "vaturnover": 257
+    },
+    {
+      "time": "10:48:27",
+      "price": 6.43,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 643
+    },
+    {
+      "time": "10:47:51",
+      "price": 6.43,
+      "change": 0.01,
+      "voturnover": 1,
+      "vaturnover": 643
+    },
+    {
+      "time": "10:47:30",
+      "price": 6.42,
+      "change": -0.01,
+      "voturnover": 4,
+      "vaturnover": 2568
+    },
+    {
+      "time": "10:47:21",
+      "price": 6.43,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 643
+    },
+    {
+      "time": "10:46:51",
+      "price": 6.43,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 643
+    },
+    {
+      "time": "10:46:18",
+      "price": 6.43,
+      "change": 0,
+      "voturnover": 2,
+      "vaturnover": 1286
+    },
+    {
+      "time": "10:46:15",
+      "price": 6.43,
+      "change": -0.01,
+      "voturnover": 33,
+      "vaturnover": 21605
+    },
+    {
+      "time": "10:45:48",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 644
+    },
+    {
+      "time": "10:45:18",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 644
+    },
+    {
+      "time": "10:44:48",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 644
+    },
+    {
+      "time": "10:44:18",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 644
+    },
+    {
+      "time": "10:43:48",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 644
+    },
+    {
+      "time": "10:43:18",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 644
+    },
+    {
+      "time": "10:42:48",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 2,
+      "vaturnover": 1288
+    },
+    {
+      "time": "10:42:30",
+      "price": 6.44,
+      "change": -0.01,
+      "voturnover": 47,
+      "vaturnover": 30268
+    },
+    {
+      "time": "10:42:18",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 645
+    },
+    {
+      "time": "10:41:48",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 645
+    },
+    {
+      "time": "10:41:18",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 645
+    },
+    {
+      "time": "10:40:48",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 645
+    },
+    {
+      "time": "10:40:18",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 645
+    },
+    {
+      "time": "10:39:48",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 2,
+      "vaturnover": 1290
+    },
+    {
+      "time": "10:39:39",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 20,
+      "vaturnover": 12900
+    },
+    {
+      "time": "10:39:18",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 645
+    },
+    {
+      "time": "10:38:48",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 645
+    },
+    {
+      "time": "10:38:18",
+      "price": 6.45,
+      "change": 0.01,
+      "voturnover": 1,
+      "vaturnover": 645
+    },
+    {
+      "time": "10:38:06",
+      "price": 6.44,
+      "change": -0.01,
+      "voturnover": 10,
+      "vaturnover": 6440
+    },
+    {
+      "time": "10:37:48",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 645
+    },
+    {
+      "time": "10:37:18",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 645
+    },
+    {
+      "time": "10:36:48",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 645
+    },
+    {
+      "time": "10:36:18",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 645
+    },
+    {
+      "time": "10:35:45",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 2,
+      "vaturnover": 1290
+    },
+    {
+      "time": "10:35:15",
+      "price": 6.45,
+      "change": 0.01,
+      "voturnover": 1,
+      "vaturnover": 645
+    },
+    {
+      "time": "10:34:48",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 3,
+      "vaturnover": 1932
+    },
+    {
+      "time": "10:34:45",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 644
+    },
+    {
+      "time": "10:34:36",
+      "price": 6.44,
+      "change": 0.01,
+      "voturnover": 42,
+      "vaturnover": 27048
+    },
+    {
+      "time": "10:34:12",
+      "price": 6.43,
+      "change": 0.01,
+      "voturnover": 111,
+      "vaturnover": 71630
+    },
+    {
+      "time": "10:33:03",
+      "price": 6.42,
+      "change": 0,
+      "voturnover": 20,
+      "vaturnover": 12840
+    },
+    {
+      "time": "10:32:00",
+      "price": 6.42,
+      "change": 6.42,
+      "voturnover": 10,
+      "vaturnover": 6420
+    },
+    {
+      "time": "10:30:57",
+      "price": 6.43,
+      "change": 0.01,
+      "voturnover": 50,
+      "vaturnover": 32150
+    },
+    {
+      "time": "10:30:18",
+      "price": 6.42,
+      "change": -0.01,
+      "voturnover": 30,
+      "vaturnover": 19260
+    },
+    {
+      "time": "10:30:09",
+      "price": 6.43,
+      "change": 0,
+      "voturnover": 5,
+      "vaturnover": 3215
+    },
+    {
+      "time": "10:29:15",
+      "price": 6.43,
+      "change": 0,
+      "voturnover": 8,
+      "vaturnover": 5144
+    },
+    {
+      "time": "10:29:12",
+      "price": 6.43,
+      "change": 0,
+      "voturnover": 21,
+      "vaturnover": 13503
+    },
+    {
+      "time": "10:28:33",
+      "price": 6.43,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 643
+    },
+    {
+      "time": "10:28:30",
+      "price": 6.43,
+      "change": 0.01,
+      "voturnover": 5,
+      "vaturnover": 3215
+    },
+    {
+      "time": "10:26:54",
+      "price": 6.42,
+      "change": 0,
+      "voturnover": 18,
+      "vaturnover": 11556
+    },
+    {
+      "time": "10:26:45",
+      "price": 6.42,
+      "change": -0.01,
+      "voturnover": 100,
+      "vaturnover": 64200
+    },
+    {
+      "time": "10:24:33",
+      "price": 6.43,
+      "change": 0.01,
+      "voturnover": 1,
+      "vaturnover": 643
+    },
+    {
+      "time": "10:24:18",
+      "price": 6.42,
+      "change": 0,
+      "voturnover": 23,
+      "vaturnover": 15023
+    },
+    {
+      "time": "10:24:12",
+      "price": 6.42,
+      "change": -0.01,
+      "voturnover": 20,
+      "vaturnover": 12840
+    },
+    {
+      "time": "10:24:03",
+      "price": 6.43,
+      "change": 0,
+      "voturnover": 2,
+      "vaturnover": 1286
+    },
+    {
+      "time": "10:23:57",
+      "price": 6.43,
+      "change": 0,
+      "voturnover": 14,
+      "vaturnover": 9002
+    },
+    {
+      "time": "10:23:33",
+      "price": 6.43,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 643
+    },
+    {
+      "time": "10:23:03",
+      "price": 6.43,
+      "change": 0,
+      "voturnover": 2,
+      "vaturnover": 1286
+    },
+    {
+      "time": "10:22:54",
+      "price": 6.43,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 643
+    },
+    {
+      "time": "10:22:45",
+      "price": 6.43,
+      "change": 0,
+      "voturnover": 20,
+      "vaturnover": 13439
+    },
+    {
+      "time": "10:22:42",
+      "price": 6.43,
+      "change": 0,
+      "voturnover": 2,
+      "vaturnover": 1350
+    },
+    {
+      "time": "10:22:33",
+      "price": 6.43,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 643
+    },
+    {
+      "time": "10:22:03",
+      "price": 6.43,
+      "change": 0,
+      "voturnover": 2,
+      "vaturnover": 1286
+    },
+    {
+      "time": "10:21:33",
+      "price": 6.43,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 643
+    },
+    {
+      "time": "10:21:03",
+      "price": 6.43,
+      "change": 0,
+      "voturnover": 2,
+      "vaturnover": 1286
+    },
+    {
+      "time": "10:20:57",
+      "price": 6.43,
+      "change": 0.01,
+      "voturnover": 80,
+      "vaturnover": 51440
+    },
+    {
+      "time": "10:20:30",
+      "price": 6.42,
+      "change": -0.01,
+      "voturnover": 3,
+      "vaturnover": 2504
+    },
+    {
+      "time": "10:20:06",
+      "price": 6.43,
+      "change": 0,
+      "voturnover": 0,
+      "vaturnover": 0
+    },
+    {
+      "time": "10:20:03",
+      "price": 6.43,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 643
+    },
+    {
+      "time": "10:19:30",
+      "price": 6.43,
+      "change": 0.03,
+      "voturnover": 2,
+      "vaturnover": 1286
+    },
+    {
+      "time": "10:19:24",
+      "price": 6.4,
+      "change": 0,
+      "voturnover": 0,
+      "vaturnover": 0
+    },
+    {
+      "time": "10:19:15",
+      "price": 6.4,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 896
+    },
+    {
+      "time": "10:19:12",
+      "price": 6.4,
+      "change": 0,
+      "voturnover": 21,
+      "vaturnover": 13440
+    },
+    {
+      "time": "10:19:03",
+      "price": 6.4,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 640
+    },
+    {
+      "time": "10:18:54",
+      "price": 6.4,
+      "change": 0,
+      "voturnover": 20,
+      "vaturnover": 12800
+    },
+    {
+      "time": "10:18:48",
+      "price": 6.4,
+      "change": -0.02,
+      "voturnover": 494,
+      "vaturnover": 316160
+    },
+    {
+      "time": "10:18:39",
+      "price": 6.42,
+      "change": 0,
+      "voturnover": 0,
+      "vaturnover": 0
+    },
+    {
+      "time": "10:18:36",
+      "price": 6.42,
+      "change": 0.01,
+      "voturnover": 20,
+      "vaturnover": 12840
+    },
+    {
+      "time": "10:18:32",
+      "price": 6.41,
+      "change": 0,
+      "voturnover": 2,
+      "vaturnover": 1282
+    },
+    {
+      "time": "10:18:18",
+      "price": 6.41,
+      "change": -0.01,
+      "voturnover": 24,
+      "vaturnover": 15769
+    },
+    {
+      "time": "10:18:00",
+      "price": 6.42,
+      "change": 0.01,
+      "voturnover": 1,
+      "vaturnover": 642
+    },
+    {
+      "time": "10:17:54",
+      "price": 6.41,
+      "change": 0,
+      "voturnover": 36,
+      "vaturnover": 23332
+    },
+    {
+      "time": "10:17:51",
+      "price": 6.41,
+      "change": 0,
+      "voturnover": 50,
+      "vaturnover": 32050
+    },
+    {
+      "time": "10:17:45",
+      "price": 6.41,
+      "change": 0,
+      "voturnover": 10,
+      "vaturnover": 6410
+    },
+    {
+      "time": "10:17:30",
+      "price": 6.41,
+      "change": 0,
+      "voturnover": 2,
+      "vaturnover": 1282
+    },
+    {
+      "time": "10:17:00",
+      "price": 6.41,
+      "change": 0,
+      "voturnover": 41,
+      "vaturnover": 26281
+    },
+    {
+      "time": "10:16:57",
+      "price": 6.41,
+      "change": 0,
+      "voturnover": 33,
+      "vaturnover": 21217
+    },
+    {
+      "time": "10:16:54",
+      "price": 6.41,
+      "change": 0,
+      "voturnover": 26,
+      "vaturnover": 16666
+    },
+    {
+      "time": "10:16:48",
+      "price": 6.41,
+      "change": -0.01,
+      "voturnover": 16,
+      "vaturnover": 10833
+    },
+    {
+      "time": "10:16:39",
+      "price": 6.42,
+      "change": 0,
+      "voturnover": 12,
+      "vaturnover": 7704
+    },
+    {
+      "time": "10:16:30",
+      "price": 6.42,
+      "change": 0,
+      "voturnover": 2,
+      "vaturnover": 1284
+    },
+    {
+      "time": "10:16:00",
+      "price": 6.42,
+      "change": 0.01,
+      "voturnover": 1,
+      "vaturnover": 642
+    },
+    {
+      "time": "10:15:57",
+      "price": 6.41,
+      "change": -0.01,
+      "voturnover": 159,
+      "vaturnover": 101919
+    },
+    {
+      "time": "10:15:45",
+      "price": 6.42,
+      "change": -0.01,
+      "voturnover": 100,
+      "vaturnover": 64200
+    },
+    {
+      "time": "10:15:30",
+      "price": 6.43,
+      "change": 0,
+      "voturnover": 2,
+      "vaturnover": 1286
+    },
+    {
+      "time": "10:15:18",
+      "price": 6.43,
+      "change": 0,
+      "voturnover": 101,
+      "vaturnover": 64943
+    },
+    {
+      "time": "10:15:00",
+      "price": 6.43,
+      "change": 0.01,
+      "voturnover": 2,
+      "vaturnover": 1286
+    },
+    {
+      "time": "10:14:57",
+      "price": 6.42,
+      "change": 0,
+      "voturnover": 0,
+      "vaturnover": 0
+    },
+    {
+      "time": "10:14:39",
+      "price": 6.42,
+      "change": 0,
+      "voturnover": 0,
+      "vaturnover": 0
+    },
+    {
+      "time": "10:14:29",
+      "price": 6.42,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 642
+    },
+    {
+      "time": "10:14:18",
+      "price": 6.42,
+      "change": 0,
+      "voturnover": 110,
+      "vaturnover": 70620
+    },
+    {
+      "time": "10:14:00",
+      "price": 6.42,
+      "change": 0.02,
+      "voturnover": 2,
+      "vaturnover": 1284
+    },
+    {
+      "time": "10:13:45",
+      "price": 6.4,
+      "change": 0,
+      "voturnover": 0,
+      "vaturnover": 0
+    },
+    {
+      "time": "10:13:39",
+      "price": 6.4,
+      "change": 0,
+      "voturnover": 73,
+      "vaturnover": 46720
+    },
+    {
+      "time": "10:13:36",
+      "price": 6.4,
+      "change": 0,
+      "voturnover": 131,
+      "vaturnover": 83840
+    },
+    {
+      "time": "10:13:33",
+      "price": 6.4,
+      "change": 0,
+      "voturnover": 89,
+      "vaturnover": 56960
+    },
+    {
+      "time": "10:13:30",
+      "price": 6.4,
+      "change": 0.01,
+      "voturnover": 1,
+      "vaturnover": 640
+    },
+    {
+      "time": "10:13:24",
+      "price": 6.39,
+      "change": 0,
+      "voturnover": 40,
+      "vaturnover": 25560
+    },
+    {
+      "time": "10:13:18",
+      "price": 6.39,
+      "change": -0.01,
+      "voturnover": 2,
+      "vaturnover": 1278
+    },
+    {
+      "time": "10:13:09",
+      "price": 6.4,
+      "change": 0,
+      "voturnover": 8,
+      "vaturnover": 5120
+    },
+    {
+      "time": "10:13:00",
+      "price": 6.4,
+      "change": 0,
+      "voturnover": 5,
+      "vaturnover": 3200
+    },
+    {
+      "time": "10:12:57",
+      "price": 6.4,
+      "change": 0,
+      "voturnover": 359,
+      "vaturnover": 229760
+    },
+    {
+      "time": "10:12:51",
+      "price": 6.4,
+      "change": 0,
+      "voturnover": 0,
+      "vaturnover": 0
+    },
+    {
+      "time": "10:12:45",
+      "price": 6.4,
+      "change": -0.02,
+      "voturnover": 291,
+      "vaturnover": 186240
+    },
+    {
+      "time": "10:12:30",
+      "price": 6.42,
+      "change": 0.01,
+      "voturnover": 1,
+      "vaturnover": 642
+    },
+    {
+      "time": "10:12:24",
+      "price": 6.41,
+      "change": 0,
+      "voturnover": 4,
+      "vaturnover": 2564
+    },
+    {
+      "time": "10:12:09",
+      "price": 6.41,
+      "change": -0.01,
+      "voturnover": 291,
+      "vaturnover": 186531
+    },
+    {
+      "time": "10:12:00",
+      "price": 6.42,
+      "change": 0,
+      "voturnover": 2,
+      "vaturnover": 1284
+    },
+    {
+      "time": "10:11:57",
+      "price": 6.42,
+      "change": 0,
+      "voturnover": 13,
+      "vaturnover": 8346
+    },
+    {
+      "time": "10:11:33",
+      "price": 6.42,
+      "change": -0.01,
+      "voturnover": 57,
+      "vaturnover": 36594
+    },
+    {
+      "time": "10:11:30",
+      "price": 6.43,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 643
+    },
+    {
+      "time": "10:11:12",
+      "price": 6.43,
+      "change": 0,
+      "voturnover": 19,
+      "vaturnover": 12796
+    },
+    {
+      "time": "10:11:03",
+      "price": 6.43,
+      "change": 0.02,
+      "voturnover": 65,
+      "vaturnover": 41859
+    },
+    {
+      "time": "10:11:00",
+      "price": 6.41,
+      "change": 0,
+      "voturnover": 0,
+      "vaturnover": 0
+    },
+    {
+      "time": "10:10:54",
+      "price": 6.41,
+      "change": -0.01,
+      "voturnover": 103,
+      "vaturnover": 66023
+    },
+    {
+      "time": "10:10:51",
+      "price": 6.42,
+      "change": 0,
+      "voturnover": 2,
+      "vaturnover": 1284
+    },
+    {
+      "time": "10:10:48",
+      "price": 6.42,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 642
+    },
+    {
+      "time": "10:10:45",
+      "price": 6.42,
+      "change": 0,
+      "voturnover": 3,
+      "vaturnover": 1926
+    },
+    {
+      "time": "10:10:39",
+      "price": 6.42,
+      "change": 0,
+      "voturnover": 5,
+      "vaturnover": 3210
+    },
+    {
+      "time": "10:10:36",
+      "price": 6.42,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 642
+    },
+    {
+      "time": "10:10:33",
+      "price": 6.42,
+      "change": 0,
+      "voturnover": 4,
+      "vaturnover": 2568
+    },
+    {
+      "time": "10:10:30",
+      "price": 6.42,
+      "change": 0,
+      "voturnover": 11,
+      "vaturnover": 7062
+    },
+    {
+      "time": "10:10:27",
+      "price": 6.42,
+      "change": -0.01,
+      "voturnover": 54,
+      "vaturnover": 34668
+    },
+    {
+      "time": "10:09:57",
+      "price": 6.43,
+      "change": 6.43,
+      "voturnover": 2,
+      "vaturnover": 1286
+    },
+    {
+      "time": "10:09:30",
+      "price": 6.43,
+      "change": 0,
+      "voturnover": 159,
+      "vaturnover": 102237
+    },
+    {
+      "time": "10:09:15",
+      "price": 6.43,
+      "change": -0.01,
+      "voturnover": 50,
+      "vaturnover": 32150
+    },
+    {
+      "time": "10:08:57",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 2,
+      "vaturnover": 1288
+    },
+    {
+      "time": "10:08:39",
+      "price": 6.44,
+      "change": 0.01,
+      "voturnover": 6,
+      "vaturnover": 3864
+    },
+    {
+      "time": "10:08:33",
+      "price": 6.43,
+      "change": -0.01,
+      "voturnover": 13,
+      "vaturnover": 8359
+    },
+    {
+      "time": "10:08:27",
+      "price": 6.44,
+      "change": 0.01,
+      "voturnover": 36,
+      "vaturnover": 23184
+    },
+    {
+      "time": "10:08:21",
+      "price": 6.43,
+      "change": -0.01,
+      "voturnover": 5,
+      "vaturnover": 3215
+    },
+    {
+      "time": "10:07:57",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 2,
+      "vaturnover": 1288
+    },
+    {
+      "time": "10:07:54",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 10,
+      "vaturnover": 6440
+    },
+    {
+      "time": "10:07:48",
+      "price": 6.44,
+      "change": 0.01,
+      "voturnover": 26,
+      "vaturnover": 16744
+    },
+    {
+      "time": "10:07:45",
+      "price": 6.43,
+      "change": -0.01,
+      "voturnover": 1,
+      "vaturnover": 643
+    },
+    {
+      "time": "10:07:36",
+      "price": 6.44,
+      "change": -0.01,
+      "voturnover": 34,
+      "vaturnover": 21896
+    },
+    {
+      "time": "10:07:27",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 645
+    },
+    {
+      "time": "10:06:57",
+      "price": 6.45,
+      "change": 0.01,
+      "voturnover": 2,
+      "vaturnover": 1290
+    },
+    {
+      "time": "10:06:48",
+      "price": 6.44,
+      "change": -0.01,
+      "voturnover": 16,
+      "vaturnover": 10304
+    },
+    {
+      "time": "10:06:27",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 645
+    },
+    {
+      "time": "10:06:15",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 35,
+      "vaturnover": 22575
+    },
+    {
+      "time": "10:06:12",
+      "price": 6.45,
+      "change": -0.01,
+      "voturnover": 28,
+      "vaturnover": 18060
+    },
+    {
+      "time": "10:05:56",
+      "price": 6.46,
+      "change": 0.01,
+      "voturnover": 2,
+      "vaturnover": 1292
+    },
+    {
+      "time": "10:05:45",
+      "price": 6.45,
+      "change": -0.01,
+      "voturnover": 200,
+      "vaturnover": 129000
+    },
+    {
+      "time": "10:05:27",
+      "price": 6.46,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 646
+    },
+    {
+      "time": "10:05:18",
+      "price": 6.46,
+      "change": -0.01,
+      "voturnover": 4,
+      "vaturnover": 2584
+    },
+    {
+      "time": "10:04:57",
+      "price": 6.47,
+      "change": 0,
+      "voturnover": 2,
+      "vaturnover": 1294
+    },
+    {
+      "time": "10:04:27",
+      "price": 6.47,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 647
+    },
+    {
+      "time": "10:03:57",
+      "price": 6.47,
+      "change": 0,
+      "voturnover": 2,
+      "vaturnover": 1294
+    },
+    {
+      "time": "10:03:27",
+      "price": 6.47,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 647
+    },
+    {
+      "time": "10:02:57",
+      "price": 6.47,
+      "change": 0,
+      "voturnover": 2,
+      "vaturnover": 1294
+    },
+    {
+      "time": "10:02:27",
+      "price": 6.47,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 647
+    },
+    {
+      "time": "10:01:57",
+      "price": 6.47,
+      "change": 0,
+      "voturnover": 2,
+      "vaturnover": 1294
+    },
+    {
+      "time": "10:01:42",
+      "price": 6.47,
+      "change": 0,
+      "voturnover": 2,
+      "vaturnover": 1294
+    },
+    {
+      "time": "10:01:12",
+      "price": 6.47,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 647
+    },
+    {
+      "time": "10:00:45",
+      "price": 6.47,
+      "change": 0,
+      "voturnover": 5,
+      "vaturnover": 3235
+    },
+    {
+      "time": "10:00:42",
+      "price": 6.47,
+      "change": 0,
+      "voturnover": 2,
+      "vaturnover": 1294
+    },
+    {
+      "time": "10:00:18",
+      "price": 6.47,
+      "change": 0,
+      "voturnover": 5,
+      "vaturnover": 3235
+    },
+    {
+      "time": "10:00:12",
+      "price": 6.47,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 647
+    },
+    {
+      "time": "09:59:42",
+      "price": 6.47,
+      "change": 0.02,
+      "voturnover": 2,
+      "vaturnover": 1294
+    },
+    {
+      "time": "09:58:21",
+      "price": 6.45,
+      "change": -0.02,
+      "voturnover": 2,
+      "vaturnover": 1290
+    },
+    {
+      "time": "09:56:45",
+      "price": 6.47,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 647
+    },
+    {
+      "time": "09:56:42",
+      "price": 6.47,
+      "change": 0,
+      "voturnover": 2,
+      "vaturnover": 1294
+    },
+    {
+      "time": "09:55:42",
+      "price": 6.47,
+      "change": 0,
+      "voturnover": 0,
+      "vaturnover": 0
+    },
+    {
+      "time": "09:55:33",
+      "price": 6.47,
+      "change": 0,
+      "voturnover": 20,
+      "vaturnover": 12940
+    },
+    {
+      "time": "09:55:12",
+      "price": 6.47,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 647
+    },
+    {
+      "time": "09:54:57",
+      "price": 6.47,
+      "change": 0,
+      "voturnover": 0,
+      "vaturnover": 0
+    },
+    {
+      "time": "09:54:51",
+      "price": 6.47,
+      "change": 0,
+      "voturnover": 2,
+      "vaturnover": 1294
+    },
+    {
+      "time": "09:54:45",
+      "price": 6.47,
+      "change": 0,
+      "voturnover": 2,
+      "vaturnover": 1294
+    },
+    {
+      "time": "09:54:42",
+      "price": 6.47,
+      "change": 0,
+      "voturnover": 0,
+      "vaturnover": 0
+    },
+    {
+      "time": "09:54:39",
+      "price": 6.47,
+      "change": 0.03,
+      "voturnover": 1,
+      "vaturnover": 647
+    },
+    {
+      "time": "09:54:24",
+      "price": 6.44,
+      "change": -0.03,
+      "voturnover": 2,
+      "vaturnover": 1674
+    },
+    {
+      "time": "09:54:21",
+      "price": 6.47,
+      "change": 0,
+      "voturnover": 0,
+      "vaturnover": 0
+    },
+    {
+      "time": "09:54:15",
+      "price": 6.47,
+      "change": 0,
+      "voturnover": 2,
+      "vaturnover": 1294
+    },
+    {
+      "time": "09:54:12",
+      "price": 6.47,
+      "change": 0.03,
+      "voturnover": 3,
+      "vaturnover": 1941
+    },
+    {
+      "time": "09:53:57",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 0,
+      "vaturnover": 0
+    },
+    {
+      "time": "09:53:45",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 17,
+      "vaturnover": 11270
+    },
+    {
+      "time": "09:53:42",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 4,
+      "vaturnover": 2576
+    },
+    {
+      "time": "09:53:33",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 117,
+      "vaturnover": 75348
+    },
+    {
+      "time": "09:53:15",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 644
+    },
+    {
+      "time": "09:53:12",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 4,
+      "vaturnover": 2576
+    },
+    {
+      "time": "09:53:09",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 644
+    },
+    {
+      "time": "09:52:51",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 644
+    },
+    {
+      "time": "09:52:45",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 4,
+      "vaturnover": 2576
+    },
+    {
+      "time": "09:52:42",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 3,
+      "vaturnover": 1932
+    },
+    {
+      "time": "09:52:15",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 3,
+      "vaturnover": 1932
+    },
+    {
+      "time": "09:52:12",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 2,
+      "vaturnover": 1288
+    },
+    {
+      "time": "09:51:45",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 4,
+      "vaturnover": 2576
+    },
+    {
+      "time": "09:51:42",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 2,
+      "vaturnover": 1288
+    },
+    {
+      "time": "09:51:36",
+      "price": 6.44,
+      "change": 0.01,
+      "voturnover": 15,
+      "vaturnover": 9660
+    },
+    {
+      "time": "09:51:33",
+      "price": 6.43,
+      "change": -0.01,
+      "voturnover": 4,
+      "vaturnover": 2572
+    },
+    {
+      "time": "09:51:27",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 13,
+      "vaturnover": 8372
+    },
+    {
+      "time": "09:51:24",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 20,
+      "vaturnover": 12880
+    },
+    {
+      "time": "09:51:21",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 6,
+      "vaturnover": 3864
+    },
+    {
+      "time": "09:51:18",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 35,
+      "vaturnover": 22540
+    },
+    {
+      "time": "09:51:15",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 91,
+      "vaturnover": 58604
+    },
+    {
+      "time": "09:51:12",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 85,
+      "vaturnover": 54740
+    },
+    {
+      "time": "09:51:09",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 70,
+      "vaturnover": 45080
+    },
+    {
+      "time": "09:50:54",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 2,
+      "vaturnover": 1288
+    },
+    {
+      "time": "09:50:48",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 50,
+      "vaturnover": 32200
+    },
+    {
+      "time": "09:50:42",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 4,
+      "vaturnover": 2576
+    },
+    {
+      "time": "09:50:39",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 3,
+      "vaturnover": 1932
+    },
+    {
+      "time": "09:50:36",
+      "price": 6.44,
+      "change": 0.01,
+      "voturnover": 50,
+      "vaturnover": 32200
+    },
+    {
+      "time": "09:50:15",
+      "price": 6.43,
+      "change": 0,
+      "voturnover": 73,
+      "vaturnover": 46939
+    },
+    {
+      "time": "09:50:12",
+      "price": 6.43,
+      "change": 0.01,
+      "voturnover": 49,
+      "vaturnover": 31507
+    },
+    {
+      "time": "09:49:51",
+      "price": 6.42,
+      "change": -0.02,
+      "voturnover": 8,
+      "vaturnover": 5136
+    },
+    {
+      "time": "09:49:48",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 0,
+      "vaturnover": 0
+    },
+    {
+      "time": "09:49:42",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 5,
+      "vaturnover": 3220
+    },
+    {
+      "time": "09:49:36",
+      "price": 6.44,
+      "change": 0.03,
+      "voturnover": 1,
+      "vaturnover": 644
+    },
+    {
+      "time": "09:49:33",
+      "price": 6.41,
+      "change": 0,
+      "voturnover": 0,
+      "vaturnover": 0
+    },
+    {
+      "time": "09:49:27",
+      "price": 6.41,
+      "change": 0,
+      "voturnover": 0,
+      "vaturnover": 0
+    },
+    {
+      "time": "09:49:24",
+      "price": 6.41,
+      "change": 0,
+      "voturnover": 100,
+      "vaturnover": 64100
+    },
+    {
+      "time": "09:49:15",
+      "price": 6.41,
+      "change": -0.03,
+      "voturnover": 14,
+      "vaturnover": 8974
+    },
+    {
+      "time": "09:49:12",
+      "price": 6.44,
+      "change": 0.04,
+      "voturnover": 6,
+      "vaturnover": 3864
+    },
+    {
+      "time": "09:48:51",
+      "price": 6.4,
+      "change": 0,
+      "voturnover": 0,
+      "vaturnover": 0
+    },
+    {
+      "time": "09:48:45",
+      "price": 6.4,
+      "change": 0,
+      "voturnover": 0,
+      "vaturnover": 0
+    },
+    {
+      "time": "09:48:42",
+      "price": 6.4,
+      "change": 0,
+      "voturnover": 0,
+      "vaturnover": 0
+    },
+    {
+      "time": "09:48:39",
+      "price": 6.4,
+      "change": 0,
+      "voturnover": 107,
+      "vaturnover": 68608
+    },
+    {
+      "time": "09:48:36",
+      "price": 6.4,
+      "change": 0,
+      "voturnover": 20,
+      "vaturnover": 12800
+    },
+    {
+      "time": "09:48:33",
+      "price": 6.4,
+      "change": 0,
+      "voturnover": 20,
+      "vaturnover": 12800
+    },
+    {
+      "time": "09:48:27",
+      "price": 6.4,
+      "change": 0,
+      "voturnover": 46,
+      "vaturnover": 29440
+    },
+    {
+      "time": "09:48:18",
+      "price": 6.4,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 640
+    },
+    {
+      "time": "09:48:15",
+      "price": 6.4,
+      "change": -0.04,
+      "voturnover": 1406,
+      "vaturnover": 900352
+    },
+    {
+      "time": "09:48:12",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 5,
+      "vaturnover": 3220
+    },
+    {
+      "time": "09:48:09",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 644
+    },
+    {
+      "time": "09:48:06",
+      "price": 6.44,
+      "change": 0.01,
+      "voturnover": 1,
+      "vaturnover": 644
+    },
+    {
+      "time": "09:47:57",
+      "price": 6.43,
+      "change": -0.01,
+      "voturnover": 5,
+      "vaturnover": 3344
+    },
+    {
+      "time": "09:47:54",
+      "price": 6.44,
+      "change": 0.01,
+      "voturnover": 31,
+      "vaturnover": 19964
+    },
+    {
+      "time": "09:47:47",
+      "price": 6.43,
+      "change": -0.01,
+      "voturnover": 5,
+      "vaturnover": 3215
+    },
+    {
+      "time": "09:47:45",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 7,
+      "vaturnover": 4508
+    },
+    {
+      "time": "09:47:42",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 5,
+      "vaturnover": 3220
+    },
+    {
+      "time": "09:47:24",
+      "price": 6.44,
+      "change": 6.44,
+      "voturnover": 50,
+      "vaturnover": 32200
+    },
+    {
+      "time": "09:47:15",
+      "price": 6.43,
+      "change": -0.01,
+      "voturnover": 5,
+      "vaturnover": 3215
+    },
+    {
+      "time": "09:47:12",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 2,
+      "vaturnover": 1288
+    },
+    {
+      "time": "09:47:09",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 54,
+      "vaturnover": 34776
+    },
+    {
+      "time": "09:47:06",
+      "price": 6.44,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 644
+    },
+    {
+      "time": "09:46:56",
+      "price": 6.44,
+      "change": -0.03,
+      "voturnover": 508,
+      "vaturnover": 327152
+    },
+    {
+      "time": "09:46:42",
+      "price": 6.47,
+      "change": 0,
+      "voturnover": 4,
+      "vaturnover": 2588
+    },
+    {
+      "time": "09:46:39",
+      "price": 6.47,
+      "change": 0.02,
+      "voturnover": 1,
+      "vaturnover": 647
+    },
+    {
+      "time": "09:46:27",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 9,
+      "vaturnover": 5805
+    },
+    {
+      "time": "09:46:21",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 29,
+      "vaturnover": 18705
+    },
+    {
+      "time": "09:46:15",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 9,
+      "vaturnover": 5805
+    },
+    {
+      "time": "09:46:12",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 6,
+      "vaturnover": 3870
+    },
+    {
+      "time": "09:46:03",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 9,
+      "vaturnover": 5805
+    },
+    {
+      "time": "09:46:00",
+      "price": 6.45,
+      "change": 0.01,
+      "voturnover": 204,
+      "vaturnover": 131580
+    },
+    {
+      "time": "09:45:57",
+      "price": 6.44,
+      "change": -0.01,
+      "voturnover": 20,
+      "vaturnover": 12880
+    },
+    {
+      "time": "09:45:54",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 3,
+      "vaturnover": 1935
+    },
+    {
+      "time": "09:45:51",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 645
+    },
+    {
+      "time": "09:45:45",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 6,
+      "vaturnover": 3870
+    },
+    {
+      "time": "09:45:42",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 2,
+      "vaturnover": 1290
+    },
+    {
+      "time": "09:45:39",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 74,
+      "vaturnover": 47730
+    },
+    {
+      "time": "09:45:35",
+      "price": 6.45,
+      "change": -0.02,
+      "voturnover": 167,
+      "vaturnover": 107715
+    },
+    {
+      "time": "09:45:33",
+      "price": 6.47,
+      "change": 0,
+      "voturnover": 75,
+      "vaturnover": 48525
+    },
+    {
+      "time": "09:45:30",
+      "price": 6.47,
+      "change": 0,
+      "voturnover": 187,
+      "vaturnover": 120989
+    },
+    {
+      "time": "09:45:18",
+      "price": 6.47,
+      "change": 0,
+      "voturnover": 5,
+      "vaturnover": 3235
+    },
+    {
+      "time": "09:45:15",
+      "price": 6.47,
+      "change": -0.01,
+      "voturnover": 125,
+      "vaturnover": 81199
+    },
+    {
+      "time": "09:45:12",
+      "price": 6.48,
+      "change": 0,
+      "voturnover": 3,
+      "vaturnover": 1944
+    },
+    {
+      "time": "09:45:09",
+      "price": 6.48,
+      "change": 0.01,
+      "voturnover": 1,
+      "vaturnover": 648
+    },
+    {
+      "time": "09:45:03",
+      "price": 6.47,
+      "change": 0,
+      "voturnover": 17,
+      "vaturnover": 10999
+    },
+    {
+      "time": "09:45:00",
+      "price": 6.47,
+      "change": 0,
+      "voturnover": 67,
+      "vaturnover": 43673
+    },
+    {
+      "time": "09:44:39",
+      "price": 6.47,
+      "change": 0,
+      "voturnover": 6,
+      "vaturnover": 3882
+    },
+    {
+      "time": "09:44:24",
+      "price": 6.47,
+      "change": 0,
+      "voturnover": 0,
+      "vaturnover": 0
+    },
+    {
+      "time": "09:44:12",
+      "price": 6.47,
+      "change": 0,
+      "voturnover": 4,
+      "vaturnover": 2588
+    },
+    {
+      "time": "09:44:09",
+      "price": 6.47,
+      "change": 0.02,
+      "voturnover": 1,
+      "vaturnover": 647
+    },
+    {
+      "time": "09:43:56",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 11,
+      "vaturnover": 7095
+    },
+    {
+      "time": "09:43:51",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 0,
+      "vaturnover": 0
+    },
+    {
+      "time": "09:43:48",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 0,
+      "vaturnover": 0
+    },
+    {
+      "time": "09:43:42",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 3,
+      "vaturnover": 1935
+    },
+    {
+      "time": "09:43:39",
+      "price": 6.45,
+      "change": 0.01,
+      "voturnover": 98,
+      "vaturnover": 63210
+    },
+    {
+      "time": "09:43:35",
+      "price": 6.44,
+      "change": -0.01,
+      "voturnover": 36,
+      "vaturnover": 23184
+    },
+    {
+      "time": "09:43:21",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 10,
+      "vaturnover": 6450
+    },
+    {
+      "time": "09:43:12",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 2,
+      "vaturnover": 1290
+    },
+    {
+      "time": "09:43:09",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 2,
+      "vaturnover": 1290
+    },
+    {
+      "time": "09:43:03",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 346,
+      "vaturnover": 223622
+    },
+    {
+      "time": "09:43:00",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 0,
+      "vaturnover": 0
+    },
+    {
+      "time": "09:42:57",
+      "price": 6.45,
+      "change": -0.01,
+      "voturnover": 35,
+      "vaturnover": 22575
+    },
+    {
+      "time": "09:42:54",
+      "price": 6.46,
+      "change": 0.01,
+      "voturnover": 1,
+      "vaturnover": 904
+    },
+    {
+      "time": "09:42:51",
+      "price": 6.45,
+      "change": -0.01,
+      "voturnover": 200,
+      "vaturnover": 129581
+    },
+    {
+      "time": "09:42:45",
+      "price": 6.46,
+      "change": 0,
+      "voturnover": 10,
+      "vaturnover": 6460
+    },
+    {
+      "time": "09:42:42",
+      "price": 6.46,
+      "change": 0,
+      "voturnover": 4,
+      "vaturnover": 2584
+    },
+    {
+      "time": "09:42:38",
+      "price": 6.46,
+      "change": 0,
+      "voturnover": 2,
+      "vaturnover": 1292
+    },
+    {
+      "time": "09:42:32",
+      "price": 6.46,
+      "change": 0,
+      "voturnover": 13,
+      "vaturnover": 8398
+    },
+    {
+      "time": "09:42:24",
+      "price": 6.46,
+      "change": -0.01,
+      "voturnover": 170,
+      "vaturnover": 109820
+    },
+    {
+      "time": "09:42:14",
+      "price": 6.47,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 647
+    },
+    {
+      "time": "09:42:12",
+      "price": 6.47,
+      "change": 0.01,
+      "voturnover": 4,
+      "vaturnover": 2588
+    },
+    {
+      "time": "09:42:03",
+      "price": 6.46,
+      "change": 0,
+      "voturnover": 50,
+      "vaturnover": 32300
+    },
+    {
+      "time": "09:42:00",
+      "price": 6.46,
+      "change": 0,
+      "voturnover": 114,
+      "vaturnover": 73644
+    },
+    {
+      "time": "09:41:53",
+      "price": 6.46,
+      "change": -0.01,
+      "voturnover": 136,
+      "vaturnover": 87856
+    },
+    {
+      "time": "09:41:42",
+      "price": 6.47,
+      "change": 0,
+      "voturnover": 2,
+      "vaturnover": 1294
+    },
+    {
+      "time": "09:41:39",
+      "price": 6.47,
+      "change": 0.01,
+      "voturnover": 2,
+      "vaturnover": 1294
+    },
+    {
+      "time": "09:41:30",
+      "price": 6.46,
+      "change": 0,
+      "voturnover": 8,
+      "vaturnover": 5168
+    },
+    {
+      "time": "09:41:27",
+      "price": 6.46,
+      "change": -0.01,
+      "voturnover": 23,
+      "vaturnover": 14858
+    },
+    {
+      "time": "09:41:15",
+      "price": 6.47,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 647
+    },
+    {
+      "time": "09:41:09",
+      "price": 6.47,
+      "change": 0.01,
+      "voturnover": 272,
+      "vaturnover": 175984
+    },
+    {
+      "time": "09:41:05",
+      "price": 6.46,
+      "change": 0,
+      "voturnover": 21,
+      "vaturnover": 13566
+    },
+    {
+      "time": "09:41:02",
+      "price": 6.46,
+      "change": 0.01,
+      "voturnover": 46,
+      "vaturnover": 29716
+    },
+    {
+      "time": "09:41:00",
+      "price": 6.45,
+      "change": 0,
+      "voturnover": 0,
+      "vaturnover": 0
+    },
+    {
+      "time": "09:40:57",
+      "price": 6.45,
+      "change": -0.02,
+      "voturnover": 8,
+      "vaturnover": 5160
+    },
+    {
+      "time": "09:40:42",
+      "price": 6.47,
+      "change": 0,
+      "voturnover": 3,
+      "vaturnover": 1941
+    },
+    {
+      "time": "09:40:39",
+      "price": 6.47,
+      "change": 0.02,
+      "voturnover": 2,
+      "vaturnover": 1294
+    },
+    {
+      "time": "09:40:21",
+      "price": 6.45,
+      "change": -0.01,
+      "voturnover": 90,
+      "vaturnover": 58050
+    },
+    {
+      "time": "09:40:15",
+      "price": 6.46,
+      "change": 0,
+      "voturnover": 197,
+      "vaturnover": 127262
+    },
+    {
+      "time": "09:40:12",
+      "price": 6.46,
+      "change": 0,
+      "voturnover": 5,
+      "vaturnover": 3230
+    },
+    {
+      "time": "09:39:42",
+      "price": 6.46,
+      "change": 0,
+      "voturnover": 7,
+      "vaturnover": 4522
+    },
+    {
+      "time": "09:39:39",
+      "price": 6.46,
+      "change": 0,
+      "voturnover": 4,
+      "vaturnover": 2584
+    },
+    {
+      "time": "09:39:35",
+      "price": 6.46,
+      "change": 0,
+      "voturnover": 30,
+      "vaturnover": 19380
+    },
+    {
+      "time": "09:39:27",
+      "price": 6.46,
+      "change": -0.01,
+      "voturnover": 76,
+      "vaturnover": 49096
+    },
+    {
+      "time": "09:39:08",
+      "price": 6.47,
+      "change": 0,
+      "voturnover": 5,
+      "vaturnover": 3235
+    },
+    {
+      "time": "09:39:05",
+      "price": 6.47,
+      "change": 0.01,
+      "voturnover": 1,
+      "vaturnover": 647
+    },
+    {
+      "time": "09:39:03",
+      "price": 6.46,
+      "change": -0.01,
+      "voturnover": 10,
+      "vaturnover": 6460
+    },
+    {
+      "time": "09:38:59",
+      "price": 6.47,
+      "change": 0.01,
+      "voturnover": 6,
+      "vaturnover": 3882
+    },
+    {
+      "time": "09:38:38",
+      "price": 6.46,
+      "change": 0,
+      "voturnover": 20,
+      "vaturnover": 12920
+    },
+    {
+      "time": "09:38:30",
+      "price": 6.46,
+      "change": 0,
+      "voturnover": 200,
+      "vaturnover": 129200
+    },
+    {
+      "time": "09:38:23",
+      "price": 6.46,
+      "change": 0.01,
+      "voturnover": 35,
+      "vaturnover": 22610
+    },
+    {
+      "time": "09:38:21",
+      "price": 6.45,
+      "change": -0.01,
+      "voturnover": 200,
+      "vaturnover": 129000
+    },
+    {
+      "time": "09:38:14",
+      "price": 6.46,
+      "change": 0,
+      "voturnover": 10,
+      "vaturnover": 6460
+    },
+    {
+      "time": "09:38:09",
+      "price": 6.46,
+      "change": 0,
+      "voturnover": 11,
+      "vaturnover": 7106
+    },
+    {
+      "time": "09:38:05",
+      "price": 6.46,
+      "change": 0,
+      "voturnover": 24,
+      "vaturnover": 15504
+    },
+    {
+      "time": "09:38:02",
+      "price": 6.46,
+      "change": 0,
+      "voturnover": 17,
+      "vaturnover": 10982
+    },
+    {
+      "time": "09:38:00",
+      "price": 6.46,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 646
+    },
+    {
+      "time": "09:37:57",
+      "price": 6.46,
+      "change": 0,
+      "voturnover": 109,
+      "vaturnover": 70414
+    },
+    {
+      "time": "09:37:44",
+      "price": 6.46,
+      "change": 0.01,
+      "voturnover": 50,
+      "vaturnover": 32300
+    },
+    {
+      "time": "09:37:42",
+      "price": 6.45,
+      "change": -0.01,
+      "voturnover": 10,
+      "vaturnover": 6450
+    },
+    {
+      "time": "09:37:38",
+      "price": 6.46,
+      "change": 0,
+      "voturnover": 7,
+      "vaturnover": 4522
+    },
+    {
+      "time": "09:37:29",
+      "price": 6.46,
+      "change": 0,
+      "voturnover": 10,
+      "vaturnover": 6460
+    },
+    {
+      "time": "09:37:15",
+      "price": 6.46,
+      "change": -0.01,
+      "voturnover": 36,
+      "vaturnover": 23256
+    },
+    {
+      "time": "09:37:09",
+      "price": 6.47,
+      "change": 0.01,
+      "voturnover": 5,
+      "vaturnover": 3235
+    },
+    {
+      "time": "09:36:53",
+      "price": 6.46,
+      "change": 0,
+      "voturnover": 4,
+      "vaturnover": 2584
+    },
+    {
+      "time": "09:36:39",
+      "price": 6.46,
+      "change": 0,
+      "voturnover": 2,
+      "vaturnover": 1292
+    },
+    {
+      "time": "09:36:35",
+      "price": 6.46,
+      "change": 0.01,
+      "voturnover": 66,
+      "vaturnover": 42636
+    },
+    {
+      "time": "09:36:29",
+      "price": 6.45,
+      "change": -0.01,
+      "voturnover": 200,
+      "vaturnover": 129000
+    },
+    {
+      "time": "09:36:23",
+      "price": 6.46,
+      "change": 0,
+      "voturnover": 100,
+      "vaturnover": 64600
+    },
+    {
+      "time": "09:36:14",
+      "price": 6.46,
+      "change": -0.01,
+      "voturnover": 21,
+      "vaturnover": 13566
+    },
+    {
+      "time": "09:36:08",
+      "price": 6.47,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 647
+    },
+    {
+      "time": "09:36:05",
+      "price": 6.47,
+      "change": 0,
+      "voturnover": 2,
+      "vaturnover": 1294
+    },
+    {
+      "time": "09:35:56",
+      "price": 6.47,
+      "change": 0,
+      "voturnover": 20,
+      "vaturnover": 12940
+    },
+    {
+      "time": "09:35:53",
+      "price": 6.47,
+      "change": 0,
+      "voturnover": 12,
+      "vaturnover": 7764
+    },
+    {
+      "time": "09:35:38",
+      "price": 6.47,
+      "change": -0.01,
+      "voturnover": 48,
+      "vaturnover": 31056
+    },
+    {
+      "time": "09:35:35",
+      "price": 6.48,
+      "change": 0,
+      "voturnover": 2,
+      "vaturnover": 1296
+    },
+    {
+      "time": "09:35:20",
+      "price": 6.48,
+      "change": 0,
+      "voturnover": 35,
+      "vaturnover": 22680
+    },
+    {
+      "time": "09:35:11",
+      "price": 6.48,
+      "change": 0,
+      "voturnover": 0,
+      "vaturnover": 0
+    },
+    {
+      "time": "09:35:08",
+      "price": 6.48,
+      "change": 0,
+      "voturnover": 60,
+      "vaturnover": 38880
+    },
+    {
+      "time": "09:35:05",
+      "price": 6.48,
+      "change": 0,
+      "voturnover": 134,
+      "vaturnover": 86832
+    },
+    {
+      "time": "09:34:41",
+      "price": 6.48,
+      "change": -0.02,
+      "voturnover": 1,
+      "vaturnover": 648
+    },
+    {
+      "time": "09:34:38",
+      "price": 6.5,
+      "change": 0,
+      "voturnover": 5,
+      "vaturnover": 3250
+    },
+    {
+      "time": "09:34:35",
+      "price": 6.5,
+      "change": -0.01,
+      "voturnover": 1,
+      "vaturnover": 650
+    },
+    {
+      "time": "09:34:14",
+      "price": 6.51,
+      "change": 0,
+      "voturnover": 0,
+      "vaturnover": 0
+    },
+    {
+      "time": "09:34:11",
+      "price": 6.51,
+      "change": 0,
+      "voturnover": 0,
+      "vaturnover": 0
+    },
+    {
+      "time": "09:34:08",
+      "price": 6.51,
+      "change": 0.04,
+      "voturnover": 5,
+      "vaturnover": 3255
+    },
+    {
+      "time": "09:34:05",
+      "price": 6.47,
+      "change": 0,
+      "voturnover": 51,
+      "vaturnover": 32997
+    },
+    {
+      "time": "09:33:53",
+      "price": 6.47,
+      "change": -0.02,
+      "voturnover": 304,
+      "vaturnover": 196688
+    },
+    {
+      "time": "09:33:41",
+      "price": 6.49,
+      "change": -0.04,
+      "voturnover": 1,
+      "vaturnover": 649
+    },
+    {
+      "time": "09:33:38",
+      "price": 6.53,
+      "change": 0.05,
+      "voturnover": 5,
+      "vaturnover": 3265
+    },
+    {
+      "time": "09:33:35",
+      "price": 6.48,
+      "change": -0.05,
+      "voturnover": 17,
+      "vaturnover": 11016
+    },
+    {
+      "time": "09:33:32",
+      "price": 6.53,
+      "change": 0.06,
+      "voturnover": 5,
+      "vaturnover": 3265
+    },
+    {
+      "time": "09:33:29",
+      "price": 6.47,
+      "change": -0.02,
+      "voturnover": 300,
+      "vaturnover": 194100
+    },
+    {
+      "time": "09:33:26",
+      "price": 6.49,
+      "change": 0,
+      "voturnover": 29,
+      "vaturnover": 18821
+    },
+    {
+      "time": "09:33:23",
+      "price": 6.49,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 649
+    },
+    {
+      "time": "09:33:20",
+      "price": 6.49,
+      "change": 0,
+      "voturnover": 3,
+      "vaturnover": 1947
+    },
+    {
+      "time": "09:33:14",
+      "price": 6.49,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 649
+    },
+    {
+      "time": "09:33:11",
+      "price": 6.49,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 649
+    },
+    {
+      "time": "09:33:08",
+      "price": 6.49,
+      "change": -0.01,
+      "voturnover": 181,
+      "vaturnover": 117469
+    },
+    {
+      "time": "09:33:05",
+      "price": 6.5,
+      "change": 0,
+      "voturnover": 6,
+      "vaturnover": 3900
+    },
+    {
+      "time": "09:32:47",
+      "price": 6.5,
+      "change": 0,
+      "voturnover": 20,
+      "vaturnover": 13000
+    },
+    {
+      "time": "09:32:38",
+      "price": 6.5,
+      "change": 0,
+      "voturnover": 2,
+      "vaturnover": 1300
+    },
+    {
+      "time": "09:32:35",
+      "price": 6.5,
+      "change": 0,
+      "voturnover": 3,
+      "vaturnover": 1950
+    },
+    {
+      "time": "09:32:32",
+      "price": 6.5,
+      "change": 0,
+      "voturnover": 3,
+      "vaturnover": 1950
+    },
+    {
+      "time": "09:32:29",
+      "price": 6.5,
+      "change": 0,
+      "voturnover": 4,
+      "vaturnover": 2600
+    },
+    {
+      "time": "09:32:26",
+      "price": 6.5,
+      "change": 0,
+      "voturnover": 5,
+      "vaturnover": 3250
+    },
+    {
+      "time": "09:32:23",
+      "price": 6.5,
+      "change": 0,
+      "voturnover": 12,
+      "vaturnover": 7800
+    },
+    {
+      "time": "09:32:20",
+      "price": 6.5,
+      "change": -0.01,
+      "voturnover": 336,
+      "vaturnover": 218400
+    },
+    {
+      "time": "09:32:17",
+      "price": 6.51,
+      "change": 0.01,
+      "voturnover": 1,
+      "vaturnover": 651
+    },
+    {
+      "time": "09:31:59",
+      "price": 6.5,
+      "change": 0,
+      "voturnover": 8,
+      "vaturnover": 5200
+    },
+    {
+      "time": "09:31:44",
+      "price": 6.5,
+      "change": -0.03,
+      "voturnover": 792,
+      "vaturnover": 514800
+    },
+    {
+      "time": "09:31:41",
+      "price": 6.53,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 653
+    },
+    {
+      "time": "09:31:35",
+      "price": 6.53,
+      "change": 0,
+      "voturnover": 5,
+      "vaturnover": 3265
+    },
+    {
+      "time": "09:31:08",
+      "price": 6.53,
+      "change": 0,
+      "voturnover": 6,
+      "vaturnover": 3918
+    },
+    {
+      "time": "09:31:05",
+      "price": 6.53,
+      "change": 0.03,
+      "voturnover": 5,
+      "vaturnover": 3265
+    },
+    {
+      "time": "09:30:53",
+      "price": 6.5,
+      "change": 0,
+      "voturnover": 75,
+      "vaturnover": 48750
+    },
+    {
+      "time": "09:30:50",
+      "price": 6.5,
+      "change": -0.04,
+      "voturnover": 225,
+      "vaturnover": 146250
+    },
+    {
+      "time": "09:30:41",
+      "price": 6.54,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 654
+    },
+    {
+      "time": "09:30:35",
+      "price": 6.54,
+      "change": 0.03,
+      "voturnover": 4,
+      "vaturnover": 2616
+    },
+    {
+      "time": "09:30:14",
+      "price": 6.51,
+      "change": -0.03,
+      "voturnover": 1,
+      "vaturnover": 651
+    },
+    {
+      "time": "09:30:05",
+      "price": 6.54,
+      "change": 0,
+      "voturnover": 24,
+      "vaturnover": 15696
+    },
+    {
+      "time": "09:30:02",
+      "price": 6.54,
+      "change": -0.01,
+      "voturnover": 35,
+      "vaturnover": 22890
+    },
+    {
+      "time": "09:25:00",
+      "price": 6.55,
+      "change": 6.55,
+      "voturnover": 20,
+      "vaturnover": 13100
+    }
+  ]
+}
