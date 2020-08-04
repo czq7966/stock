@@ -102,4 +102,6 @@ export class TransHis {
     async update(code: string, date: Date, records: ITransHisRecord[]) {
         await Services.Database.TransHis.update(this, code, date, records);
     }
+
+    // async getCodeSimulData(code: string, )
 }
