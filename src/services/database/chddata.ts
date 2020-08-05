@@ -136,4 +136,22 @@ export class ChdData {
 
         return results;
     }    
+
+    static async getCodePrices(chdDataDB: Modules.Database.ChdData, code: string): Promise<{high: number, low: number, middle: number, average: number}> {
+        let records = chdDataDB.getData(code);
+        let high = 0, low = 0, middle = 0, average = 0;
+        let vaturnover = 0;
+        let voturnover= 0;
+        Object.values(records).forEach(record => {
+            high = Math.max(high, record.high);
+            low = Math.min(low || 99999, record.low || 99999);            
+            vaturnover += record.vaturnover;
+            voturnover += record.voturnover;
+        })
+
+        average = vaturnover / voturnover;
+        middle = (high + low) / 2;
+
+        return {high: high, low: low, middle: middle, average: average}
+    }    
 } 

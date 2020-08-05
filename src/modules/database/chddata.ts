@@ -79,5 +79,10 @@ export class ChdData {
     async averagePrices(codes?: string[]): Promise<{[code: string]: number}> {
         return await Services.Database.ChdData.averagePrices(this, codes)
     }    
+    
+    async getCodePrices(code: string): Promise<{}> {
+        
+        return;
+    }
 }
 
