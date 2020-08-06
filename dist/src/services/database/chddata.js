@@ -218,6 +218,26 @@ var ChdData = /** @class */ (function () {
             });
         });
     };
+    ChdData.getCodePrices = function (chdDataDB, code) {
+        return __awaiter(this, void 0, void 0, function () {
+            var records, high, low, middle, average, vaturnover, voturnover;
+            return __generator(this, function (_a) {
+                records = chdDataDB.getData(code);
+                high = 0, low = 0, middle = 0, average = 0;
+                vaturnover = 0;
+                voturnover = 0;
+                Object.values(records).forEach(function (record) {
+                    high = Math.max(high, record.high);
+                    low = Math.min(low || 99999, record.low || 99999);
+                    vaturnover += record.vaturnover;
+                    voturnover += record.voturnover;
+                });
+                average = vaturnover / voturnover;
+                middle = (high + low) / 2;
+                return [2 /*return*/, { high: high, low: low, middle: middle, average: average }];
+            });
+        });
+    };
     return ChdData;
 }());
 exports.ChdData = ChdData;
