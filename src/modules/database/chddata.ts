@@ -7,6 +7,7 @@ import * as polyfills from '../../polyfills'
 import { Database } from './database';
 
 
+
 export interface IChdDataRecord {
     date: string,
     code: string,
