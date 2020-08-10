@@ -10,8 +10,10 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !exports.hasOwnProperty(p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Database = void 0;
+exports.Dts = exports.Database = void 0;
 __exportStar(require("./transhis"), exports);
 // export * from './codes'
 var Database = require("./database");
 exports.Database = Database;
+var Dts = require("./dts");
+exports.Dts = Dts;
