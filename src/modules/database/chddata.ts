@@ -34,6 +34,13 @@ export interface IChdDataCodeDateRecords {
     [code: string]: IChdDataDateRecords
 }
 
+export interface IChdDataCodePrices {
+    high: number, 
+    low: number, 
+    middle: number, 
+    average: number
+}
+
 
 export class ChdData {
     database: Database;
@@ -81,9 +88,8 @@ export class ChdData {
         return await Services.Database.ChdData.averagePrices(this, codes)
     }    
     
-    async getCodePrices(code: string): Promise<{}> {
-        
-        return;
+    async getCodePrices(code: string): Promise<IChdDataCodePrices> {                
+        return await Services.Database.ChdData.getCodePrices(this, code);
     }
 }
 

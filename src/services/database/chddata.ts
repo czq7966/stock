@@ -137,7 +137,7 @@ export class ChdData {
         return results;
     }    
 
-    static async getCodePrices(chdDataDB: Modules.Database.ChdData, code: string): Promise<{high: number, low: number, middle: number, average: number}> {
+    static async getCodePrices(chdDataDB: Modules.Database.ChdData, code: string): Promise<Modules.Database.IChdDataCodePrices> {
         let records = chdDataDB.getData(code);
         let high = 0, low = 0, middle = 0, average = 0;
         let vaturnover = 0;
@@ -149,8 +149,8 @@ export class ChdData {
             voturnover += record.voturnover;
         })
 
-        average = vaturnover / voturnover;
-        middle = (high + low) / 2;
+        average = Math.round(vaturnover / voturnover * 100) / 100;
+        middle = Math.round((high + low) / 2 * 100) / 100;
 
         return {high: high, low: low, middle: middle, average: average}
     }    

@@ -232,8 +232,8 @@ var ChdData = /** @class */ (function () {
                     vaturnover += record.vaturnover;
                     voturnover += record.voturnover;
                 });
-                average = vaturnover / voturnover;
-                middle = (high + low) / 2;
+                average = Math.round(vaturnover / voturnover * 100) / 100;
+                middle = Math.round((high + low) / 2 * 100) / 100;
                 return [2 /*return*/, { high: high, low: low, middle: middle, average: average }];
             });
         });

@@ -37,6 +37,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.TransHis = void 0;
+var Modules = require("../../modules");
 var TransHis = /** @class */ (function () {
     function TransHis() {
     }
@@ -50,9 +51,173 @@ var TransHis = /** @class */ (function () {
             });
         });
     };
-    TransHis.calCodeInvestment = function (investment) {
+    TransHis.calCodeInvestParams = function (transHis, code, investment) {
         return __awaiter(this, void 0, void 0, function () {
+            var incomes, prices, handles, volume, value, income, getCloserIncome, _baseRate, currIncome, result1, result;
             return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        incomes = [];
+                        investment.handleVolume = investment.handleVolume || Modules.Dts.SHHandleVolume;
+                        return [4 /*yield*/, transHis.database.chddata.getCodePrices(code)];
+                    case 1:
+                        prices = _a.sent();
+                        handles = 0;
+                        if (!prices || !prices.high)
+                            return [2 /*return*/];
+                        while (true) {
+                            handles++;
+                            volume = handles * investment.handleVolume;
+                            value = volume * prices.average;
+                            if (value > investment.capital.max)
+                                break;
+                            income = { min: investment.income.min / value,
+                                max: investment.income.max / value,
+                                mid: (investment.income.min + investment.income.max) / 2 / value,
+                                vol: volume,
+                                val: value };
+                            incomes.push(income);
+                        }
+                        getCloserIncome = function (baseRate, income1, income2) {
+                            var result;
+                            income2 = income2 || income1;
+                            var rateMax1 = Math.abs(income1.max - baseRate);
+                            var rateMid1 = Math.abs(income1.mid - baseRate);
+                            var rateMin1 = Math.abs(income1.min - baseRate);
+                            var rateMax2 = Math.abs(income2.max - baseRate);
+                            var rateMid2 = Math.abs(income2.mid - baseRate);
+                            var rateMin2 = Math.abs(income2.min - baseRate);
+                            var rate1 = Math.min(rateMax1, rateMid1, rateMin1);
+                            var rate2 = Math.min(rateMax2, rateMid2, rateMin2);
+                            if (rate1 <= rate2) {
+                                result = Object.assign({}, income1);
+                                result.curr = rateMax1 < rateMid1 ? income1.max : rateMid1 < rateMin1 ? income1.mid : income1.min;
+                            }
+                            else {
+                                result = Object.assign({}, income2);
+                                result.curr = rateMax2 < rateMid2 ? income2.max : rateMid2 < rateMin2 ? income2.mid : income2.min;
+                            }
+                            return result;
+                        };
+                        _baseRate = (investment.income.min + investment.income.max) / (investment.capital.min + investment.capital.max);
+                        currIncome = null;
+                        incomes.forEach(function (income) {
+                            currIncome = getCloserIncome(_baseRate, income, currIncome);
+                        });
+                        result1 = {
+                            investment: investment,
+                            return: currIncome,
+                            prices: prices,
+                            stepPrice: prices.average * currIncome.curr
+                        };
+                        result = {
+                            prices: { high: prices.high, low: prices.low, average: prices.average },
+                            step: { price: prices.average * currIncome.curr, volume: currIncome.vol }
+                        };
+                        // console.log('111111', result1, result)
+                        return [2 /*return*/, result];
+                }
+            });
+        });
+    };
+    TransHis.getCodePricePoints = function (transHis, code, investParms) {
+        var low = investParms.prices.average;
+        while (low > investParms.prices.low) {
+            low = low - investParms.step.price;
+        }
+        var point = low + investParms.step.price;
+        point = Math.round(point * 100) / 100;
+        var result = [];
+        while (point <= investParms.prices.high) {
+            result.push(point);
+            point = point + investParms.step.price;
+            point = Math.round(point * 100) / 100;
+        }
+        return result;
+    };
+    TransHis.initCodePriceHoldPoints = function (transHis, code, investParms, currPrice) {
+        var result = {};
+        var points = this.getCodePricePoints(transHis, code, investParms).sort(function (a, b) { return a - b; });
+        for (var i = 0; i < points.length; i++) {
+            var point = Math.round(points[i] * 100.0) / 100.0;
+            result[point] = (i < points.length - 1) && (point >= currPrice) && false;
+        }
+        return result;
+    };
+    TransHis.getCodeSalePoints = function (transHis, code, investParams) {
+        var low = investParams.prices.average;
+        while (low > investParams.prices.low) {
+            low = low - investParams.step.price;
+        }
+        var point = low + investParams.step.price;
+        var result = [];
+        while (point <= investParams.prices.high) {
+            result.push(point);
+            point = point + investParams.step.price;
+        }
+        return result;
+    };
+    TransHis.tryCodeBuyPricePoint = function (transHis, code, holdPoints, currPrice) {
+        var result = [];
+        var points = Object.keys(holdPoints).sort(function (a, b) { return a - b; });
+        for (var i = 0; i < points.length - 1; i++) {
+            var point = points[i];
+            var hold = holdPoints[point];
+            if (!hold && point >= currPrice) {
+                holdPoints[point] = true;
+                result.push(point);
+            }
+        }
+        return result;
+    };
+    TransHis.tryCodeSalePricePoint = function (transHis, code, holdPoints, currPrice) {
+        var result = [];
+        var points = Object.keys(holdPoints).sort(function (a, b) { return a - b; });
+        for (var i = 0; i < points.length - 1; i++) {
+            var point = points[i];
+            var nextPoint = points[i + 1];
+            var hold = holdPoints[point];
+            if (hold && currPrice >= nextPoint) {
+                holdPoints[point] = false;
+                result.push(point);
+                console.log('1111', point, nextPoint, currPrice);
+            }
+        }
+        return result;
+    };
+    TransHis.calCodeInvestment = function (transHis, code, investParms) {
+        return __awaiter(this, void 0, void 0, function () {
+            var records, dates, currPrice, holdPoints, buyCount, saleCount, i, date, db, details, j, detail, buys, sales;
+            return __generator(this, function (_a) {
+                records = transHis.database.chddata.getData(code);
+                dates = Object.keys(records).reverse();
+                currPrice = 0;
+                holdPoints = null;
+                buyCount = 0;
+                saleCount = 0;
+                for (i = 0; i < dates.length; i++) {
+                    date = dates[i];
+                    if (transHis.existTransHisDB(code, new Date(date))) {
+                        db = transHis.getTransHisDB(code, new Date(date));
+                        details = db.get("transhis").value().reverse();
+                        for (j = 0; j < details.length; j++) {
+                            detail = details[j];
+                            currPrice = detail.price;
+                            holdPoints = holdPoints || this.initCodePriceHoldPoints(transHis, code, investParms, currPrice);
+                            buys = this.tryCodeBuyPricePoint(transHis, code, holdPoints, currPrice);
+                            sales = this.tryCodeSalePricePoint(transHis, code, holdPoints, currPrice);
+                            buyCount = buyCount + buys.length;
+                            saleCount = saleCount + sales.length;
+                            if (buys.length > 0 || sales.length > 0) {
+                                console.log("buyCount: " + buyCount + " , saleCount: " + saleCount + " ");
+                            }
+                            // console.log(holdPoints.toString(), currPrice)         
+                            // break;
+                        }
+                        // console.log(`buyCount: ${buyCount} , saleCount: ${saleCount} `);
+                    }
+                }
+                ;
                 return [2 /*return*/];
             });
         });
