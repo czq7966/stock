@@ -60,20 +60,11 @@ export class TransHis {
         })
 
 
-        let result1: Modules.Dts.IInvestmentReturn = {
-            investment: investment,
-            return: currIncome,
-            prices: prices,
-            stepPrice: prices.average * currIncome.curr
-        }
-
         let result: Modules.Dts.IInvestParams = {
             prices: {high: prices.high, low: prices.low, average: prices.average},
             step: {price: prices.average * currIncome.curr, volume: currIncome.vol}            
         }
  
-        // console.log('111111', result1, result)
-
         return result;
     }
 
@@ -151,14 +142,15 @@ export class TransHis {
             if (hold && currPrice >= nextPoint) {
                 holdPoints[point] = false;
                 result.push(point);
-                console.log('1111', point, nextPoint, currPrice)
+                // console.log('1111', point, nextPoint, currPrice)
             }  
         }
 
         return result;
     }    
 
-    static async calCodeInvestment(transHis: Modules.Database.TransHis, code: string, investParms: Modules.Dts.IInvestParams ) {
+    static async calCodeInvestment(transHis: Modules.Database.TransHis, code: string, investParams: Modules.Dts.IInvestParams ): Promise<Modules.Dts.IInvestmentReturn> {
+        let result: Modules.Dts.IInvestmentReturn;
         let records = transHis.database.chddata.getData(code);
         let dates = Object.keys(records).reverse();
         let currPrice = 0;
@@ -176,24 +168,43 @@ export class TransHis {
                 for (let j = 0; j < details.length; j++) {
                     let detail = details[j];
                     currPrice = detail.price;
-                    holdPoints = holdPoints || this.initCodePriceHoldPoints(transHis, code, investParms, currPrice);
+                    holdPoints = holdPoints || this.initCodePriceHoldPoints(transHis, code, investParams, currPrice);
                     let buys =  this.tryCodeBuyPricePoint(transHis, code, holdPoints, currPrice);
                     let sales =  this.tryCodeSalePricePoint(transHis, code, holdPoints, currPrice);
                     buyCount = buyCount + buys.length;
                     saleCount = saleCount + sales.length;
                     if (buys.length > 0 || sales.length > 0) {
-                        console.log(`buyCount: ${buyCount} , saleCount: ${saleCount} `)
+                        // console.log(`buyCount: ${buyCount} , saleCount: ${saleCount} `)
                     }
-                    
-                    // console.log(holdPoints.toString(), currPrice)         
-                    
-
-                    // break;
-                    
                 }        
                 // console.log(`buyCount: ${buyCount} , saleCount: ${saleCount} `);
 
             }
         };
+
+        
+
+        
+        let income: Modules.Dts.IInvestIncome = {} as any;
+        income.buyCount = buyCount;
+        income.saleCount = saleCount;
+        let points = (Object.keys(holdPoints) as any as number[]).sort((a, b) => {return a - b});
+        points.splice(points.length-1);
+        points.forEach(point => {
+            income.capital = (income.capital || 0) + point * investParams.step.volume;
+        })
+        income.income = income.saleCount * investParams.step.price * investParams.step.volume;
+        income.rate = income.income * 100 / income.capital;
+
+
+
+        result = {
+            code: code,
+            params: investParams,
+            points: holdPoints,
+            income: income
+        }
+
+        return result;
     }
 }

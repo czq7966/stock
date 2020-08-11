@@ -15,7 +15,7 @@ import * as Services from '../services'
 // Services.Database.TransHis.calCodeInvestment(Modules.Database.database.transhis, "603993", null);
 
 async function start() {
-    let code = "603993";
+    let code = "600004";
     let investParams = await Services.Database.TransHis.calCodeInvestParams(Modules.Database.database.transhis,code, {
             capital:{min: 3800, max: 4200},
             income: {min: 80, max: 120}
@@ -23,10 +23,11 @@ async function start() {
 
     console.log(investParams)
 
-    investParams.prices.average = 4.10;
-    investParams.prices.high = 4.6;
+    investParams.prices.average = 16.6;
+    investParams.prices.high = 20.0;
         
-    await Services.Database.TransHis.calCodeInvestment(Modules.Database.database.transhis, code, investParams);
+    let result = await Services.Database.TransHis.calCodeInvestment(Modules.Database.database.transhis, code, investParams);
+    console.log(result)
     
 }
 

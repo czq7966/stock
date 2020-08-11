@@ -53,7 +53,7 @@ var TransHis = /** @class */ (function () {
     };
     TransHis.calCodeInvestParams = function (transHis, code, investment) {
         return __awaiter(this, void 0, void 0, function () {
-            var incomes, prices, handles, volume, value, income, getCloserIncome, _baseRate, currIncome, result1, result;
+            var incomes, prices, handles, volume, value, income, getCloserIncome, _baseRate, currIncome, result;
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
@@ -104,17 +104,10 @@ var TransHis = /** @class */ (function () {
                         incomes.forEach(function (income) {
                             currIncome = getCloserIncome(_baseRate, income, currIncome);
                         });
-                        result1 = {
-                            investment: investment,
-                            return: currIncome,
-                            prices: prices,
-                            stepPrice: prices.average * currIncome.curr
-                        };
                         result = {
                             prices: { high: prices.high, low: prices.low, average: prices.average },
                             step: { price: prices.average * currIncome.curr, volume: currIncome.vol }
                         };
-                        // console.log('111111', result1, result)
                         return [2 /*return*/, result];
                 }
             });
@@ -180,14 +173,14 @@ var TransHis = /** @class */ (function () {
             if (hold && currPrice >= nextPoint) {
                 holdPoints[point] = false;
                 result.push(point);
-                console.log('1111', point, nextPoint, currPrice);
+                // console.log('1111', point, nextPoint, currPrice)
             }
         }
         return result;
     };
-    TransHis.calCodeInvestment = function (transHis, code, investParms) {
+    TransHis.calCodeInvestment = function (transHis, code, investParams) {
         return __awaiter(this, void 0, void 0, function () {
-            var records, dates, currPrice, holdPoints, buyCount, saleCount, i, date, db, details, j, detail, buys, sales;
+            var result, records, dates, currPrice, holdPoints, buyCount, saleCount, i, date, db, details, j, detail, buys, sales, income, points;
             return __generator(this, function (_a) {
                 records = transHis.database.chddata.getData(code);
                 dates = Object.keys(records).reverse();
@@ -203,22 +196,36 @@ var TransHis = /** @class */ (function () {
                         for (j = 0; j < details.length; j++) {
                             detail = details[j];
                             currPrice = detail.price;
-                            holdPoints = holdPoints || this.initCodePriceHoldPoints(transHis, code, investParms, currPrice);
+                            holdPoints = holdPoints || this.initCodePriceHoldPoints(transHis, code, investParams, currPrice);
                             buys = this.tryCodeBuyPricePoint(transHis, code, holdPoints, currPrice);
                             sales = this.tryCodeSalePricePoint(transHis, code, holdPoints, currPrice);
                             buyCount = buyCount + buys.length;
                             saleCount = saleCount + sales.length;
                             if (buys.length > 0 || sales.length > 0) {
-                                console.log("buyCount: " + buyCount + " , saleCount: " + saleCount + " ");
+                                // console.log(`buyCount: ${buyCount} , saleCount: ${saleCount} `)
                             }
-                            // console.log(holdPoints.toString(), currPrice)         
-                            // break;
                         }
                         // console.log(`buyCount: ${buyCount} , saleCount: ${saleCount} `);
                     }
                 }
                 ;
-                return [2 /*return*/];
+                income = {};
+                income.buyCount = buyCount;
+                income.saleCount = saleCount;
+                points = Object.keys(holdPoints).sort(function (a, b) { return a - b; });
+                points.splice(points.length - 1);
+                points.forEach(function (point) {
+                    income.capital = (income.capital || 0) + point * investParams.step.volume;
+                });
+                income.income = income.saleCount * investParams.step.price * investParams.step.volume;
+                income.rate = income.income * 100 / income.capital;
+                result = {
+                    code: code,
+                    params: investParams,
+                    points: holdPoints,
+                    income: income
+                };
+                return [2 /*return*/, result];
             });
         });
     };

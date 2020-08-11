@@ -19,13 +19,11 @@ export interface IInvestment {
 }
 
 export interface IInvestmentReturn {
-    investment: IInvestment,
-    return: IInterval
-    maxCapital?: number,
-    prices?: IChdDataCodePrices,
-    stepPrice?: number,
-    stepVolume?: number,
-    stepRate?: number    
+    code: string,
+    name?: string
+    params: IInvestParams,
+    points: IPriceHoldPoints,
+    income: IInvestIncome
 }
 
 
@@ -33,6 +31,14 @@ export interface IInvestParams {
     prices: {high: number, low: number, average: number}
     step: { price: number, volume: number, rate?: number }
 
+}
+
+export interface IInvestIncome {
+    buyCount: number,
+    saleCount: number,
+    capital: number,
+    income: number,
+    rate: number
 }
 
 export interface IPriceHoldPoints {
