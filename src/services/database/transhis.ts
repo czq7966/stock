@@ -59,13 +59,15 @@ export class TransHis {
             currIncome = getCloserIncome(_baseRate, income, currIncome);
         })
 
-
-        let result: Modules.Dts.IInvestParams = {
-            prices: {high: prices.high, low: prices.low, average: prices.average},
-            step: {price: prices.average * currIncome.curr, volume: currIncome.vol}            
+        if (currIncome) {
+            let result: Modules.Dts.IInvestParams = {
+                prices: {high: prices.high, low: prices.low, average: prices.average},
+                step: {price: prices.average * currIncome.curr, volume: currIncome.vol}            
+            }
+    
+            return result;
         }
- 
-        return result;
+        
     }
 
     static getCodePricePoints(transHis: Modules.Database.TransHis, code: string, investParms: Modules.Dts.IInvestParams): number[] {
@@ -149,7 +151,7 @@ export class TransHis {
         return result;
     }    
 
-    static async calCodeInvestment(transHis: Modules.Database.TransHis, code: string, investParams: Modules.Dts.IInvestParams ): Promise<Modules.Dts.IInvestmentReturn> {
+    static async calCodeInvestmentReturn(transHis: Modules.Database.TransHis, code: string, investParams: Modules.Dts.IInvestParams ): Promise<Modules.Dts.IInvestmentReturn> {
         let result: Modules.Dts.IInvestmentReturn;
         let records = transHis.database.chddata.getData(code);
         let dates = Object.keys(records).reverse();

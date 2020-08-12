@@ -104,11 +104,14 @@ var TransHis = /** @class */ (function () {
                         incomes.forEach(function (income) {
                             currIncome = getCloserIncome(_baseRate, income, currIncome);
                         });
-                        result = {
-                            prices: { high: prices.high, low: prices.low, average: prices.average },
-                            step: { price: prices.average * currIncome.curr, volume: currIncome.vol }
-                        };
-                        return [2 /*return*/, result];
+                        if (currIncome) {
+                            result = {
+                                prices: { high: prices.high, low: prices.low, average: prices.average },
+                                step: { price: prices.average * currIncome.curr, volume: currIncome.vol }
+                            };
+                            return [2 /*return*/, result];
+                        }
+                        return [2 /*return*/];
                 }
             });
         });
@@ -178,7 +181,7 @@ var TransHis = /** @class */ (function () {
         }
         return result;
     };
-    TransHis.calCodeInvestment = function (transHis, code, investParams) {
+    TransHis.calCodeInvestmentReturn = function (transHis, code, investParams) {
         return __awaiter(this, void 0, void 0, function () {
             var result, records, dates, currPrice, holdPoints, buyCount, saleCount, i, date, db, details, j, detail, buys, sales, income, points;
             return __generator(this, function (_a) {

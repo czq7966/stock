@@ -14,20 +14,46 @@ import * as Services from '../services'
 
 // Services.Database.TransHis.calCodeInvestment(Modules.Database.database.transhis, "603993", null);
 
-async function start() {
-    let code = "600004";
+async function getCodeInvestmentReturn(code: string, params?: Modules.Dts.IInvestParams): Promise<Modules.Dts.IInvestmentReturn> {
     let investParams = await Services.Database.TransHis.calCodeInvestParams(Modules.Database.database.transhis,code, {
             capital:{min: 3800, max: 4200},
             income: {min: 80, max: 120}
         })
 
-    console.log(investParams)
+    if (investParams) {
+        investParams = Object.assign(investParams, params);
+        // investParams.prices.average = 16.6;
+        // investParams.prices.high = 20.0;
+            
+        return Services.Database.TransHis.calCodeInvestmentReturn(Modules.Database.database.transhis, code, investParams);
+    }    
+}
 
-    investParams.prices.average = 16.6;
-    investParams.prices.high = 20.0;
+async function start() {
+    let codes = Object.keys(Modules.Database.database.codes.getSHCodes());
+    // codes = ["600009"]
+    for (let i = 0; i < 10; i++) {
+        let  code = codes[i];
+        let result = await getCodeInvestmentReturn(code);
+        if (result)
+            console.log(result)        
+        else 
+            console.log(`${code} is out rule`)
+    }
+
+    // let code = "600004";
+    // let investParams = await Services.Database.TransHis.calCodeInvestParams(Modules.Database.database.transhis,code, {
+    //         capital:{min: 3800, max: 4200},
+    //         income: {min: 80, max: 120}
+    //     })
+
+    // console.log(investParams)
+
+    // // investParams.prices.average = 16.6;
+    // // investParams.prices.high = 20.0;
         
-    let result = await Services.Database.TransHis.calCodeInvestment(Modules.Database.database.transhis, code, investParams);
-    console.log(result)
+    // let result = await Services.Database.TransHis.calCodeInvestment(Modules.Database.database.transhis, code, investParams);
+    // console.log(result)
     
 }
 
