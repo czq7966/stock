@@ -61,8 +61,21 @@ export class TransHis {
 
         if (currIncome) {
             let result: Modules.Dts.IInvestParams = {
-                prices: {high: prices.high, low: prices.low, average: prices.average},
+                prices: prices,
                 step: {price: prices.average * currIncome.curr, volume: currIncome.vol}            
+            }
+            if (investment.maxCapital) {
+                let capital = 0;
+                let points = this.getCodePricePoints(transHis, code, result).sort((a, b) => {return a - b});
+                
+                for (let i = 0; i < points.length; i++) {
+                    let point = points[i];
+                    capital = capital + point * result.step.volume;
+                    if (capital >= investment.maxCapital) {
+                        result.prices.sechigh = point;
+                        break;
+                    }                    
+                }
             }
     
             return result;
@@ -81,7 +94,7 @@ export class TransHis {
 
         let result: number[] = [];
         
-        while (point <= investParms.prices.high) {
+        while (point <= (investParms.prices.sechigh || investParms.prices.high)) {
             result.push(point);
             point = point + investParms.step.price;
             point = Math.round(point * 100) / 100;
@@ -98,23 +111,6 @@ export class TransHis {
             result[point] = (i < points.length - 1) && (point >= currPrice) && false;            
         }
 
-        return result;
-    }
-
-
-    static getCodeSalePoints(transHis: Modules.Database.TransHis, code: string, investParams: Modules.Dts.IInvestParams): number[] {
-        let low = investParams.prices.average;
-        while(low > investParams.prices.low) {
-            low = low - investParams.step.price;
-        }
-        let point  = low  + investParams.step.price;
-
-        let result: number[] = [];
-        
-        while (point <= investParams.prices.high) {
-            result.push(point);
-            point = point + investParams.step.price;
-        }
         return result;
     }
 

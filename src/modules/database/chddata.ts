@@ -38,7 +38,9 @@ export interface IChdDataCodePrices {
     high: number, 
     low: number, 
     middle: number, 
-    average: number
+    average: number,
+    current: number,
+    sechigh?: number
 }
 
 

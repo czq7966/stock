@@ -142,16 +142,33 @@ export class ChdData {
         let high = 0, low = 0, middle = 0, average = 0;
         let vaturnover = 0;
         let voturnover= 0;
-        Object.values(records).forEach(record => {
+        let currPrice = 0;
+        let dates = Object.keys(records);
+        let currDate: Date = null;
+        dates.forEach(date => {
+            currDate = currDate || new Date(date);
+            let record = records[date];
             high = Math.max(high, record.high);
             low = Math.min(low || 99999, record.low || 99999);            
             vaturnover += record.vaturnover;
             voturnover += record.voturnover;
+
+            if (new Date(date) >= currDate) {
+                currDate = new Date(date);
+                currPrice = record.tclose;
+            }
+            
         })
+        // Object.values(records).forEach(record => {
+        //     high = Math.max(high, record.high);
+        //     low = Math.min(low || 99999, record.low || 99999);            
+        //     vaturnover += record.vaturnover;
+        //     voturnover += record.voturnover;
+        // })
 
         average = Math.round(vaturnover / voturnover * 100) / 100;
         middle = Math.round((high + low) / 2 * 100) / 100;
 
-        return {high: high, low: low, middle: middle, average: average}
+        return {high: high, low: low, middle: middle, average: average, current: currPrice}
     }    
 } 

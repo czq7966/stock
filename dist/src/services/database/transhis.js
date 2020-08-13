@@ -53,7 +53,7 @@ var TransHis = /** @class */ (function () {
     };
     TransHis.calCodeInvestParams = function (transHis, code, investment) {
         return __awaiter(this, void 0, void 0, function () {
-            var incomes, prices, handles, volume, value, income, getCloserIncome, _baseRate, currIncome, result;
+            var incomes, prices, handles, volume, value, income, getCloserIncome, _baseRate, currIncome, result, capital, points, i, point;
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
@@ -106,9 +106,21 @@ var TransHis = /** @class */ (function () {
                         });
                         if (currIncome) {
                             result = {
-                                prices: { high: prices.high, low: prices.low, average: prices.average },
+                                prices: prices,
                                 step: { price: prices.average * currIncome.curr, volume: currIncome.vol }
                             };
+                            if (investment.maxCapital) {
+                                capital = 0;
+                                points = this.getCodePricePoints(transHis, code, result).sort(function (a, b) { return a - b; });
+                                for (i = 0; i < points.length; i++) {
+                                    point = points[i];
+                                    capital = capital + point * result.step.volume;
+                                    if (capital >= investment.maxCapital) {
+                                        result.prices.sechigh = point;
+                                        break;
+                                    }
+                                }
+                            }
                             return [2 /*return*/, result];
                         }
                         return [2 /*return*/];
@@ -124,7 +136,7 @@ var TransHis = /** @class */ (function () {
         var point = low + investParms.step.price;
         point = Math.round(point * 100) / 100;
         var result = [];
-        while (point <= investParms.prices.high) {
+        while (point <= (investParms.prices.sechigh || investParms.prices.high)) {
             result.push(point);
             point = point + investParms.step.price;
             point = Math.round(point * 100) / 100;
@@ -137,19 +149,6 @@ var TransHis = /** @class */ (function () {
         for (var i = 0; i < points.length; i++) {
             var point = Math.round(points[i] * 100.0) / 100.0;
             result[point] = (i < points.length - 1) && (point >= currPrice) && false;
-        }
-        return result;
-    };
-    TransHis.getCodeSalePoints = function (transHis, code, investParams) {
-        var low = investParams.prices.average;
-        while (low > investParams.prices.low) {
-            low = low - investParams.step.price;
-        }
-        var point = low + investParams.step.price;
-        var result = [];
-        while (point <= investParams.prices.high) {
-            result.push(point);
-            point = point + investParams.step.price;
         }
         return result;
     };

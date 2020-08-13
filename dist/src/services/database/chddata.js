@@ -220,21 +220,36 @@ var ChdData = /** @class */ (function () {
     };
     ChdData.getCodePrices = function (chdDataDB, code) {
         return __awaiter(this, void 0, void 0, function () {
-            var records, high, low, middle, average, vaturnover, voturnover;
+            var records, high, low, middle, average, vaturnover, voturnover, currPrice, dates, currDate;
             return __generator(this, function (_a) {
                 records = chdDataDB.getData(code);
                 high = 0, low = 0, middle = 0, average = 0;
                 vaturnover = 0;
                 voturnover = 0;
-                Object.values(records).forEach(function (record) {
+                currPrice = 0;
+                dates = Object.keys(records);
+                currDate = null;
+                dates.forEach(function (date) {
+                    currDate = currDate || new Date(date);
+                    var record = records[date];
                     high = Math.max(high, record.high);
                     low = Math.min(low || 99999, record.low || 99999);
                     vaturnover += record.vaturnover;
                     voturnover += record.voturnover;
+                    if (new Date(date) >= currDate) {
+                        currDate = new Date(date);
+                        currPrice = record.tclose;
+                    }
                 });
+                // Object.values(records).forEach(record => {
+                //     high = Math.max(high, record.high);
+                //     low = Math.min(low || 99999, record.low || 99999);            
+                //     vaturnover += record.vaturnover;
+                //     voturnover += record.voturnover;
+                // })
                 average = Math.round(vaturnover / voturnover * 100) / 100;
                 middle = Math.round((high + low) / 2 * 100) / 100;
-                return [2 /*return*/, { high: high, low: low, middle: middle, average: average }];
+                return [2 /*return*/, { high: high, low: low, middle: middle, average: average, current: currPrice }];
             });
         });
     };

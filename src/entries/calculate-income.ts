@@ -16,6 +16,7 @@ import * as Services from '../services'
 
 async function getCodeInvestmentReturn(code: string, params?: Modules.Dts.IInvestParams): Promise<Modules.Dts.IInvestmentReturn> {
     let investParams = await Services.Database.TransHis.calCodeInvestParams(Modules.Database.database.transhis,code, {
+            maxCapital: 50000,
             capital:{min: 3800, max: 4200},
             income: {min: 80, max: 120}
         })
@@ -31,8 +32,8 @@ async function getCodeInvestmentReturn(code: string, params?: Modules.Dts.IInves
 
 async function start() {
     let codes = Object.keys(Modules.Database.database.codes.getSHCodes());
-    // codes = ["600009"]
-    for (let i = 0; i < 10; i++) {
+    codes = ["603993"]
+    for (let i = 0; i < 1; i++) {
         let  code = codes[i];
         let result = await getCodeInvestmentReturn(code);
         if (result)

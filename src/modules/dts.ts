@@ -12,6 +12,7 @@ export interface IInterval {
 }
 
 export interface IInvestment {
+    maxCapital?: number
     capital: IInterval,
     income?: IInterval,
     rate?: IInterval,
@@ -28,7 +29,7 @@ export interface IInvestmentReturn {
 
 
 export interface IInvestParams {
-    prices: {high: number, low: number, average: number}
+    prices: IChdDataCodePrices
     step: { price: number, volume: number, rate?: number }
 
 }
