@@ -84,6 +84,17 @@ export class ChdData {
         
     }
 
+    static async updateCodeChdData(chdDataDB: Modules.Database.ChdData, code: string, days: number, end?: Date): Promise<boolean>  {
+        let records = await this.requestCodeData(code, days, end);
+        if (records) {
+            let data = chdDataDB.getData(code);
+            // data = Object.assign(records);
+            data = records;
+            chdDataDB.setData(code, data);
+            return true;
+        }            
+        return false;  
+    }  
     
     static async updateChdData(chdDataDB: Modules.Database.ChdData, excCode: 'sh' | 'sz', days: number, end?: Date): Promise<boolean>  {
         end = end || new Date()
@@ -91,14 +102,21 @@ export class ChdData {
         let keys = Object.keys(codes);
         for (let i = 0; i < keys.length; i++) {
             let code = keys[i];
-            let records = await this.requestCodeData(code, days, end);
-            if (records) {
-                let data = chdDataDB.getData(code);
-                // data = Object.assign(records);
-                data = records;
-                chdDataDB.setData(code, data);
+            let updated = await this.updateCodeChdData(chdDataDB, code, days, end);
+            if (updated) {
                 console.log(`got ${i} / ${keys.length}`)
-            }            
+            } else {
+                console.log(`not got ${i} / ${keys.length}`)
+            }
+
+            // let records = await this.requestCodeData(code, days, end);
+            // if (records) {
+            //     let data = chdDataDB.getData(code);
+            //     // data = Object.assign(records);
+            //     data = records;
+            //     chdDataDB.setData(code, data);
+            //     console.log(`got ${i} / ${keys.length}`)
+            // }            
         }
 
         return true;

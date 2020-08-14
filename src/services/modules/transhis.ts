@@ -201,7 +201,7 @@ export class TransHis {
                     break;
                 }                
             } catch (error) {
-                console.error(`got ${code} error: ` + error.message)
+                console.error(`got ${code} ${date.format('yyyy-MM-dd')} error: ` + error.message)
                 
             }
 

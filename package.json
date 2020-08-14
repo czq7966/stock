@@ -42,7 +42,8 @@
     "update-codes": "tsc && node ./dist/src/entries/update-codes.js",
     "update-chddata": "tsc && node ./dist/src/entries/update-chddata.js",
     "average-chddata": "tsc && node ./dist/src/entries/average-chddata.js",
-    "calculate-income": "tsc && node ./dist/src/entries/calculate-income.js"
+    "calculate-income": "tsc && node ./dist/src/entries/calculate-income.js",
+    "check-chddata": "tsc && node ./dist/src/entries/check-chddata.js"
   },
   "repository": {
     "type": "git",

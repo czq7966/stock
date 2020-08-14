@@ -38,61 +38,10 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var Modules = require("../modules");
 var transHis = new Modules.TransHis();
-var Progress = /** @class */ (function () {
-    function Progress() {
-        this.Codes = Object.keys(Modules.Database.database.codes.getSHCodes());
-        // this.Codes = ["603993"];
-        this.CodesIndex = 0;
-        this.Dates = {};
-    }
-    Progress.prototype.destroy = function () {
-    };
-    Progress.prototype.getCodeDates = function (code) {
-        var dates = {};
-        var chddata = Modules.Database.database.chddata.getData(code);
-        Object.keys(chddata).forEach(function (date) {
-            var exists = Modules.Database.database.transhis.existTransHisDB(code, new Date(date));
-            dates[date] = exists;
-        });
-        return dates;
-    };
-    Progress.prototype.getCodeNextDate = function (code) {
-        var dates = this.Dates[code];
-        dates = dates || this.getCodeDates(code);
-        this.Dates[code] = dates;
-        var dateKeys = Object.keys(dates);
-        for (var i = 0; i < dateKeys.length; i++) {
-            var date = dateKeys[i];
-            if (!dates[date]) {
-                dates[date] = true;
-                return new Date(date);
-            }
-        }
-        return null;
-    };
-    Progress.prototype.getNext = function () {
-        if (this.CodesIndex < this.Codes.length) {
-            var code = this.Codes[this.CodesIndex];
-            var dates = this.Dates[code];
-            dates = dates || this.getCodeDates(code);
-            this.Dates[code] = dates;
-            var date = this.getCodeNextDate(code);
-            if (date) {
-                return { code: code, date: date };
-            }
-            else {
-                delete this.Dates[code];
-                this.CodesIndex++;
-                return this.getNext();
-            }
-        }
-    };
-    return Progress;
-}());
 // let codeKeys = Object.keys(codes);
 // let codeKeysIndex = 0;
-var progress = new Progress();
-var threadCount = 200;
+var progress = new Modules.Progress();
+var threadCount = 1;
 // async function  update(date?: Date) {    
 //     date = date || new Date();
 //     while(codeKeysIndex < codeKeys.length) {
@@ -114,6 +63,7 @@ function update2() {
                     code = progress.getNext();
                     if (!code) return [3 /*break*/, 3];
                     if (!!transHis.database.transhis.existTransHisDB(code.code, code.date)) return [3 /*break*/, 2];
+                    console.log('111111', code);
                     return [4 /*yield*/, transHis.update(code.code, code.date)];
                 case 1:
                     _a.sent();

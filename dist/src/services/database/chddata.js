@@ -130,9 +130,29 @@ var ChdData = /** @class */ (function () {
             });
         });
     };
+    ChdData.updateCodeChdData = function (chdDataDB, code, days, end) {
+        return __awaiter(this, void 0, void 0, function () {
+            var records, data;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, this.requestCodeData(code, days, end)];
+                    case 1:
+                        records = _a.sent();
+                        if (records) {
+                            data = chdDataDB.getData(code);
+                            // data = Object.assign(records);
+                            data = records;
+                            chdDataDB.setData(code, data);
+                            return [2 /*return*/, true];
+                        }
+                        return [2 /*return*/, false];
+                }
+            });
+        });
+    };
     ChdData.updateChdData = function (chdDataDB, excCode, days, end) {
         return __awaiter(this, void 0, void 0, function () {
-            var codes, keys, i, code, records, data;
+            var codes, keys, i, code, updated;
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
@@ -144,15 +164,14 @@ var ChdData = /** @class */ (function () {
                     case 1:
                         if (!(i < keys.length)) return [3 /*break*/, 4];
                         code = keys[i];
-                        return [4 /*yield*/, this.requestCodeData(code, days, end)];
+                        return [4 /*yield*/, this.updateCodeChdData(chdDataDB, code, days, end)];
                     case 2:
-                        records = _a.sent();
-                        if (records) {
-                            data = chdDataDB.getData(code);
-                            // data = Object.assign(records);
-                            data = records;
-                            chdDataDB.setData(code, data);
+                        updated = _a.sent();
+                        if (updated) {
                             console.log("got " + i + " / " + keys.length);
+                        }
+                        else {
+                            console.log("not got " + i + " / " + keys.length);
                         }
                         _a.label = 3;
                     case 3:
