@@ -41,19 +41,8 @@ var transHis = new Modules.TransHis();
 // let codeKeys = Object.keys(codes);
 // let codeKeysIndex = 0;
 var progress = new Modules.Progress();
-var threadCount = 1;
-// async function  update(date?: Date) {    
-//     date = date || new Date();
-//     while(codeKeysIndex < codeKeys.length) {
-//         let index = codeKeysIndex;
-//         codeKeysIndex++;
-//         let code = codeKeys[index];
-//         if (!transHis.database.transhis.existTransHisDB(code, date)) {
-//             await transHis.update(code, date);
-//         }
-//     }
-// }
-function update2() {
+var threadCount = 300;
+function start() {
     return __awaiter(this, void 0, void 0, function () {
         var code;
         return __generator(this, function (_a) {
@@ -63,7 +52,6 @@ function update2() {
                     code = progress.getNext();
                     if (!code) return [3 /*break*/, 3];
                     if (!!transHis.database.transhis.existTransHisDB(code.code, code.date)) return [3 /*break*/, 2];
-                    console.log('111111', code);
                     return [4 /*yield*/, transHis.update(code.code, code.date)];
                 case 1:
                     _a.sent();
@@ -77,5 +65,5 @@ function update2() {
     });
 }
 for (var i = 0; i < threadCount; i++) {
-    update2();
+    start();
 }

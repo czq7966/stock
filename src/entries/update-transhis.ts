@@ -9,28 +9,15 @@ let transHis = new Modules.TransHis();
 
 
 let progress = new Modules.Progress()
-let threadCount = 1;
+let threadCount = 300;
 
 
-// async function  update(date?: Date) {    
-//     date = date || new Date();
-//     while(codeKeysIndex < codeKeys.length) {
-//         let index = codeKeysIndex;
-//         codeKeysIndex++;
-//         let code = codeKeys[index];
-//         if (!transHis.database.transhis.existTransHisDB(code, date)) {
-//             await transHis.update(code, date);
-//         }
-//     }
-// }
 
-
-async function  update2() { 
+async function  start() { 
     while (true) {
         let code = progress.getNext();
         if (code) {
             if (!transHis.database.transhis.existTransHisDB(code.code, code.date)) {
-                console.log('111111', code)
                 await transHis.update(code.code, code.date);
             }     
         } else {
@@ -40,6 +27,6 @@ async function  update2() {
 }
 
 for (let i = 0; i < threadCount; i++) {
-    update2();    
+    start();    
 }
 
