@@ -41,7 +41,7 @@ var transHis = new Modules.TransHis();
 // let codeKeys = Object.keys(codes);
 // let codeKeysIndex = 0;
 var progress = new Modules.Progress();
-var threadCount = 300;
+var threadCount = 400;
 function start() {
     return __awaiter(this, void 0, void 0, function () {
         var code;

@@ -226,7 +226,6 @@ var TransHis = /** @class */ (function () {
                         records = [];
                         _records = [];
                         startTime = new Date();
-                        console.log("getting: " + code + " " + date.format('yyyy-MM-dd'));
                         _a.label = 1;
                     case 1:
                         if (!true) return [3 /*break*/, 6];
@@ -251,7 +250,6 @@ var TransHis = /** @class */ (function () {
                         return [3 /*break*/, 5];
                     case 4:
                         error_1 = _a.sent();
-                        console.error("got " + code + " " + date.format('yyyy-MM-dd') + " error: " + error_1.message);
                         return [3 /*break*/, 5];
                     case 5: return [3 /*break*/, 1];
                     case 6:

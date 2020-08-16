@@ -185,7 +185,7 @@ export class TransHis {
         let _records: Modules.Database.ITransHisRecord[] = [];
 
         let startTime = new Date();
-        console.log(`getting: ${code} ${date.format('yyyy-MM-dd')}`);
+        // console.log(`getting: ${code} ${date.format('yyyy-MM-dd')}`);
         while (true) {
             let index = Math.floor(Math.random() * proxysCount);
             let host = proxyHosts[index];
@@ -201,7 +201,7 @@ export class TransHis {
                     break;
                 }                
             } catch (error) {
-                console.error(`got ${code} ${date.format('yyyy-MM-dd')} error: ` + error.message)
+                // console.error(`got ${code} ${date.format('yyyy-MM-dd')} error: ` + error.message)
                 
             }
 

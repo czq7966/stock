@@ -9,7 +9,7 @@ let transHis = new Modules.TransHis();
 
 
 let progress = new Modules.Progress()
-let threadCount = 300;
+let threadCount = 400;
 
 
 
