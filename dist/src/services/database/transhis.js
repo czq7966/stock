@@ -182,7 +182,7 @@ var TransHis = /** @class */ (function () {
     };
     TransHis.calCodeInvestmentReturn = function (transHis, code, investParams) {
         return __awaiter(this, void 0, void 0, function () {
-            var result, records, dates, currPrice, holdPoints, buyCount, saleCount, i, date, db, details, j, detail, buys, sales, income, points;
+            var result, records, dates, currPrice, holdPoints, buyCount, saleCount, i, date, db, value, details, j, detail, buys, sales, income, points;
             return __generator(this, function (_a) {
                 records = transHis.database.chddata.getData(code);
                 dates = Object.keys(records).reverse();
@@ -194,7 +194,8 @@ var TransHis = /** @class */ (function () {
                     date = dates[i];
                     if (transHis.existTransHisDB(code, new Date(date))) {
                         db = transHis.getTransHisDB(code, new Date(date), false);
-                        details = db.get("transhis").value().reverse();
+                        value = db.get("transhis").value() || [];
+                        details = value.reverse();
                         for (j = 0; j < details.length; j++) {
                             detail = details[j];
                             currPrice = detail.price;

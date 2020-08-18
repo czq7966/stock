@@ -40,6 +40,9 @@ export class Incomes {
     setData(code: string, data: IInvestmentReturn ) {
         return this.db.set(code, data).write();
     }
+    getData(code): IInvestmentReturn {
+        return this.db.get(code).value();
+    }
     async setCSV(code: string, data: IInvestmentReturn): Promise<boolean> {
         let res = data;
         let record =`${res.code}` +

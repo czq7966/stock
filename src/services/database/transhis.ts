@@ -162,7 +162,8 @@ export class TransHis {
             let date = dates[i];
             if (transHis.existTransHisDB(code, new Date(date))) {
                 let db = transHis.getTransHisDB(code, new Date(date), false);
-                let details = (db.get("transhis").value() as Array<Modules.Database.ITransHisRecord>).reverse();    
+                let value = db.get("transhis").value() || [];
+                let details = (value as Array<Modules.Database.ITransHisRecord>).reverse();    
                 for (let j = 0; j < details.length; j++) {
                     let detail = details[j];
                     currPrice = detail.price;
