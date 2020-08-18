@@ -41,7 +41,8 @@ var transHis = new Modules.TransHis();
 // let codeKeys = Object.keys(codes);
 // let codeKeysIndex = 0;
 var progress = new Modules.Progress();
-var threadCount = 400;
+var threadCount = 1;
+progress.Codes = ["600000"];
 function start() {
     return __awaiter(this, void 0, void 0, function () {
         var code;
@@ -59,7 +60,9 @@ function start() {
                 case 2: return [3 /*break*/, 4];
                 case 3: return [3 /*break*/, 5];
                 case 4: return [3 /*break*/, 0];
-                case 5: return [2 /*return*/];
+                case 5:
+                    console.log('1111111111');
+                    throw "222222";
             }
         });
     });
