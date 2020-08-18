@@ -63,14 +63,14 @@ export class TransHis {
         return path.resolve(this.getDBDataPath(),  `${code}/${this.getChdDataKey()}/${code}.json` )
     }
 
-    getTransHisDB(code: string, date: Date) {
+    getTransHisDB(code: string, date: Date, writeDefault: boolean) {
         let filename = this.getTransHisFilename(code, date);
         polyfills.mkdirsSync(path.dirname(filename));
 
         let db = this.dbs[filename];
         if (!db) {
             db = Lowdb(new FileSync(filename));
-            db.defaults({}).write();
+            writeDefault ? db.defaults({}).write() : null;
             this.dbs[filename] = db;            
         }
         return db;

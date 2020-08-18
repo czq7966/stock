@@ -293,7 +293,7 @@ var TransHis = /** @class */ (function () {
             var prices, dateKey, db;
             return __generator(this, function (_a) {
                 dateKey = date.format('yyyy-MM-dd');
-                db = transHis.database.transhis.existTransHisDB(code, date) ? transHis.database.transhis.getTransHisDB(code, date) : null;
+                db = transHis.database.transhis.existTransHisDB(code, date) ? transHis.database.transhis.getTransHisDB(code, date, true) : null;
                 if (db) {
                     prices = db.get("transhis").value();
                 }

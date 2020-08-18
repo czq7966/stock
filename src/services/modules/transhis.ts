@@ -227,7 +227,7 @@ export class TransHis {
     static async getDateRecords(transHis: Modules.TransHis, code: string, date: Date):  Promise<Modules.Database.ITransHisRecord[]> {
         let prices: []
         let dateKey =  date.format('yyyy-MM-dd');
-        let db = transHis.database.transhis.existTransHisDB(code, date) ? transHis.database.transhis.getTransHisDB(code, date): null;
+        let db = transHis.database.transhis.existTransHisDB(code, date) ? transHis.database.transhis.getTransHisDB(code, date, true): null;
         if (db) {
             prices = db.get("transhis").value() as []
         }

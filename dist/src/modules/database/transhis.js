@@ -74,13 +74,13 @@ var TransHis = /** @class */ (function () {
     TransHis.prototype.getChdDataFilename = function (code) {
         return path.resolve(this.getDBDataPath(), code + "/" + this.getChdDataKey() + "/" + code + ".json");
     };
-    TransHis.prototype.getTransHisDB = function (code, date) {
+    TransHis.prototype.getTransHisDB = function (code, date, writeDefault) {
         var filename = this.getTransHisFilename(code, date);
         polyfills.mkdirsSync(path.dirname(filename));
         var db = this.dbs[filename];
         if (!db) {
             db = Lowdb(new FileSync(filename));
-            db.defaults({}).write();
+            writeDefault ? db.defaults({}).write() : null;
             this.dbs[filename] = db;
         }
         return db;

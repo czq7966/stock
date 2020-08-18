@@ -45,7 +45,7 @@ var TransHis = /** @class */ (function () {
         return __awaiter(this, void 0, void 0, function () {
             var db;
             return __generator(this, function (_a) {
-                db = transHis.getTransHisDB(code, date);
+                db = transHis.getTransHisDB(code, date, true);
                 db.set(transHis.getTransHisKey(code), records).write();
                 return [2 /*return*/];
             });
@@ -193,7 +193,7 @@ var TransHis = /** @class */ (function () {
                 for (i = 0; i < dates.length; i++) {
                     date = dates[i];
                     if (transHis.existTransHisDB(code, new Date(date))) {
-                        db = transHis.getTransHisDB(code, new Date(date));
+                        db = transHis.getTransHisDB(code, new Date(date), false);
                         details = db.get("transhis").value().reverse();
                         for (j = 0; j < details.length; j++) {
                             detail = details[j];
@@ -228,6 +228,23 @@ var TransHis = /** @class */ (function () {
                     income: income
                 };
                 return [2 /*return*/, result];
+            });
+        });
+    };
+    TransHis.getCodeInvestmentReturn = function (code, investment, params) {
+        return __awaiter(this, void 0, void 0, function () {
+            var investParams;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, this.calCodeInvestParams(Modules.Database.database.transhis, code, investment)];
+                    case 1:
+                        investParams = _a.sent();
+                        if (investParams) {
+                            investParams = Object.assign(investParams, params);
+                            return [2 /*return*/, this.calCodeInvestmentReturn(Modules.Database.database.transhis, code, investParams)];
+                        }
+                        return [2 /*return*/];
+                }
             });
         });
     };

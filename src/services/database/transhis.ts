@@ -1,7 +1,7 @@
 import * as Modules from '../../modules'
 export class TransHis {
     static async update(transHis: Modules.Database.TransHis, code: string, date: Date, records: Modules.Database.ITransHisRecord[]) {
-        let db = transHis.getTransHisDB(code, date);
+        let db = transHis.getTransHisDB(code, date, true);
         db.set(transHis.getTransHisKey(code), records).write();
     }
 
@@ -161,7 +161,7 @@ export class TransHis {
         // for (let i = 0; i < 50 ; i++) {
             let date = dates[i];
             if (transHis.existTransHisDB(code, new Date(date))) {
-                let db = transHis.getTransHisDB(code, new Date(date));
+                let db = transHis.getTransHisDB(code, new Date(date), false);
                 let details = (db.get("transhis").value() as Array<Modules.Database.ITransHisRecord>).reverse();    
                 for (let j = 0; j < details.length; j++) {
                     let detail = details[j];
@@ -204,5 +204,14 @@ export class TransHis {
         }
 
         return result;
+    }
+
+    static async getCodeInvestmentReturn(code: string, investment: Modules.Dts.IInvestment , params?: Modules.Dts.IInvestParams): Promise<Modules.Dts.IInvestmentReturn> {
+        let investParams = await this.calCodeInvestParams(Modules.Database.database.transhis,code, investment)
+    
+        if (investParams) {
+            investParams = Object.assign(investParams, params);
+            return this.calCodeInvestmentReturn(Modules.Database.database.transhis, code, investParams);
+        }    
     }
 }
