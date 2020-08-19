@@ -14500,6 +14500,5541 @@
       "rate": 21.157236736656515
     }
   },
+  "600439": {
+    "code": "600439",
+    "params": {
+      "prices": {
+        "high": 3.78,
+        "low": 2.55,
+        "middle": 3.17,
+        "average": 3.26,
+        "current": 3.6
+      },
+      "step": {
+        "price": 0.08,
+        "volume": 1000
+      }
+    },
+    "points": {
+      "2.62": false,
+      "2.7": false,
+      "2.78": false,
+      "2.86": false,
+      "2.94": false,
+      "3.02": false,
+      "3.1": false,
+      "3.18": false,
+      "3.26": false,
+      "3.34": false,
+      "3.42": false,
+      "3.5": false,
+      "3.58": true,
+      "3.66": true,
+      "3.74": false
+    },
+    "income": {
+      "buyCount": 114,
+      "saleCount": 112,
+      "capital": 43960,
+      "income": 8960,
+      "rate": 20.38216560509554
+    }
+  },
+  "600444": {
+    "code": "600444",
+    "params": {
+      "prices": {
+        "high": 12.47,
+        "low": 8.61,
+        "middle": 10.54,
+        "average": 10.36,
+        "current": 10.81
+      },
+      "step": {
+        "price": 0.2666666666666666,
+        "volume": 300
+      }
+    },
+    "points": {
+      "12": true,
+      "8.76": false,
+      "9.03": false,
+      "9.3": false,
+      "9.57": false,
+      "9.84": false,
+      "10.11": false,
+      "10.38": false,
+      "10.65": true,
+      "10.92": true,
+      "11.19": true,
+      "11.46": true,
+      "11.73": true,
+      "12.27": false
+    },
+    "income": {
+      "buyCount": 78,
+      "saleCount": 72,
+      "capital": 40482,
+      "income": 5759.999999999999,
+      "rate": 14.228546020453532
+    }
+  },
+  "600446": {
+    "code": "600446",
+    "params": {
+      "prices": {
+        "high": 26.86,
+        "low": 15.8,
+        "middle": 21.33,
+        "average": 20.66,
+        "current": 19.48,
+        "sechigh": 22.66
+      },
+      "step": {
+        "price": 0.5,
+        "volume": 200
+      }
+    },
+    "points": {
+      "16.16": false,
+      "16.66": false,
+      "17.16": false,
+      "17.66": false,
+      "18.16": false,
+      "18.66": false,
+      "19.16": false,
+      "19.66": true,
+      "20.16": true,
+      "20.66": true,
+      "21.16": true,
+      "21.66": true,
+      "22.16": true,
+      "22.66": false
+    },
+    "income": {
+      "buyCount": 188,
+      "saleCount": 182,
+      "capital": 49816,
+      "income": 18200,
+      "rate": 36.53444676409186
+    }
+  },
+  "600448": {
+    "code": "600448",
+    "params": {
+      "prices": {
+        "high": 8.1,
+        "low": 3.83,
+        "middle": 5.97,
+        "average": 5.67,
+        "current": 4.1,
+        "sechigh": 5.92
+      },
+      "step": {
+        "price": 0.14285714285714285,
+        "volume": 700
+      }
+    },
+    "points": {
+      "3.96": false,
+      "4.1": true,
+      "4.24": true,
+      "4.38": true,
+      "4.52": true,
+      "4.66": true,
+      "4.8": true,
+      "4.94": true,
+      "5.08": true,
+      "5.22": true,
+      "5.36": true,
+      "5.5": true,
+      "5.64": true,
+      "5.78": true,
+      "5.92": false
+    },
+    "income": {
+      "buyCount": 131,
+      "saleCount": 118,
+      "capital": 47726,
+      "income": 11800,
+      "rate": 24.72446884297867
+    }
+  },
+  "600449": {
+    "code": "600449",
+    "params": {
+      "prices": {
+        "high": 18.6,
+        "low": 7.98,
+        "middle": 13.29,
+        "average": 12.24,
+        "current": 18.42,
+        "sechigh": 13.19
+      },
+      "step": {
+        "price": 0.33333333333333337,
+        "volume": 300
+      }
+    },
+    "points": {
+      "8.24": false,
+      "8.57": false,
+      "8.9": false,
+      "9.23": false,
+      "9.56": false,
+      "9.89": false,
+      "10.22": false,
+      "10.55": false,
+      "10.88": false,
+      "11.21": false,
+      "11.54": false,
+      "11.87": false,
+      "12.2": false,
+      "12.53": false,
+      "12.86": false,
+      "13.19": false
+    },
+    "income": {
+      "buyCount": 50,
+      "saleCount": 50,
+      "capital": 47475,
+      "income": 5000,
+      "rate": 10.531858873091101
+    }
+  },
+  "600452": {
+    "code": "600452",
+    "params": {
+      "prices": {
+        "high": 22.7,
+        "low": 13.88,
+        "middle": 18.29,
+        "average": 18.32,
+        "current": 20.52,
+        "sechigh": 21.32
+      },
+      "step": {
+        "price": 0.5,
+        "volume": 200
+      }
+    },
+    "points": {
+      "14.32": false,
+      "14.82": false,
+      "15.32": false,
+      "15.82": false,
+      "16.32": false,
+      "16.82": false,
+      "17.32": false,
+      "17.82": false,
+      "18.32": false,
+      "18.82": false,
+      "19.32": false,
+      "19.82": false,
+      "20.32": true,
+      "20.82": true,
+      "21.32": false
+    },
+    "income": {
+      "buyCount": 109,
+      "saleCount": 107,
+      "capital": 49196,
+      "income": 10700,
+      "rate": 21.749735750874056
+    }
+  },
+  "600455": {
+    "code": "600455",
+    "params": {
+      "prices": {
+        "high": 51,
+        "low": 20.72,
+        "middle": 35.86,
+        "average": 29.51,
+        "current": 25.11,
+        "sechigh": 35.11
+      },
+      "step": {
+        "price": 0.8,
+        "volume": 100
+      }
+    },
+    "points": {
+      "21.51": false,
+      "22.31": false,
+      "23.11": false,
+      "23.91": false,
+      "24.71": true,
+      "25.51": true,
+      "26.31": true,
+      "27.11": true,
+      "27.91": true,
+      "28.71": true,
+      "29.51": true,
+      "30.31": true,
+      "31.11": true,
+      "31.91": true,
+      "32.71": true,
+      "33.51": true,
+      "34.31": true,
+      "35.11": false
+    },
+    "income": {
+      "buyCount": 97,
+      "saleCount": 84,
+      "capital": 47447,
+      "income": 6720,
+      "rate": 14.163171538769575
+    }
+  },
+  "600456": {
+    "code": "600456",
+    "params": {
+      "prices": {
+        "high": 38.13,
+        "low": 20.73,
+        "middle": 29.43,
+        "average": 26.93,
+        "current": 31.34,
+        "sechigh": 34.93
+      },
+      "step": {
+        "price": 0.8,
+        "volume": 100
+      }
+    },
+    "points": {
+      "21.33": false,
+      "22.13": false,
+      "22.93": false,
+      "23.73": false,
+      "24.53": false,
+      "25.33": false,
+      "26.13": false,
+      "26.93": false,
+      "27.73": false,
+      "28.53": false,
+      "29.33": false,
+      "30.13": false,
+      "30.93": true,
+      "31.73": true,
+      "32.53": true,
+      "33.33": true,
+      "34.13": true,
+      "34.93": false
+    },
+    "income": {
+      "buyCount": 96,
+      "saleCount": 91,
+      "capital": 47141,
+      "income": 7280,
+      "rate": 15.443032604314716
+    }
+  },
+  "600458": {
+    "code": "600458",
+    "params": {
+      "prices": {
+        "high": 11.53,
+        "low": 5.47,
+        "middle": 8.5,
+        "average": 7.93,
+        "current": 7.49,
+        "sechigh": 8.33
+      },
+      "step": {
+        "price": 0.19999999999999998,
+        "volume": 500
+      }
+    },
+    "points": {
+      "5.53": false,
+      "5.73": false,
+      "5.93": false,
+      "6.13": false,
+      "6.33": false,
+      "6.53": false,
+      "6.73": false,
+      "6.93": false,
+      "7.13": false,
+      "7.33": true,
+      "7.53": true,
+      "7.73": true,
+      "7.93": true,
+      "8.13": true,
+      "8.33": false
+    },
+    "income": {
+      "buyCount": 102,
+      "saleCount": 97,
+      "capital": 47810,
+      "income": 9700,
+      "rate": 20.28864254340096
+    }
+  },
+  "600459": {
+    "code": "600459",
+    "params": {
+      "prices": {
+        "high": 32.4,
+        "low": 11.99,
+        "middle": 22.2,
+        "average": 19.67,
+        "current": 26.27,
+        "sechigh": 19.67
+      },
+      "step": {
+        "price": 0.49999999999999994,
+        "volume": 200
+      }
+    },
+    "points": {
+      "12.17": false,
+      "12.67": false,
+      "13.17": false,
+      "13.67": false,
+      "14.17": false,
+      "14.67": false,
+      "15.17": false,
+      "15.67": false,
+      "16.17": false,
+      "16.67": false,
+      "17.17": false,
+      "17.67": false,
+      "18.17": false,
+      "18.67": false,
+      "19.17": false,
+      "19.67": false
+    },
+    "income": {
+      "buyCount": 68,
+      "saleCount": 68,
+      "capital": 47010,
+      "income": 6799.999999999998,
+      "rate": 14.465007445224416
+    }
+  },
+  "600461": {
+    "code": "600461",
+    "params": {
+      "prices": {
+        "high": 7.44,
+        "low": 5.6,
+        "middle": 6.52,
+        "average": 6.49,
+        "current": 6.77
+      },
+      "step": {
+        "price": 0.16,
+        "volume": 500
+      }
+    },
+    "points": {
+      "5.69": false,
+      "5.85": false,
+      "6.01": false,
+      "6.17": false,
+      "6.33": false,
+      "6.49": false,
+      "6.65": false,
+      "6.81": true,
+      "6.97": true,
+      "7.13": true,
+      "7.29": false
+    },
+    "income": {
+      "buyCount": 63,
+      "saleCount": 60,
+      "capital": 32050,
+      "income": 4800,
+      "rate": 14.976599063962558
+    }
+  },
+  "600462": {
+    "code": "600462",
+    "params": {
+      "prices": {
+        "high": 2.17,
+        "low": 1.02,
+        "middle": 1.6,
+        "average": 1.58,
+        "current": 2.06,
+        "sechigh": 1.62
+      },
+      "step": {
+        "price": 0.04,
+        "volume": 2500
+      }
+    },
+    "points": {
+      "1.06": false,
+      "1.1": false,
+      "1.14": false,
+      "1.18": false,
+      "1.22": false,
+      "1.26": false,
+      "1.3": false,
+      "1.34": false,
+      "1.38": false,
+      "1.42": false,
+      "1.46": false,
+      "1.5": false,
+      "1.54": false,
+      "1.58": false,
+      "1.62": false
+    },
+    "income": {
+      "buyCount": 102,
+      "saleCount": 102,
+      "capital": 46200,
+      "income": 10200,
+      "rate": 22.07792207792208
+    }
+  },
+  "600463": {
+    "code": "600463",
+    "params": {
+      "prices": {
+        "high": 9.99,
+        "low": 5.55,
+        "middle": 7.77,
+        "average": 7.56,
+        "current": 7.27,
+        "sechigh": 8.36
+      },
+      "step": {
+        "price": 0.19999999999999998,
+        "volume": 500
+      }
+    },
+    "points": {
+      "5.56": false,
+      "5.76": false,
+      "5.96": false,
+      "6.16": false,
+      "6.36": false,
+      "6.56": false,
+      "6.76": false,
+      "6.96": false,
+      "7.16": true,
+      "7.36": true,
+      "7.56": true,
+      "7.76": true,
+      "7.96": true,
+      "8.16": true,
+      "8.36": false
+    },
+    "income": {
+      "buyCount": 95,
+      "saleCount": 89,
+      "capital": 48020,
+      "income": 8899.999999999998,
+      "rate": 18.533944189920863
+    }
+  },
+  "600466": {
+    "code": "600466",
+    "params": {
+      "prices": {
+        "high": 7.75,
+        "low": 5,
+        "middle": 6.38,
+        "average": 6.2,
+        "current": 5.46,
+        "sechigh": 7.48
+      },
+      "step": {
+        "price": 0.16,
+        "volume": 500
+      }
+    },
+    "points": {
+      "7": true,
+      "5.08": false,
+      "5.24": false,
+      "5.4": true,
+      "5.56": true,
+      "5.72": true,
+      "5.88": true,
+      "6.04": true,
+      "6.2": true,
+      "6.36": true,
+      "6.52": true,
+      "6.68": true,
+      "6.84": true,
+      "7.16": true,
+      "7.32": true,
+      "7.48": false
+    },
+    "income": {
+      "buyCount": 110,
+      "saleCount": 97,
+      "capital": 46500,
+      "income": 7760,
+      "rate": 16.688172043010752
+    }
+  },
+  "600467": {
+    "code": "600467",
+    "params": {
+      "prices": {
+        "high": 3.63,
+        "low": 1.91,
+        "middle": 2.77,
+        "average": 2.68,
+        "current": 3.33,
+        "sechigh": 3.07
+      },
+      "step": {
+        "price": 0.06666666666666668,
+        "volume": 1200
+      }
+    },
+    "points": {
+      "3": false,
+      "1.95": false,
+      "2.02": false,
+      "2.09": false,
+      "2.16": false,
+      "2.23": false,
+      "2.3": false,
+      "2.37": false,
+      "2.44": false,
+      "2.51": false,
+      "2.58": false,
+      "2.65": false,
+      "2.72": false,
+      "2.79": false,
+      "2.86": false,
+      "2.93": false,
+      "3.07": false
+    },
+    "income": {
+      "buyCount": 140,
+      "saleCount": 140,
+      "capital": 47520,
+      "income": 11200.000000000004,
+      "rate": 23.569023569023578
+    }
+  },
+  "600468": {
+    "code": "600468",
+    "params": {
+      "prices": {
+        "high": 6.32,
+        "low": 3.13,
+        "middle": 4.72,
+        "average": 4.37,
+        "current": 5.46,
+        "sechigh": 4.69
+      },
+      "step": {
+        "price": 0.11111111111111112,
+        "volume": 900
+      }
+    },
+    "points": {
+      "3.15": false,
+      "3.26": false,
+      "3.37": false,
+      "3.48": false,
+      "3.59": false,
+      "3.7": false,
+      "3.81": false,
+      "3.92": false,
+      "4.03": false,
+      "4.14": false,
+      "4.25": false,
+      "4.36": false,
+      "4.47": false,
+      "4.58": false,
+      "4.69": false
+    },
+    "income": {
+      "buyCount": 143,
+      "saleCount": 143,
+      "capital": 48699,
+      "income": 14300,
+      "rate": 29.364052649951745
+    }
+  },
+  "600469": {
+    "code": "600469",
+    "params": {
+      "prices": {
+        "high": 6.17,
+        "low": 4.39,
+        "middle": 5.28,
+        "average": 5.29,
+        "current": 5
+      },
+      "step": {
+        "price": 0.13333333333333333,
+        "volume": 600
+      }
+    },
+    "points": {
+      "4.49": false,
+      "4.62": false,
+      "4.75": false,
+      "4.88": false,
+      "5.01": true,
+      "5.14": true,
+      "5.27": true,
+      "5.4": true,
+      "5.53": true,
+      "5.66": true,
+      "5.79": true,
+      "5.92": true,
+      "6.05": false
+    },
+    "income": {
+      "buyCount": 122,
+      "saleCount": 114,
+      "capital": 37476,
+      "income": 9120,
+      "rate": 24.335574767851426
+    }
+  },
+  "600470": {
+    "code": "600470",
+    "params": {
+      "prices": {
+        "high": 5.62,
+        "low": 2.4,
+        "middle": 4.01,
+        "average": 4.2,
+        "current": 3.08,
+        "sechigh": 4
+      },
+      "step": {
+        "price": 0.1,
+        "volume": 1000
+      }
+    },
+    "points": {
+      "3": false,
+      "4": false,
+      "2.5": false,
+      "2.6": false,
+      "2.7": false,
+      "2.8": false,
+      "2.9": false,
+      "3.1": true,
+      "3.2": true,
+      "3.3": true,
+      "3.4": true,
+      "3.5": true,
+      "3.6": true,
+      "3.7": true,
+      "3.8": true,
+      "3.9": true
+    },
+    "income": {
+      "buyCount": 74,
+      "saleCount": 65,
+      "capital": 48000,
+      "income": 6500,
+      "rate": 13.541666666666666
+    }
+  },
+  "600475": {
+    "code": "600475",
+    "params": {
+      "prices": {
+        "high": 13.96,
+        "low": 8.1,
+        "middle": 11.03,
+        "average": 11.06,
+        "current": 13.33,
+        "sechigh": 12.45
+      },
+      "step": {
+        "price": 0.26666666666666666,
+        "volume": 300
+      }
+    },
+    "points": {
+      "8.13": false,
+      "8.4": false,
+      "8.67": false,
+      "8.94": false,
+      "9.21": false,
+      "9.48": false,
+      "9.75": false,
+      "10.02": false,
+      "10.29": false,
+      "10.56": false,
+      "10.83": false,
+      "11.1": false,
+      "11.37": false,
+      "11.64": false,
+      "11.91": false,
+      "12.18": false,
+      "12.45": false
+    },
+    "income": {
+      "buyCount": 69,
+      "saleCount": 69,
+      "capital": 48744,
+      "income": 5520,
+      "rate": 11.324470704086657
+    }
+  },
+  "600476": {
+    "code": "600476",
+    "params": {
+      "prices": {
+        "high": 19.35,
+        "low": 11.46,
+        "middle": 15.41,
+        "average": 15.48,
+        "current": 14.06,
+        "sechigh": 18.28
+      },
+      "step": {
+        "price": 0.39999999999999997,
+        "volume": 200
+      }
+    },
+    "points": {
+      "11.48": false,
+      "11.88": false,
+      "12.28": false,
+      "12.68": false,
+      "13.08": false,
+      "13.48": false,
+      "13.88": true,
+      "14.28": true,
+      "14.68": true,
+      "15.08": true,
+      "15.48": true,
+      "15.88": true,
+      "16.28": true,
+      "16.68": true,
+      "17.08": true,
+      "17.48": true,
+      "17.88": true,
+      "18.28": false
+    },
+    "income": {
+      "buyCount": 134,
+      "saleCount": 123,
+      "capital": 49912,
+      "income": 9840,
+      "rate": 19.714697868248116
+    }
+  },
+  "600477": {
+    "code": "600477",
+    "params": {
+      "prices": {
+        "high": 5,
+        "low": 2.42,
+        "middle": 3.71,
+        "average": 3.82,
+        "current": 4.5,
+        "sechigh": 4.02
+      },
+      "step": {
+        "price": 0.09999999999999999,
+        "volume": 1000
+      }
+    },
+    "points": {
+      "2.52": false,
+      "2.62": false,
+      "2.72": false,
+      "2.82": false,
+      "2.92": false,
+      "3.02": false,
+      "3.12": false,
+      "3.22": false,
+      "3.32": false,
+      "3.42": false,
+      "3.52": false,
+      "3.62": false,
+      "3.72": false,
+      "3.82": false,
+      "3.92": false,
+      "4.02": false
+    },
+    "income": {
+      "buyCount": 78,
+      "saleCount": 78,
+      "capital": 48300,
+      "income": 7799.999999999999,
+      "rate": 16.149068322981364
+    }
+  },
+  "600478": {
+    "code": "600478",
+    "params": {
+      "prices": {
+        "high": 5.95,
+        "low": 3.63,
+        "middle": 4.79,
+        "average": 4.54,
+        "current": 4.48,
+        "sechigh": 5.39
+      },
+      "step": {
+        "price": 0.1142857142857143,
+        "volume": 700
+      }
+    },
+    "points": {
+      "3.74": false,
+      "3.85": false,
+      "3.96": false,
+      "4.07": false,
+      "4.18": false,
+      "4.29": false,
+      "4.4": true,
+      "4.51": true,
+      "4.62": true,
+      "4.73": true,
+      "4.84": true,
+      "4.95": true,
+      "5.06": true,
+      "5.17": true,
+      "5.28": true,
+      "5.39": false
+    },
+    "income": {
+      "buyCount": 175,
+      "saleCount": 166,
+      "capital": 47355,
+      "income": 13280,
+      "rate": 28.043501214232922
+    }
+  },
+  "600479": {
+    "code": "600479",
+    "params": {
+      "prices": {
+        "high": 11.1,
+        "low": 8.24,
+        "middle": 9.67,
+        "average": 9.32,
+        "current": 10.27
+      },
+      "step": {
+        "price": 0.25,
+        "volume": 400
+      }
+    },
+    "points": {
+      "8.32": false,
+      "8.57": false,
+      "8.82": false,
+      "9.07": false,
+      "9.32": false,
+      "9.57": false,
+      "9.82": false,
+      "10.07": false,
+      "10.32": true,
+      "10.57": true,
+      "10.82": true,
+      "11.07": false
+    },
+    "income": {
+      "buyCount": 63,
+      "saleCount": 60,
+      "capital": 42108,
+      "income": 6000,
+      "rate": 14.249073810202336
+    }
+  },
+  "600480": {
+    "code": "600480",
+    "params": {
+      "prices": {
+        "high": 14.32,
+        "low": 5.89,
+        "middle": 10.11,
+        "average": 9.29,
+        "current": 7.88,
+        "sechigh": 9.79
+      },
+      "step": {
+        "price": 0.25,
+        "volume": 400
+      }
+    },
+    "points": {
+      "6.04": false,
+      "6.29": false,
+      "6.54": false,
+      "6.79": false,
+      "7.04": false,
+      "7.29": false,
+      "7.54": false,
+      "7.79": true,
+      "8.04": true,
+      "8.29": true,
+      "8.54": true,
+      "8.79": true,
+      "9.04": true,
+      "9.29": true,
+      "9.54": true,
+      "9.79": false
+    },
+    "income": {
+      "buyCount": 111,
+      "saleCount": 103,
+      "capital": 46740,
+      "income": 10300,
+      "rate": 22.036799315361574
+    }
+  },
+  "600481": {
+    "code": "600481",
+    "params": {
+      "prices": {
+        "high": 3.93,
+        "low": 2.6,
+        "middle": 3.27,
+        "average": 3.24,
+        "current": 3.08,
+        "sechigh": 3.88
+      },
+      "step": {
+        "price": 0.08,
+        "volume": 1000
+      }
+    },
+    "points": {
+      "3": false,
+      "2.68": false,
+      "2.76": false,
+      "2.84": false,
+      "2.92": false,
+      "3.08": true,
+      "3.16": true,
+      "3.24": true,
+      "3.32": true,
+      "3.4": true,
+      "3.48": true,
+      "3.56": true,
+      "3.64": true,
+      "3.72": true,
+      "3.8": true,
+      "3.88": false
+    },
+    "income": {
+      "buyCount": 81,
+      "saleCount": 71,
+      "capital": 48600,
+      "income": 5680,
+      "rate": 11.687242798353909
+    }
+  },
+  "600482": {
+    "code": "600482",
+    "params": {
+      "prices": {
+        "high": 27.49,
+        "low": 15.6,
+        "middle": 21.55,
+        "average": 19.95,
+        "current": 19.48,
+        "sechigh": 22.45
+      },
+      "step": {
+        "price": 0.49999999999999994,
+        "volume": 200
+      }
+    },
+    "points": {
+      "15.95": false,
+      "16.45": false,
+      "16.95": false,
+      "17.45": false,
+      "17.95": false,
+      "18.45": false,
+      "18.95": false,
+      "19.45": true,
+      "19.95": true,
+      "20.45": true,
+      "20.95": true,
+      "21.45": true,
+      "21.95": true,
+      "22.45": false
+    },
+    "income": {
+      "buyCount": 74,
+      "saleCount": 68,
+      "capital": 49270,
+      "income": 6799.999999999998,
+      "rate": 13.801501928151
+    }
+  },
+  "600483": {
+    "code": "600483",
+    "params": {
+      "prices": {
+        "high": 9.5,
+        "low": 7.12,
+        "middle": 8.31,
+        "average": 8.39,
+        "current": 8.84
+      },
+      "step": {
+        "price": 0.2,
+        "volume": 500
+      }
+    },
+    "points": {
+      "7.19": false,
+      "7.39": false,
+      "7.59": false,
+      "7.79": false,
+      "7.99": false,
+      "8.19": false,
+      "8.39": false,
+      "8.59": false,
+      "8.79": false,
+      "8.99": true,
+      "9.19": true,
+      "9.39": false
+    },
+    "income": {
+      "buyCount": 64,
+      "saleCount": 62,
+      "capital": 45045,
+      "income": 6200,
+      "rate": 13.764013764013765
+    }
+  },
+  "600487": {
+    "code": "600487",
+    "params": {
+      "prices": {
+        "high": 22.15,
+        "low": 13.68,
+        "middle": 17.92,
+        "average": 17.29,
+        "current": 16.53,
+        "sechigh": 19.69
+      },
+      "step": {
+        "price": 0.39999999999999997,
+        "volume": 200
+      }
+    },
+    "points": {
+      "13.69": false,
+      "14.09": false,
+      "14.49": false,
+      "14.89": false,
+      "15.29": false,
+      "15.69": false,
+      "16.09": false,
+      "16.49": true,
+      "16.89": true,
+      "17.29": true,
+      "17.69": true,
+      "18.09": true,
+      "18.49": true,
+      "18.89": true,
+      "19.29": true,
+      "19.69": false
+    },
+    "income": {
+      "buyCount": 140,
+      "saleCount": 132,
+      "capital": 49470,
+      "income": 10560,
+      "rate": 21.346270466949665
+    }
+  },
+  "600488": {
+    "code": "600488",
+    "params": {
+      "prices": {
+        "high": 6.2,
+        "low": 3.77,
+        "middle": 4.99,
+        "average": 4.89,
+        "current": 5.38,
+        "sechigh": 5.53
+      },
+      "step": {
+        "price": 0.125,
+        "volume": 800
+      }
+    },
+    "points": {
+      "3.89": false,
+      "4.02": false,
+      "4.14": false,
+      "4.26": false,
+      "4.39": false,
+      "4.51": false,
+      "4.64": false,
+      "4.76": false,
+      "4.89": false,
+      "5.01": false,
+      "5.14": false,
+      "5.27": false,
+      "5.4": true,
+      "5.53": false
+    },
+    "income": {
+      "buyCount": 113,
+      "saleCount": 112,
+      "capital": 48256,
+      "income": 11200,
+      "rate": 23.20954907161804
+    }
+  },
+  "600489": {
+    "code": "600489",
+    "params": {
+      "prices": {
+        "high": 12.45,
+        "low": 7.17,
+        "middle": 9.81,
+        "average": 9.25,
+        "current": 11.34,
+        "sechigh": 10.75
+      },
+      "step": {
+        "price": 0.25,
+        "volume": 400
+      }
+    },
+    "points": {
+      "8": false,
+      "9": false,
+      "10": false,
+      "7.25": false,
+      "7.5": false,
+      "7.75": false,
+      "8.25": false,
+      "8.5": false,
+      "8.75": false,
+      "9.25": false,
+      "9.5": false,
+      "9.75": false,
+      "10.25": false,
+      "10.5": false,
+      "10.75": false
+    },
+    "income": {
+      "buyCount": 87,
+      "saleCount": 87,
+      "capital": 49700,
+      "income": 8700,
+      "rate": 17.505030181086518
+    }
+  },
+  "600490": {
+    "code": "600490",
+    "params": {
+      "prices": {
+        "high": 5.52,
+        "low": 3.03,
+        "middle": 4.27,
+        "average": 4.4,
+        "current": 4.4,
+        "sechigh": 4.61
+      },
+      "step": {
+        "price": 0.1111111111111111,
+        "volume": 900
+      }
+    },
+    "points": {
+      "3.07": false,
+      "3.18": false,
+      "3.29": false,
+      "3.4": false,
+      "3.51": false,
+      "3.62": false,
+      "3.73": false,
+      "3.84": false,
+      "3.95": false,
+      "4.06": false,
+      "4.17": false,
+      "4.28": false,
+      "4.39": true,
+      "4.5": true,
+      "4.61": false
+    },
+    "income": {
+      "buyCount": 76,
+      "saleCount": 74,
+      "capital": 47691,
+      "income": 7399.999999999999,
+      "rate": 15.516554486171392
+    }
+  },
+  "600491": {
+    "code": "600491",
+    "params": {
+      "prices": {
+        "high": 10.07,
+        "low": 6,
+        "middle": 8.04,
+        "average": 8.01,
+        "current": 8.52,
+        "sechigh": 8.61
+      },
+      "step": {
+        "price": 0.19999999999999998,
+        "volume": 500
+      }
+    },
+    "points": {
+      "6.01": false,
+      "6.21": false,
+      "6.41": false,
+      "6.61": false,
+      "6.81": false,
+      "7.01": false,
+      "7.21": false,
+      "7.41": false,
+      "7.61": false,
+      "7.81": false,
+      "8.01": false,
+      "8.21": false,
+      "8.41": true,
+      "8.61": false
+    },
+    "income": {
+      "buyCount": 67,
+      "saleCount": 66,
+      "capital": 46865,
+      "income": 6600,
+      "rate": 14.08300437426651
+    }
+  },
+  "600493": {
+    "code": "600493",
+    "params": {
+      "prices": {
+        "high": 6.93,
+        "low": 4.3,
+        "middle": 5.62,
+        "average": 5.57,
+        "current": 5.36,
+        "sechigh": 6.25
+      },
+      "step": {
+        "price": 0.14285714285714288,
+        "volume": 700
+      }
+    },
+    "points": {
+      "4.43": false,
+      "4.57": false,
+      "4.71": false,
+      "4.85": false,
+      "4.99": false,
+      "5.13": false,
+      "5.27": true,
+      "5.41": true,
+      "5.55": true,
+      "5.69": true,
+      "5.83": true,
+      "5.97": true,
+      "6.11": true,
+      "6.25": false
+    },
+    "income": {
+      "buyCount": 92,
+      "saleCount": 85,
+      "capital": 47957,
+      "income": 8500,
+      "rate": 17.72421127259837
+    }
+  },
+  "600495": {
+    "code": "600495",
+    "params": {
+      "prices": {
+        "high": 5.18,
+        "low": 3.3,
+        "middle": 4.24,
+        "average": 4.41,
+        "current": 4.05,
+        "sechigh": 4.84
+      },
+      "step": {
+        "price": 0.11111111111111112,
+        "volume": 900
+      }
+    },
+    "points": {
+      "3.41": false,
+      "3.52": false,
+      "3.63": false,
+      "3.74": false,
+      "3.85": false,
+      "3.96": false,
+      "4.07": true,
+      "4.18": true,
+      "4.29": true,
+      "4.4": true,
+      "4.51": true,
+      "4.62": true,
+      "4.73": true,
+      "4.84": false
+    },
+    "income": {
+      "buyCount": 126,
+      "saleCount": 119,
+      "capital": 47619,
+      "income": 11900,
+      "rate": 24.990024990024992
+    }
+  },
+  "600496": {
+    "code": "600496",
+    "params": {
+      "prices": {
+        "high": 5.18,
+        "low": 2.53,
+        "middle": 3.85,
+        "average": 3.61,
+        "current": 5.04,
+        "sechigh": 3.87
+      },
+      "step": {
+        "price": 0.09090909090909091,
+        "volume": 1100
+      }
+    },
+    "points": {
+      "2.61": false,
+      "2.7": false,
+      "2.79": false,
+      "2.88": false,
+      "2.97": false,
+      "3.06": false,
+      "3.15": false,
+      "3.24": false,
+      "3.33": false,
+      "3.42": false,
+      "3.51": false,
+      "3.6": false,
+      "3.69": false,
+      "3.78": false,
+      "3.87": false
+    },
+    "income": {
+      "buyCount": 87,
+      "saleCount": 87,
+      "capital": 49203,
+      "income": 8700,
+      "rate": 17.68184866776416
+    }
+  },
+  "600497": {
+    "code": "600497",
+    "params": {
+      "prices": {
+        "high": 5.16,
+        "low": 3.33,
+        "middle": 4.25,
+        "average": 4.05,
+        "current": 4.28,
+        "sechigh": 4.55
+      },
+      "step": {
+        "price": 0.09999999999999999,
+        "volume": 1000
+      }
+    },
+    "points": {
+      "3.35": false,
+      "3.45": false,
+      "3.55": false,
+      "3.65": false,
+      "3.75": false,
+      "3.85": false,
+      "3.95": false,
+      "4.05": false,
+      "4.15": false,
+      "4.25": true,
+      "4.35": true,
+      "4.45": true,
+      "4.55": false
+    },
+    "income": {
+      "buyCount": 71,
+      "saleCount": 68,
+      "capital": 46800,
+      "income": 6800,
+      "rate": 14.52991452991453
+    }
+  },
+  "600498": {
+    "code": "600498",
+    "params": {
+      "prices": {
+        "high": 41.95,
+        "low": 21.1,
+        "middle": 31.53,
+        "average": 31.51,
+        "current": 28.39,
+        "sechigh": 34.71
+      },
+      "step": {
+        "price": 0.8,
+        "volume": 100
+      }
+    },
+    "points": {
+      "21.11": false,
+      "21.91": false,
+      "22.71": false,
+      "23.51": false,
+      "24.31": false,
+      "25.11": false,
+      "25.91": false,
+      "26.71": false,
+      "27.51": false,
+      "28.31": true,
+      "29.11": true,
+      "29.91": true,
+      "30.71": true,
+      "31.51": true,
+      "32.31": true,
+      "33.11": true,
+      "33.91": true,
+      "34.71": false
+    },
+    "income": {
+      "buyCount": 107,
+      "saleCount": 99,
+      "capital": 46767,
+      "income": 7920,
+      "rate": 16.93501828212201
+    }
+  },
+  "600499": {
+    "code": "600499",
+    "params": {
+      "prices": {
+        "high": 5.77,
+        "low": 3.78,
+        "middle": 4.77,
+        "average": 4.54,
+        "current": 4.61,
+        "sechigh": 5.5
+      },
+      "step": {
+        "price": 0.1142857142857143,
+        "volume": 700
+      }
+    },
+    "points": {
+      "3.85": false,
+      "3.96": false,
+      "4.07": false,
+      "4.18": false,
+      "4.29": false,
+      "4.4": false,
+      "4.51": false,
+      "4.62": true,
+      "4.73": true,
+      "4.84": true,
+      "4.95": true,
+      "5.06": true,
+      "5.17": true,
+      "5.28": true,
+      "5.39": true,
+      "5.5": false
+    },
+    "income": {
+      "buyCount": 137,
+      "saleCount": 129,
+      "capital": 48510,
+      "income": 10320,
+      "rate": 21.27396413110699
+    }
+  },
+  "600500": {
+    "code": "600500",
+    "params": {
+      "prices": {
+        "high": 7.75,
+        "low": 4.72,
+        "middle": 6.24,
+        "average": 5.55,
+        "current": 5.68,
+        "sechigh": 6.52
+      },
+      "step": {
+        "price": 0.14285714285714285,
+        "volume": 700
+      }
+    },
+    "points": {
+      "4.84": false,
+      "4.98": false,
+      "5.12": false,
+      "5.26": false,
+      "5.4": false,
+      "5.54": false,
+      "5.68": true,
+      "5.82": true,
+      "5.96": true,
+      "6.1": true,
+      "6.24": true,
+      "6.38": true,
+      "6.52": false
+    },
+    "income": {
+      "buyCount": 93,
+      "saleCount": 87,
+      "capital": 47124,
+      "income": 8699.999999999998,
+      "rate": 18.461930226636103
+    }
+  },
+  "600501": {
+    "code": "600501",
+    "params": {
+      "prices": {
+        "high": 14.2,
+        "low": 7.02,
+        "middle": 10.61,
+        "average": 9.46,
+        "current": 11.59,
+        "sechigh": 10.71
+      },
+      "step": {
+        "price": 0.25,
+        "volume": 400
+      }
+    },
+    "points": {
+      "7.21": false,
+      "7.46": false,
+      "7.71": false,
+      "7.96": false,
+      "8.21": false,
+      "8.46": false,
+      "8.71": false,
+      "8.96": false,
+      "9.21": false,
+      "9.46": false,
+      "9.71": false,
+      "9.96": false,
+      "10.21": false,
+      "10.46": false,
+      "10.71": false
+    },
+    "income": {
+      "buyCount": 113,
+      "saleCount": 113,
+      "capital": 49476,
+      "income": 11300,
+      "rate": 22.839356455655267
+    }
+  },
+  "600502": {
+    "code": "600502",
+    "params": {
+      "prices": {
+        "high": 5.26,
+        "low": 3.18,
+        "middle": 4.22,
+        "average": 4.23,
+        "current": 4.64,
+        "sechigh": 4.77
+      },
+      "step": {
+        "price": 0.1111111111111111,
+        "volume": 900
+      }
+    },
+    "points": {
+      "4": false,
+      "3.23": false,
+      "3.34": false,
+      "3.45": false,
+      "3.56": false,
+      "3.67": false,
+      "3.78": false,
+      "3.89": false,
+      "4.11": false,
+      "4.22": false,
+      "4.33": false,
+      "4.44": false,
+      "4.55": true,
+      "4.66": true,
+      "4.77": false
+    },
+    "income": {
+      "buyCount": 84,
+      "saleCount": 82,
+      "capital": 49707,
+      "income": 8200,
+      "rate": 16.496670489065927
+    }
+  },
+  "600503": {
+    "code": "600503",
+    "params": {
+      "prices": {
+        "high": 5.07,
+        "low": 2.81,
+        "middle": 3.94,
+        "average": 3.79,
+        "current": 4.24,
+        "sechigh": 4.05
+      },
+      "step": {
+        "price": 0.09090909090909091,
+        "volume": 1100
+      }
+    },
+    "points": {
+      "2.88": false,
+      "2.97": false,
+      "3.06": false,
+      "3.15": false,
+      "3.24": false,
+      "3.33": false,
+      "3.42": false,
+      "3.51": false,
+      "3.6": false,
+      "3.69": false,
+      "3.78": false,
+      "3.87": false,
+      "3.96": false,
+      "4.05": false
+    },
+    "income": {
+      "buyCount": 120,
+      "saleCount": 120,
+      "capital": 48906,
+      "income": 12000.000000000002,
+      "rate": 24.536866642129805
+    }
+  },
+  "600505": {
+    "code": "600505",
+    "params": {
+      "prices": {
+        "high": 11.8,
+        "low": 6.66,
+        "middle": 9.23,
+        "average": 9.02,
+        "current": 9.02,
+        "sechigh": 10.27
+      },
+      "step": {
+        "price": 0.25,
+        "volume": 400
+      }
+    },
+    "points": {
+      "6.77": false,
+      "7.02": false,
+      "7.27": false,
+      "7.52": false,
+      "7.77": false,
+      "8.02": false,
+      "8.27": false,
+      "8.52": false,
+      "8.77": false,
+      "9.02": true,
+      "9.27": true,
+      "9.52": true,
+      "9.77": true,
+      "10.02": true,
+      "10.27": false
+    },
+    "income": {
+      "buyCount": 129,
+      "saleCount": 124,
+      "capital": 47012,
+      "income": 12400,
+      "rate": 26.376244363141325
+    }
+  },
+  "600506": {
+    "code": "600506",
+    "params": {
+      "prices": {
+        "high": 13.28,
+        "low": 7.7,
+        "middle": 10.49,
+        "average": 10.3,
+        "current": 10.48,
+        "sechigh": 11.05
+      },
+      "step": {
+        "price": 0.25,
+        "volume": 400
+      }
+    },
+    "points": {
+      "7.8": false,
+      "8.05": false,
+      "8.3": false,
+      "8.55": false,
+      "8.8": false,
+      "9.05": false,
+      "9.3": false,
+      "9.55": false,
+      "9.8": false,
+      "10.05": false,
+      "10.3": false,
+      "10.55": true,
+      "10.8": true,
+      "11.05": false
+    },
+    "income": {
+      "buyCount": 139,
+      "saleCount": 137,
+      "capital": 48360,
+      "income": 13700,
+      "rate": 28.329197684036394
+    }
+  },
+  "600507": {
+    "code": "600507",
+    "params": {
+      "prices": {
+        "high": 10.44,
+        "low": 4.96,
+        "middle": 7.7,
+        "average": 7.69,
+        "current": 5.66,
+        "sechigh": 8.09
+      },
+      "step": {
+        "price": 0.2,
+        "volume": 500
+      }
+    },
+    "points": {
+      "5.09": false,
+      "5.29": false,
+      "5.49": false,
+      "5.69": true,
+      "5.89": true,
+      "6.09": true,
+      "6.29": true,
+      "6.49": true,
+      "6.69": true,
+      "6.89": true,
+      "7.09": true,
+      "7.29": true,
+      "7.49": true,
+      "7.69": true,
+      "7.89": true,
+      "8.09": false
+    },
+    "income": {
+      "buyCount": 29,
+      "saleCount": 17,
+      "capital": 48675,
+      "income": 1700.0000000000002,
+      "rate": 3.4925526450950186
+    }
+  },
+  "600508": {
+    "code": "600508",
+    "params": {
+      "prices": {
+        "high": 9.83,
+        "low": 7.61,
+        "middle": 8.72,
+        "average": 8.82,
+        "current": 8.96
+      },
+      "step": {
+        "price": 0.2,
+        "volume": 400
+      }
+    },
+    "points": {
+      "7.62": false,
+      "7.82": false,
+      "8.02": false,
+      "8.22": false,
+      "8.42": false,
+      "8.62": false,
+      "8.82": false,
+      "9.02": true,
+      "9.22": true,
+      "9.42": true,
+      "9.62": true,
+      "9.82": false
+    },
+    "income": {
+      "buyCount": 38,
+      "saleCount": 34,
+      "capital": 37928,
+      "income": 2720.0000000000005,
+      "rate": 7.171482809533855
+    }
+  },
+  "600509": {
+    "code": "600509",
+    "params": {
+      "prices": {
+        "high": 5.58,
+        "low": 2.74,
+        "middle": 4.16,
+        "average": 3.91,
+        "current": 3.56,
+        "sechigh": 4.21
+      },
+      "step": {
+        "price": 0.1,
+        "volume": 1000
+      }
+    },
+    "points": {
+      "2.81": false,
+      "2.91": false,
+      "3.01": false,
+      "3.11": false,
+      "3.21": false,
+      "3.31": false,
+      "3.41": false,
+      "3.51": false,
+      "3.61": true,
+      "3.71": true,
+      "3.81": true,
+      "3.91": true,
+      "4.01": true,
+      "4.11": true,
+      "4.21": false
+    },
+    "income": {
+      "buyCount": 77,
+      "saleCount": 71,
+      "capital": 48440,
+      "income": 7100.000000000001,
+      "rate": 14.657308009909169
+    }
+  },
+  "600510": {
+    "code": "600510",
+    "params": {
+      "prices": {
+        "high": 9.8,
+        "low": 5.3,
+        "middle": 7.55,
+        "average": 7.94,
+        "current": 8.08,
+        "sechigh": 8.14
+      },
+      "step": {
+        "price": 0.2,
+        "volume": 500
+      }
+    },
+    "points": {
+      "5.34": false,
+      "5.54": false,
+      "5.74": false,
+      "5.94": false,
+      "6.14": false,
+      "6.34": false,
+      "6.54": false,
+      "6.74": false,
+      "6.94": false,
+      "7.14": false,
+      "7.34": false,
+      "7.54": false,
+      "7.74": false,
+      "7.94": false,
+      "8.14": false
+    },
+    "income": {
+      "buyCount": 75,
+      "saleCount": 75,
+      "capital": 46480,
+      "income": 7500,
+      "rate": 16.135972461273667
+    }
+  },
+  "600511": {
+    "code": "600511",
+    "params": {
+      "prices": {
+        "high": 49.52,
+        "low": 22.22,
+        "middle": 35.87,
+        "average": 34.7,
+        "current": 43.97,
+        "sechigh": 36.3
+      },
+      "step": {
+        "price": 0.8,
+        "volume": 100
+      }
+    },
+    "points": {
+      "22.7": false,
+      "23.5": false,
+      "24.3": false,
+      "25.1": false,
+      "25.9": false,
+      "26.7": false,
+      "27.5": false,
+      "28.3": false,
+      "29.1": false,
+      "29.9": false,
+      "30.7": false,
+      "31.5": false,
+      "32.3": false,
+      "33.1": false,
+      "33.9": false,
+      "34.7": false,
+      "35.5": false,
+      "36.3": false
+    },
+    "income": {
+      "buyCount": 112,
+      "saleCount": 112,
+      "capital": 49470,
+      "income": 8960,
+      "rate": 18.111987062866383
+    }
+  },
+  "600512": {
+    "code": "600512",
+    "params": {
+      "prices": {
+        "high": 4.34,
+        "low": 2.37,
+        "middle": 3.36,
+        "average": 3.18,
+        "current": 2.95,
+        "sechigh": 3.66
+      },
+      "step": {
+        "price": 0.08,
+        "volume": 1000
+      }
+    },
+    "points": {
+      "2.38": false,
+      "2.46": false,
+      "2.54": false,
+      "2.62": false,
+      "2.7": false,
+      "2.78": false,
+      "2.86": false,
+      "2.94": true,
+      "3.02": true,
+      "3.1": true,
+      "3.18": true,
+      "3.26": true,
+      "3.34": true,
+      "3.42": true,
+      "3.5": true,
+      "3.58": true,
+      "3.66": false
+    },
+    "income": {
+      "buyCount": 123,
+      "saleCount": 114,
+      "capital": 47680,
+      "income": 9120.000000000002,
+      "rate": 19.127516778523496
+    }
+  },
+  "600513": {
+    "code": "600513",
+    "params": {
+      "prices": {
+        "high": 23.3,
+        "low": 6.32,
+        "middle": 14.81,
+        "average": 13.27,
+        "current": 12.98,
+        "sechigh": 12.21
+      },
+      "step": {
+        "price": 0.3333333333333333,
+        "volume": 300
+      }
+    },
+    "points": {
+      "6.6": false,
+      "6.93": false,
+      "7.26": false,
+      "7.59": false,
+      "7.92": false,
+      "8.25": false,
+      "8.58": false,
+      "8.91": false,
+      "9.24": false,
+      "9.57": false,
+      "9.9": false,
+      "10.23": false,
+      "10.56": false,
+      "10.89": false,
+      "11.22": false,
+      "11.55": false,
+      "11.88": false,
+      "12.21": false
+    },
+    "income": {
+      "buyCount": 65,
+      "saleCount": 65,
+      "capital": 47124,
+      "income": 6499.999999999999,
+      "rate": 13.79339614633732
+    }
+  },
+  "600515": {
+    "code": "600515",
+    "params": {
+      "prices": {
+        "high": 8.99,
+        "low": 3.76,
+        "middle": 6.38,
+        "average": 5.86,
+        "current": 6.9,
+        "sechigh": 5.82
+      },
+      "step": {
+        "price": 0.14285714285714288,
+        "volume": 700
+      }
+    },
+    "points": {
+      "4": false,
+      "3.86": false,
+      "4.14": false,
+      "4.28": false,
+      "4.42": false,
+      "4.56": false,
+      "4.7": false,
+      "4.84": false,
+      "4.98": false,
+      "5.12": false,
+      "5.26": false,
+      "5.4": false,
+      "5.54": false,
+      "5.68": false,
+      "5.82": false
+    },
+    "income": {
+      "buyCount": 123,
+      "saleCount": 123,
+      "capital": 46746,
+      "income": 12300.000000000002,
+      "rate": 26.312411757155697
+    }
+  },
+  "600516": {
+    "code": "600516",
+    "params": {
+      "prices": {
+        "high": 18.11,
+        "low": 6.11,
+        "middle": 12.11,
+        "average": 10.09,
+        "current": 6.84,
+        "sechigh": 10.09
+      },
+      "step": {
+        "price": 0.25,
+        "volume": 400
+      }
+    },
+    "points": {
+      "6.34": false,
+      "6.59": false,
+      "6.84": true,
+      "7.09": true,
+      "7.34": true,
+      "7.59": true,
+      "7.84": true,
+      "8.09": true,
+      "8.34": true,
+      "8.59": true,
+      "8.84": true,
+      "9.09": true,
+      "9.34": true,
+      "9.59": true,
+      "9.84": true,
+      "10.09": false
+    },
+    "income": {
+      "buyCount": 45,
+      "saleCount": 32,
+      "capital": 48540,
+      "income": 3200,
+      "rate": 6.592501030078286
+    }
+  },
+  "600517": {
+    "code": "600517",
+    "params": {
+      "prices": {
+        "high": 9.02,
+        "low": 5.9,
+        "middle": 7.46,
+        "average": 7.55,
+        "current": 7.33,
+        "sechigh": 8.55
+      },
+      "step": {
+        "price": 0.19999999999999998,
+        "volume": 500
+      }
+    },
+    "points": {
+      "5.95": false,
+      "6.15": false,
+      "6.35": false,
+      "6.55": false,
+      "6.75": false,
+      "6.95": false,
+      "7.15": false,
+      "7.35": true,
+      "7.55": true,
+      "7.75": true,
+      "7.95": true,
+      "8.15": true,
+      "8.35": true,
+      "8.55": false
+    },
+    "income": {
+      "buyCount": 162,
+      "saleCount": 156,
+      "capital": 46475,
+      "income": 15599.999999999998,
+      "rate": 33.56643356643356
+    }
+  },
+  "600518": {
+    "code": "600518",
+    "params": {
+      "prices": {
+        "high": 4.35,
+        "low": 2.31,
+        "middle": 3.33,
+        "average": 3.35,
+        "current": 0,
+        "sechigh": 3.47
+      },
+      "step": {
+        "price": 0.08333333333333334,
+        "volume": 1200
+      }
+    },
+    "points": {
+      "2.35": false,
+      "2.43": false,
+      "2.51": false,
+      "2.59": false,
+      "2.67": false,
+      "2.75": false,
+      "2.83": false,
+      "2.91": true,
+      "2.99": true,
+      "3.07": true,
+      "3.15": true,
+      "3.23": true,
+      "3.31": true,
+      "3.39": true,
+      "3.47": false
+    },
+    "income": {
+      "buyCount": 90,
+      "saleCount": 83,
+      "capital": 48216,
+      "income": 8300.000000000002,
+      "rate": 17.214202754272446
+    }
+  },
+  "600520": {
+    "code": "600520",
+    "params": {
+      "prices": {
+        "high": 13.4,
+        "low": 6.99,
+        "middle": 10.2,
+        "average": 9.56,
+        "current": 9.05,
+        "sechigh": 10.56
+      },
+      "step": {
+        "price": 0.25,
+        "volume": 400
+      }
+    },
+    "points": {
+      "7.06": false,
+      "7.31": false,
+      "7.56": false,
+      "7.81": false,
+      "8.06": false,
+      "8.31": false,
+      "8.56": false,
+      "8.81": true,
+      "9.06": true,
+      "9.31": true,
+      "9.56": true,
+      "9.81": true,
+      "10.06": true,
+      "10.31": true,
+      "10.56": false
+    },
+    "income": {
+      "buyCount": 101,
+      "saleCount": 94,
+      "capital": 48636,
+      "income": 9400,
+      "rate": 19.32724730652192
+    }
+  },
+  "600521": {
+    "code": "600521",
+    "params": {
+      "prices": {
+        "high": 39.82,
+        "low": 13.94,
+        "middle": 26.88,
+        "average": 22.36,
+        "current": 38.5,
+        "sechigh": 31.16
+      },
+      "step": {
+        "price": 0.7999999999999999,
+        "volume": 100
+      }
+    },
+    "points": {
+      "14.36": false,
+      "15.16": false,
+      "15.96": false,
+      "16.76": false,
+      "17.56": false,
+      "18.36": false,
+      "19.16": false,
+      "19.96": false,
+      "20.76": false,
+      "21.56": false,
+      "22.36": false,
+      "23.16": false,
+      "23.96": false,
+      "24.76": false,
+      "25.56": false,
+      "26.36": false,
+      "27.16": false,
+      "27.96": false,
+      "28.76": false,
+      "29.56": false,
+      "30.36": false,
+      "31.16": false
+    },
+    "income": {
+      "buyCount": 101,
+      "saleCount": 101,
+      "capital": 46956,
+      "income": 8080,
+      "rate": 17.20759860294744
+    }
+  },
+  "600522": {
+    "code": "600522",
+    "params": {
+      "prices": {
+        "high": 13.93,
+        "low": 7,
+        "middle": 10.47,
+        "average": 10.41,
+        "current": 11.67,
+        "sechigh": 11.8
+      },
+      "step": {
+        "price": 0.26666666666666666,
+        "volume": 300
+      }
+    },
+    "points": {
+      "7.21": false,
+      "7.48": false,
+      "7.75": false,
+      "8.02": false,
+      "8.29": false,
+      "8.56": false,
+      "8.83": false,
+      "9.1": false,
+      "9.37": false,
+      "9.64": false,
+      "9.91": false,
+      "10.18": false,
+      "10.45": false,
+      "10.72": false,
+      "10.99": false,
+      "11.26": false,
+      "11.53": true,
+      "11.8": false
+    },
+    "income": {
+      "buyCount": 104,
+      "saleCount": 103,
+      "capital": 47787,
+      "income": 8240,
+      "rate": 17.243183292527256
+    }
+  },
+  "600523": {
+    "code": "600523",
+    "params": {
+      "prices": {
+        "high": 19.99,
+        "low": 11.16,
+        "middle": 15.58,
+        "average": 14.99,
+        "current": 17.92,
+        "sechigh": 18.19
+      },
+      "step": {
+        "price": 0.39999999999999997,
+        "volume": 200
+      }
+    },
+    "points": {
+      "11.39": false,
+      "11.79": false,
+      "12.19": false,
+      "12.59": false,
+      "12.99": false,
+      "13.39": false,
+      "13.79": false,
+      "14.19": false,
+      "14.59": false,
+      "14.99": false,
+      "15.39": false,
+      "15.79": false,
+      "16.19": false,
+      "16.59": false,
+      "16.99": false,
+      "17.39": false,
+      "17.79": true,
+      "18.19": false
+    },
+    "income": {
+      "buyCount": 158,
+      "saleCount": 157,
+      "capital": 49606,
+      "income": 12560,
+      "rate": 25.319517800266098
+    }
+  },
+  "600525": {
+    "code": "600525",
+    "params": {
+      "prices": {
+        "high": 6.86,
+        "low": 4.46,
+        "middle": 5.66,
+        "average": 5.87,
+        "current": 6.33,
+        "sechigh": 6.4
+      },
+      "step": {
+        "price": 0.14285714285714285,
+        "volume": 700
+      }
+    },
+    "points": {
+      "5": false,
+      "4.58": false,
+      "4.72": false,
+      "4.86": false,
+      "5.14": false,
+      "5.28": false,
+      "5.42": false,
+      "5.56": false,
+      "5.7": false,
+      "5.84": false,
+      "5.98": false,
+      "6.12": false,
+      "6.26": true,
+      "6.4": false
+    },
+    "income": {
+      "buyCount": 126,
+      "saleCount": 125,
+      "capital": 49322,
+      "income": 12500,
+      "rate": 25.343660030006895
+    }
+  },
+  "600526": {
+    "code": "600526",
+    "params": {
+      "prices": {
+        "high": 6.74,
+        "low": 4.65,
+        "middle": 5.7,
+        "average": 5.41,
+        "current": 0,
+        "sechigh": 6.56
+      },
+      "step": {
+        "price": 0.13333333333333333,
+        "volume": 600
+      }
+    },
+    "points": {
+      "5": false,
+      "4.74": false,
+      "4.87": false,
+      "5.13": false,
+      "5.26": false,
+      "5.39": false,
+      "5.52": false,
+      "5.65": false,
+      "5.78": false,
+      "5.91": false,
+      "6.04": false,
+      "6.17": true,
+      "6.3": true,
+      "6.43": true,
+      "6.56": false
+    },
+    "income": {
+      "buyCount": 94,
+      "saleCount": 91,
+      "capital": 46914,
+      "income": 7280,
+      "rate": 15.517755893763056
+    }
+  },
+  "600527": {
+    "code": "600527",
+    "params": {
+      "prices": {
+        "high": 5.42,
+        "low": 1.98,
+        "middle": 3.7,
+        "average": 3.23,
+        "current": 3.1,
+        "sechigh": 3.47
+      },
+      "step": {
+        "price": 0.08,
+        "volume": 1000
+      }
+    },
+    "points": {
+      "2.03": false,
+      "2.11": false,
+      "2.19": false,
+      "2.27": false,
+      "2.35": false,
+      "2.43": false,
+      "2.51": false,
+      "2.59": false,
+      "2.67": false,
+      "2.75": false,
+      "2.83": false,
+      "2.91": false,
+      "2.99": false,
+      "3.07": true,
+      "3.15": true,
+      "3.23": true,
+      "3.31": true,
+      "3.39": true,
+      "3.47": false
+    },
+    "income": {
+      "buyCount": 196,
+      "saleCount": 191,
+      "capital": 48780,
+      "income": 15280.000000000002,
+      "rate": 31.324313243132437
+    }
+  },
+  "600528": {
+    "code": "600528",
+    "params": {
+      "prices": {
+        "high": 12.33,
+        "low": 8.45,
+        "middle": 10.39,
+        "average": 10.18,
+        "current": 9.5,
+        "sechigh": 11.68
+      },
+      "step": {
+        "price": 0.24999999999999997,
+        "volume": 400
+      }
+    },
+    "points": {
+      "8.68": false,
+      "8.93": false,
+      "9.18": false,
+      "9.43": true,
+      "9.68": true,
+      "9.93": true,
+      "10.18": true,
+      "10.43": true,
+      "10.68": true,
+      "10.93": true,
+      "11.18": true,
+      "11.43": true,
+      "11.68": false
+    },
+    "income": {
+      "buyCount": 74,
+      "saleCount": 65,
+      "capital": 48264,
+      "income": 6499.999999999998,
+      "rate": 13.467594894745561
+    }
+  },
+  "600529": {
+    "code": "600529",
+    "params": {
+      "prices": {
+        "high": 72.47,
+        "low": 20.52,
+        "middle": 46.5,
+        "average": 40.29,
+        "current": 71.1,
+        "sechigh": 38.29
+      },
+      "step": {
+        "price": 1,
+        "volume": 100
+      }
+    },
+    "points": {
+      "21.29": false,
+      "22.29": false,
+      "23.29": false,
+      "24.29": false,
+      "25.29": false,
+      "26.29": false,
+      "27.29": false,
+      "28.29": false,
+      "29.29": false,
+      "30.29": false,
+      "31.29": false,
+      "32.29": false,
+      "33.29": false,
+      "34.29": false,
+      "35.29": false,
+      "36.29": false,
+      "37.29": false,
+      "38.29": false
+    },
+    "income": {
+      "buyCount": 77,
+      "saleCount": 77,
+      "capital": 49793,
+      "income": 7700,
+      "rate": 15.46402104713514
+    }
+  },
+  "600530": {
+    "code": "600530",
+    "params": {
+      "prices": {
+        "high": 6.05,
+        "low": 2.55,
+        "middle": 4.3,
+        "average": 4.15,
+        "current": 3.02,
+        "sechigh": 4.05
+      },
+      "step": {
+        "price": 0.10000000000000002,
+        "volume": 1000
+      }
+    },
+    "points": {
+      "2.65": false,
+      "2.75": false,
+      "2.85": false,
+      "2.95": false,
+      "3.05": true,
+      "3.15": true,
+      "3.25": true,
+      "3.35": true,
+      "3.45": true,
+      "3.55": true,
+      "3.65": true,
+      "3.75": true,
+      "3.85": true,
+      "3.95": true,
+      "4.05": false
+    },
+    "income": {
+      "buyCount": 57,
+      "saleCount": 47,
+      "capital": 46200,
+      "income": 4700.000000000001,
+      "rate": 10.173160173160175
+    }
+  },
+  "600531": {
+    "code": "600531",
+    "params": {
+      "prices": {
+        "high": 7.27,
+        "low": 3.67,
+        "middle": 5.47,
+        "average": 5.01,
+        "current": 7.27,
+        "sechigh": 5.4
+      },
+      "step": {
+        "price": 0.125,
+        "volume": 800
+      }
+    },
+    "points": {
+      "3.76": false,
+      "3.89": false,
+      "4.02": false,
+      "4.14": false,
+      "4.26": false,
+      "4.39": false,
+      "4.51": false,
+      "4.64": false,
+      "4.76": false,
+      "4.89": false,
+      "5.01": false,
+      "5.14": false,
+      "5.27": false,
+      "5.4": false
+    },
+    "income": {
+      "buyCount": 93,
+      "saleCount": 93,
+      "capital": 46944,
+      "income": 9300,
+      "rate": 19.81083844580777
+    }
+  },
+  "600532": {
+    "code": "600532",
+    "params": {
+      "prices": {
+        "high": 12.86,
+        "low": 2.73,
+        "middle": 7.8,
+        "average": 5.54,
+        "current": 10.49,
+        "sechigh": 5.21
+      },
+      "step": {
+        "price": 0.14285714285714285,
+        "volume": 700
+      }
+    },
+    "points": {
+      "2.83": false,
+      "2.97": false,
+      "3.11": false,
+      "3.25": false,
+      "3.39": false,
+      "3.53": false,
+      "3.67": false,
+      "3.81": false,
+      "3.95": false,
+      "4.09": false,
+      "4.23": false,
+      "4.37": false,
+      "4.51": false,
+      "4.65": false,
+      "4.79": false,
+      "4.93": false,
+      "5.07": false,
+      "5.21": false
+    },
+    "income": {
+      "buyCount": 88,
+      "saleCount": 88,
+      "capital": 47005,
+      "income": 8800,
+      "rate": 18.72141261567918
+    }
+  },
+  "600533": {
+    "code": "600533",
+    "params": {
+      "prices": {
+        "high": 4.28,
+        "low": 2.75,
+        "middle": 3.52,
+        "average": 3.54,
+        "current": 3.6,
+        "sechigh": 4.18
+      },
+      "step": {
+        "price": 0.08888888888888888,
+        "volume": 900
+      }
+    },
+    "points": {
+      "4": true,
+      "2.83": false,
+      "2.92": false,
+      "3.01": false,
+      "3.1": false,
+      "3.19": false,
+      "3.28": false,
+      "3.37": false,
+      "3.46": false,
+      "3.55": true,
+      "3.64": true,
+      "3.73": true,
+      "3.82": true,
+      "3.91": true,
+      "4.09": true,
+      "4.18": false
+    },
+    "income": {
+      "buyCount": 139,
+      "saleCount": 132,
+      "capital": 46710,
+      "income": 10560,
+      "rate": 22.60757867694284
+    }
+  },
+  "600535": {
+    "code": "600535",
+    "params": {
+      "prices": {
+        "high": 19.44,
+        "low": 13.33,
+        "middle": 16.39,
+        "average": 16.07,
+        "current": 17.34
+      },
+      "step": {
+        "price": 0.4,
+        "volume": 200
+      }
+    },
+    "points": {
+      "13.67": false,
+      "14.07": false,
+      "14.47": false,
+      "14.87": false,
+      "15.27": false,
+      "15.67": false,
+      "16.07": false,
+      "16.47": false,
+      "16.87": false,
+      "17.27": true,
+      "17.67": true,
+      "18.07": true,
+      "18.47": true,
+      "18.87": true,
+      "19.27": false
+    },
+    "income": {
+      "buyCount": 100,
+      "saleCount": 95,
+      "capital": 45556,
+      "income": 7600,
+      "rate": 16.682764070594434
+    }
+  },
+  "600537": {
+    "code": "600537",
+    "params": {
+      "prices": {
+        "high": 4.28,
+        "low": 2.51,
+        "middle": 3.4,
+        "average": 3.31,
+        "current": 3.45,
+        "sechigh": 3.6
+      },
+      "step": {
+        "price": 0.08333333333333334,
+        "volume": 1200
+      }
+    },
+    "points": {
+      "2.56": false,
+      "2.64": false,
+      "2.72": false,
+      "2.8": false,
+      "2.88": false,
+      "2.96": false,
+      "3.04": false,
+      "3.12": false,
+      "3.2": false,
+      "3.28": false,
+      "3.36": false,
+      "3.44": true,
+      "3.52": true,
+      "3.6": false
+    },
+    "income": {
+      "buyCount": 134,
+      "saleCount": 132,
+      "capital": 47424,
+      "income": 13200.000000000002,
+      "rate": 27.834008097165995
+    }
+  },
+  "600538": {
+    "code": "600538",
+    "params": {
+      "prices": {
+        "high": 9.45,
+        "low": 3.69,
+        "middle": 6.57,
+        "average": 6.79,
+        "current": 7.95,
+        "sechigh": 6.51
+      },
+      "step": {
+        "price": 0.16666666666666666,
+        "volume": 600
+      }
+    },
+    "points": {
+      "6": false,
+      "3.79": false,
+      "3.96": false,
+      "4.13": false,
+      "4.3": false,
+      "4.47": false,
+      "4.64": false,
+      "4.81": false,
+      "4.98": false,
+      "5.15": false,
+      "5.32": false,
+      "5.49": false,
+      "5.66": false,
+      "5.83": false,
+      "6.17": false,
+      "6.34": false,
+      "6.51": false
+    },
+    "income": {
+      "buyCount": 73,
+      "saleCount": 73,
+      "capital": 48624,
+      "income": 7300,
+      "rate": 15.013162224415927
+    }
+  },
+  "600539": {
+    "code": "600539",
+    "params": {
+      "prices": {
+        "high": 7.77,
+        "low": 5.62,
+        "middle": 6.7,
+        "average": 6.44,
+        "current": 7.15
+      },
+      "step": {
+        "price": 0.16,
+        "volume": 500
+      }
+    },
+    "points": {
+      "5.64": false,
+      "5.8": false,
+      "5.96": false,
+      "6.12": false,
+      "6.28": false,
+      "6.44": false,
+      "6.6": false,
+      "6.76": false,
+      "6.92": false,
+      "7.08": false,
+      "7.24": true,
+      "7.4": true,
+      "7.56": true,
+      "7.72": false
+    },
+    "income": {
+      "buyCount": 69,
+      "saleCount": 66,
+      "capital": 42900,
+      "income": 5280,
+      "rate": 12.307692307692308
+    }
+  },
+  "600540": {
+    "code": "600540",
+    "params": {
+      "prices": {
+        "high": 7,
+        "low": 3.12,
+        "middle": 5.06,
+        "average": 4.95,
+        "current": 5.75,
+        "sechigh": 5.14
+      },
+      "step": {
+        "price": 0.125,
+        "volume": 800
+      }
+    },
+    "points": {
+      "3.2": false,
+      "3.33": false,
+      "3.46": false,
+      "3.59": false,
+      "3.72": false,
+      "3.85": false,
+      "3.98": false,
+      "4.11": false,
+      "4.24": false,
+      "4.37": false,
+      "4.5": false,
+      "4.63": false,
+      "4.76": false,
+      "4.89": false,
+      "5.01": false,
+      "5.14": false
+    },
+    "income": {
+      "buyCount": 117,
+      "saleCount": 117,
+      "capital": 49312,
+      "income": 11700,
+      "rate": 23.726476314081765
+    }
+  },
+  "600543": {
+    "code": "600543",
+    "params": {
+      "prices": {
+        "high": 7.79,
+        "low": 4.65,
+        "middle": 6.22,
+        "average": 5.97,
+        "current": 6.27,
+        "sechigh": 6.36
+      },
+      "step": {
+        "price": 0.14285714285714285,
+        "volume": 700
+      }
+    },
+    "points": {
+      "4.68": false,
+      "4.82": false,
+      "4.96": false,
+      "5.1": false,
+      "5.24": false,
+      "5.38": false,
+      "5.52": false,
+      "5.66": false,
+      "5.8": false,
+      "5.94": false,
+      "6.08": false,
+      "6.22": true,
+      "6.36": false
+    },
+    "income": {
+      "buyCount": 77,
+      "saleCount": 76,
+      "capital": 45780,
+      "income": 7599.999999999999,
+      "rate": 16.601135867190912
+    }
+  },
+  "600545": {
+    "code": "600545",
+    "params": {
+      "prices": {
+        "high": 8.06,
+        "low": 4.64,
+        "middle": 6.35,
+        "average": 5.93,
+        "current": 5.49,
+        "sechigh": 6.46
+      },
+      "step": {
+        "price": 0.14285714285714285,
+        "volume": 700
+      }
+    },
+    "points": {
+      "4.64": false,
+      "4.78": false,
+      "4.92": false,
+      "5.06": false,
+      "5.2": false,
+      "5.34": false,
+      "5.48": true,
+      "5.62": true,
+      "5.76": true,
+      "5.9": true,
+      "6.04": true,
+      "6.18": true,
+      "6.32": true,
+      "6.46": false
+    },
+    "income": {
+      "buyCount": 70,
+      "saleCount": 63,
+      "capital": 49868,
+      "income": 6300,
+      "rate": 12.633352049410444
+    }
+  },
+  "600546": {
+    "code": "600546",
+    "params": {
+      "prices": {
+        "high": 14.97,
+        "low": 5.32,
+        "middle": 10.15,
+        "average": 9.49,
+        "current": 14.95,
+        "sechigh": 9.49
+      },
+      "step": {
+        "price": 0.25,
+        "volume": 400
+      }
+    },
+    "points": {
+      "5.49": false,
+      "5.74": false,
+      "5.99": false,
+      "6.24": false,
+      "6.49": false,
+      "6.74": false,
+      "6.99": false,
+      "7.24": false,
+      "7.49": false,
+      "7.74": false,
+      "7.99": false,
+      "8.24": false,
+      "8.49": false,
+      "8.74": false,
+      "8.99": false,
+      "9.24": false,
+      "9.49": false
+    },
+    "income": {
+      "buyCount": 90,
+      "saleCount": 90,
+      "capital": 47136,
+      "income": 9000,
+      "rate": 19.093686354378818
+    }
+  },
+  "600547": {
+    "code": "600547",
+    "params": {
+      "prices": {
+        "high": 52,
+        "low": 27.8,
+        "middle": 39.9,
+        "average": 36.45,
+        "current": 43.01,
+        "sechigh": 42.45
+      },
+      "step": {
+        "price": 0.9999999999999999,
+        "volume": 100
+      }
+    },
+    "points": {
+      "28.45": false,
+      "29.45": false,
+      "30.45": false,
+      "31.45": false,
+      "32.45": false,
+      "33.45": false,
+      "34.45": false,
+      "35.45": false,
+      "36.45": false,
+      "37.45": false,
+      "38.45": false,
+      "39.45": false,
+      "40.45": false,
+      "41.45": false,
+      "42.45": false
+    },
+    "income": {
+      "buyCount": 101,
+      "saleCount": 101,
+      "capital": 48930,
+      "income": 10099.999999999998,
+      "rate": 20.641733088085015
+    }
+  },
+  "600548": {
+    "code": "600548",
+    "params": {
+      "prices": {
+        "high": 12.11,
+        "low": 8.5,
+        "middle": 10.31,
+        "average": 9.97,
+        "current": 8.97,
+        "sechigh": 11.72
+      },
+      "step": {
+        "price": 0.25,
+        "volume": 400
+      }
+    },
+    "points": {
+      "8.72": false,
+      "8.97": true,
+      "9.22": true,
+      "9.47": true,
+      "9.72": true,
+      "9.97": true,
+      "10.22": true,
+      "10.47": true,
+      "10.72": true,
+      "10.97": true,
+      "11.22": true,
+      "11.47": true,
+      "11.72": false
+    },
+    "income": {
+      "buyCount": 63,
+      "saleCount": 52,
+      "capital": 48456,
+      "income": 5200,
+      "rate": 10.731385174178635
+    }
+  },
+  "600549": {
+    "code": "600549",
+    "params": {
+      "prices": {
+        "high": 16.62,
+        "low": 10.18,
+        "middle": 13.4,
+        "average": 13.27,
+        "current": 15,
+        "sechigh": 14.56
+      },
+      "step": {
+        "price": 0.3333333333333333,
+        "volume": 300
+      }
+    },
+    "points": {
+      "10.27": false,
+      "10.6": false,
+      "10.93": false,
+      "11.26": false,
+      "11.59": false,
+      "11.92": false,
+      "12.25": false,
+      "12.58": false,
+      "12.91": false,
+      "13.24": false,
+      "13.57": false,
+      "13.9": false,
+      "14.23": false,
+      "14.56": false
+    },
+    "income": {
+      "buyCount": 64,
+      "saleCount": 64,
+      "capital": 47775,
+      "income": 6400,
+      "rate": 13.396127681841968
+    }
+  },
+  "600550": {
+    "code": "600550",
+    "params": {
+      "prices": {
+        "high": 8.1,
+        "low": 2.64,
+        "middle": 5.37,
+        "average": 5.75,
+        "current": 5.7,
+        "sechigh": 5.27
+      },
+      "step": {
+        "price": 0.14285714285714285,
+        "volume": 700
+      }
+    },
+    "points": {
+      "2.75": false,
+      "2.89": false,
+      "3.03": false,
+      "3.17": false,
+      "3.31": false,
+      "3.45": false,
+      "3.59": false,
+      "3.73": false,
+      "3.87": false,
+      "4.01": false,
+      "4.15": false,
+      "4.29": false,
+      "4.43": false,
+      "4.57": false,
+      "4.71": false,
+      "4.85": false,
+      "4.99": false,
+      "5.13": false,
+      "5.27": false
+    },
+    "income": {
+      "buyCount": 47,
+      "saleCount": 47,
+      "capital": 49644,
+      "income": 4699.999999999999,
+      "rate": 9.467407944565302
+    }
+  },
+  "600551": {
+    "code": "600551",
+    "params": {
+      "prices": {
+        "high": 11.39,
+        "low": 7.06,
+        "middle": 9.23,
+        "average": 8.67,
+        "current": 9.56,
+        "sechigh": 9.87
+      },
+      "step": {
+        "price": 0.2,
+        "volume": 400
+      }
+    },
+    "points": {
+      "7.07": false,
+      "7.27": false,
+      "7.47": false,
+      "7.67": false,
+      "7.87": false,
+      "8.07": false,
+      "8.27": false,
+      "8.47": false,
+      "8.67": false,
+      "8.87": false,
+      "9.07": false,
+      "9.27": false,
+      "9.47": true,
+      "9.67": true,
+      "9.87": false
+    },
+    "income": {
+      "buyCount": 82,
+      "saleCount": 80,
+      "capital": 46872,
+      "income": 6400,
+      "rate": 13.6542072025943
+    }
+  },
+  "600552": {
+    "code": "600552",
+    "params": {
+      "prices": {
+        "high": 8.07,
+        "low": 4.54,
+        "middle": 6.31,
+        "average": 5.91,
+        "current": 6.7,
+        "sechigh": 6.44
+      },
+      "step": {
+        "price": 0.14285714285714285,
+        "volume": 700
+      }
+    },
+    "points": {
+      "4.62": false,
+      "4.76": false,
+      "4.9": false,
+      "5.04": false,
+      "5.18": false,
+      "5.32": false,
+      "5.46": false,
+      "5.6": false,
+      "5.74": false,
+      "5.88": false,
+      "6.02": false,
+      "6.16": false,
+      "6.3": false,
+      "6.44": false
+    },
+    "income": {
+      "buyCount": 136,
+      "saleCount": 136,
+      "capital": 49686,
+      "income": 13599.999999999998,
+      "rate": 27.371895503763632
+    }
+  },
+  "600555": {
+    "code": "600555",
+    "params": {
+      "prices": {
+        "high": 3.73,
+        "low": 1,
+        "middle": 2.37,
+        "average": 2.25,
+        "current": 1.4,
+        "sechigh": 2.11
+      },
+      "step": {
+        "price": 0.05555555555555555,
+        "volume": 1800
+      }
+    },
+    "points": {
+      "1.03": false,
+      "1.09": false,
+      "1.15": false,
+      "1.21": false,
+      "1.27": false,
+      "1.33": false,
+      "1.39": true,
+      "1.45": true,
+      "1.51": true,
+      "1.57": true,
+      "1.63": true,
+      "1.69": true,
+      "1.75": true,
+      "1.81": true,
+      "1.87": true,
+      "1.93": true,
+      "1.99": true,
+      "2.05": true,
+      "2.11": false
+    },
+    "income": {
+      "buyCount": 48,
+      "saleCount": 36,
+      "capital": 49896,
+      "income": 3600,
+      "rate": 7.215007215007215
+    }
+  },
+  "600556": {
+    "code": "600556",
+    "params": {
+      "prices": {
+        "high": 22.52,
+        "low": 7.11,
+        "middle": 14.82,
+        "average": 15.67,
+        "current": 19.38,
+        "sechigh": 15.67
+      },
+      "step": {
+        "price": 0.4,
+        "volume": 200
+      }
+    },
+    "points": {
+      "7.27": false,
+      "7.67": false,
+      "8.07": false,
+      "8.47": false,
+      "8.87": false,
+      "9.27": false,
+      "9.67": false,
+      "10.07": false,
+      "10.47": false,
+      "10.87": false,
+      "11.27": false,
+      "11.67": false,
+      "12.07": false,
+      "12.47": false,
+      "12.87": false,
+      "13.27": false,
+      "13.67": false,
+      "14.07": false,
+      "14.47": false,
+      "14.87": false,
+      "15.27": false,
+      "15.67": false
+    },
+    "income": {
+      "buyCount": 77,
+      "saleCount": 77,
+      "capital": 47334,
+      "income": 6160,
+      "rate": 13.013901212658977
+    }
+  },
+  "600557": {
+    "code": "600557",
+    "params": {
+      "prices": {
+        "high": 18.66,
+        "low": 12.1,
+        "middle": 15.38,
+        "average": 14.95,
+        "current": 15.13,
+        "sechigh": 18.55
+      },
+      "step": {
+        "price": 0.39999999999999997,
+        "volume": 200
+      }
+    },
+    "points": {
+      "12.15": false,
+      "12.55": false,
+      "12.95": false,
+      "13.35": false,
+      "13.75": false,
+      "14.15": false,
+      "14.55": false,
+      "14.95": true,
+      "15.35": true,
+      "15.75": true,
+      "16.15": true,
+      "16.55": true,
+      "16.95": true,
+      "17.35": true,
+      "17.75": true,
+      "18.15": true,
+      "18.55": false
+    },
+    "income": {
+      "buyCount": 109,
+      "saleCount": 100,
+      "capital": 48480,
+      "income": 8000,
+      "rate": 16.501650165016503
+    }
+  },
+  "600558": {
+    "code": "600558",
+    "params": {
+      "prices": {
+        "high": 3.76,
+        "low": 2.57,
+        "middle": 3.17,
+        "average": 3.14,
+        "current": 3.13
+      },
+      "step": {
+        "price": 0.08,
+        "volume": 1000
+      }
+    },
+    "points": {
+      "2.58": false,
+      "2.66": false,
+      "2.74": false,
+      "2.82": false,
+      "2.9": false,
+      "2.98": false,
+      "3.06": false,
+      "3.14": true,
+      "3.22": true,
+      "3.3": true,
+      "3.38": true,
+      "3.46": true,
+      "3.54": true,
+      "3.62": true,
+      "3.7": false
+    },
+    "income": {
+      "buyCount": 104,
+      "saleCount": 97,
+      "capital": 43400,
+      "income": 7760,
+      "rate": 17.880184331797235
+    }
+  },
+  "600559": {
+    "code": "600559",
+    "params": {
+      "prices": {
+        "high": 15.75,
+        "low": 8.1,
+        "middle": 11.93,
+        "average": 11.82,
+        "current": 12.9,
+        "sechigh": 12.67
+      },
+      "step": {
+        "price": 0.26666666666666666,
+        "volume": 300
+      }
+    },
+    "points": {
+      "8.35": false,
+      "8.62": false,
+      "8.89": false,
+      "9.16": false,
+      "9.43": false,
+      "9.7": false,
+      "9.97": false,
+      "10.24": false,
+      "10.51": false,
+      "10.78": false,
+      "11.05": false,
+      "11.32": false,
+      "11.59": false,
+      "11.86": false,
+      "12.13": false,
+      "12.4": false,
+      "12.67": false
+    },
+    "income": {
+      "buyCount": 63,
+      "saleCount": 63,
+      "capital": 49800,
+      "income": 5040,
+      "rate": 10.120481927710843
+    }
+  },
+  "600560": {
+    "code": "600560",
+    "params": {
+      "prices": {
+        "high": 13.16,
+        "low": 7.16,
+        "middle": 10.16,
+        "average": 9.91,
+        "current": 11.5,
+        "sechigh": 10.66
+      },
+      "step": {
+        "price": 0.25,
+        "volume": 400
+      }
+    },
+    "points": {
+      "7.41": false,
+      "7.66": false,
+      "7.91": false,
+      "8.16": false,
+      "8.41": false,
+      "8.66": false,
+      "8.91": false,
+      "9.16": false,
+      "9.41": false,
+      "9.66": false,
+      "9.91": false,
+      "10.16": false,
+      "10.41": false,
+      "10.66": false
+    },
+    "income": {
+      "buyCount": 122,
+      "saleCount": 122,
+      "capital": 46332,
+      "income": 12200,
+      "rate": 26.331692998359664
+    }
+  },
+  "600561": {
+    "code": "600561",
+    "params": {
+      "prices": {
+        "high": 6.97,
+        "low": 4.32,
+        "middle": 5.65,
+        "average": 5.35,
+        "current": 5.07,
+        "sechigh": 6.37
+      },
+      "step": {
+        "price": 0.13333333333333333,
+        "volume": 600
+      }
+    },
+    "points": {
+      "4.42": false,
+      "4.55": false,
+      "4.68": false,
+      "4.81": false,
+      "4.94": false,
+      "5.07": true,
+      "5.2": true,
+      "5.33": true,
+      "5.46": true,
+      "5.59": true,
+      "5.72": true,
+      "5.85": true,
+      "5.98": true,
+      "6.11": true,
+      "6.24": true,
+      "6.37": false
+    },
+    "income": {
+      "buyCount": 80,
+      "saleCount": 70,
+      "capital": 47970,
+      "income": 5600,
+      "rate": 11.673962893475089
+    }
+  },
+  "600562": {
+    "code": "600562",
+    "params": {
+      "prices": {
+        "high": 19.15,
+        "low": 12,
+        "middle": 15.58,
+        "average": 15.6,
+        "current": 18.34,
+        "sechigh": 18.8
+      },
+      "step": {
+        "price": 0.39999999999999997,
+        "volume": 200
+      }
+    },
+    "points": {
+      "14": false,
+      "16": false,
+      "18": false,
+      "12.4": false,
+      "12.8": false,
+      "13.2": false,
+      "13.6": false,
+      "14.4": false,
+      "14.8": false,
+      "15.2": false,
+      "15.6": false,
+      "16.4": false,
+      "16.8": false,
+      "17.2": false,
+      "17.6": false,
+      "18.4": true,
+      "18.8": false
+    },
+    "income": {
+      "buyCount": 129,
+      "saleCount": 128,
+      "capital": 49280,
+      "income": 10240,
+      "rate": 20.77922077922078
+    }
+  },
+  "600565": {
+    "code": "600565",
+    "params": {
+      "prices": {
+        "high": 4.07,
+        "low": 2.7,
+        "middle": 3.39,
+        "average": 3.19,
+        "current": 2.93,
+        "sechigh": 3.91
+      },
+      "step": {
+        "price": 0.08,
+        "volume": 1000
+      }
+    },
+    "points": {
+      "2.71": false,
+      "2.79": false,
+      "2.87": false,
+      "2.95": true,
+      "3.03": true,
+      "3.11": true,
+      "3.19": true,
+      "3.27": true,
+      "3.35": true,
+      "3.43": true,
+      "3.51": true,
+      "3.59": true,
+      "3.67": true,
+      "3.75": true,
+      "3.83": true,
+      "3.91": false
+    },
+    "income": {
+      "buyCount": 85,
+      "saleCount": 73,
+      "capital": 49050,
+      "income": 5840,
+      "rate": 11.906218144750255
+    }
+  },
+  "600566": {
+    "code": "600566",
+    "params": {
+      "prices": {
+        "high": 33.41,
+        "low": 19.6,
+        "middle": 26.51,
+        "average": 25.31,
+        "current": 25.32
+      },
+      "step": {
+        "price": 0.8,
+        "volume": 100
+      }
+    },
+    "points": {
+      "19.71": false,
+      "20.51": false,
+      "21.31": false,
+      "22.11": false,
+      "22.91": false,
+      "23.71": false,
+      "24.51": false,
+      "25.31": true,
+      "26.11": true,
+      "26.91": true,
+      "27.71": true,
+      "28.51": true,
+      "29.31": true,
+      "30.11": true,
+      "30.91": true,
+      "31.71": true,
+      "32.51": true,
+      "33.31": false
+    },
+    "income": {
+      "buyCount": 73,
+      "saleCount": 63,
+      "capital": 44387,
+      "income": 5040.000000000001,
+      "rate": 11.354675918624825
+    }
+  },
+  "600567": {
+    "code": "600567",
+    "params": {
+      "prices": {
+        "high": 3.94,
+        "low": 2.8,
+        "middle": 3.37,
+        "average": 3.28,
+        "current": 3.17,
+        "sechigh": 3.82
+      },
+      "step": {
+        "price": 0.08333333333333334,
+        "volume": 1200
+      }
+    },
+    "points": {
+      "2.86": false,
+      "2.94": false,
+      "3.02": false,
+      "3.1": false,
+      "3.18": true,
+      "3.26": true,
+      "3.34": true,
+      "3.42": true,
+      "3.5": true,
+      "3.58": true,
+      "3.66": true,
+      "3.74": true,
+      "3.82": false
+    },
+    "income": {
+      "buyCount": 77,
+      "saleCount": 69,
+      "capital": 47520,
+      "income": 6900.000000000001,
+      "rate": 14.520202020202023
+    }
+  },
+  "600568": {
+    "code": "600568",
+    "params": {
+      "prices": {
+        "high": 2.24,
+        "low": 1,
+        "middle": 1.62,
+        "average": 1.69,
+        "current": 1.22,
+        "sechigh": 1.78
+      },
+      "step": {
+        "price": 0.042105263157894736,
+        "volume": 1900
+      }
+    },
+    "points": {
+      "1.02": false,
+      "1.06": false,
+      "1.1": false,
+      "1.14": false,
+      "1.18": false,
+      "1.22": true,
+      "1.26": true,
+      "1.3": true,
+      "1.34": true,
+      "1.38": true,
+      "1.42": true,
+      "1.46": true,
+      "1.5": true,
+      "1.54": true,
+      "1.58": true,
+      "1.62": true,
+      "1.66": true,
+      "1.7": true,
+      "1.74": true,
+      "1.78": false
+    },
+    "income": {
+      "buyCount": 142,
+      "saleCount": 128,
+      "capital": 49818,
+      "income": 10240,
+      "rate": 20.554819543137018
+    }
+  },
+  "600569": {
+    "code": "600569",
+    "params": {
+      "prices": {
+        "high": 2.99,
+        "low": 1.91,
+        "middle": 2.45,
+        "average": 2.36,
+        "current": 2.17,
+        "sechigh": 2.67
+      },
+      "step": {
+        "price": 0.0588235294117647,
+        "volume": 1700
+      }
+    },
+    "points": {
+      "1.95": false,
+      "2.01": false,
+      "2.07": false,
+      "2.13": false,
+      "2.19": true,
+      "2.25": true,
+      "2.31": true,
+      "2.37": true,
+      "2.43": true,
+      "2.49": true,
+      "2.55": true,
+      "2.61": true,
+      "2.67": false
+    },
+    "income": {
+      "buyCount": 78,
+      "saleCount": 70,
+      "capital": 46512,
+      "income": 6999.999999999999,
+      "rate": 15.04987960096319
+    }
+  },
+  "600571": {
+    "code": "600571",
+    "params": {
+      "prices": {
+        "high": 12.33,
+        "low": 7.87,
+        "middle": 10.1,
+        "average": 9.96,
+        "current": 9.24,
+        "sechigh": 11.21
+      },
+      "step": {
+        "price": 0.24999999999999997,
+        "volume": 400
+      }
+    },
+    "points": {
+      "7.96": false,
+      "8.21": false,
+      "8.46": false,
+      "8.71": false,
+      "8.96": false,
+      "9.21": true,
+      "9.46": true,
+      "9.71": true,
+      "9.96": true,
+      "10.21": true,
+      "10.46": true,
+      "10.71": true,
+      "10.96": true,
+      "11.21": false
+    },
+    "income": {
+      "buyCount": 140,
+      "saleCount": 132,
+      "capital": 49192,
+      "income": 13199.999999999996,
+      "rate": 26.833631484794267
+    }
+  },
+  "600572": {
+    "code": "600572",
+    "params": {
+      "prices": {
+        "high": 8.3,
+        "low": 5.01,
+        "middle": 6.66,
+        "average": 6.23,
+        "current": 6.01,
+        "sechigh": 7.51
+      },
+      "step": {
+        "price": 0.16,
+        "volume": 500
+      }
+    },
+    "points": {
+      "5.11": false,
+      "5.27": false,
+      "5.43": false,
+      "5.59": false,
+      "5.75": false,
+      "5.91": true,
+      "6.07": true,
+      "6.23": true,
+      "6.39": true,
+      "6.55": true,
+      "6.71": true,
+      "6.87": true,
+      "7.03": true,
+      "7.19": true,
+      "7.35": true,
+      "7.51": false
+    },
+    "income": {
+      "buyCount": 120,
+      "saleCount": 110,
+      "capital": 46725,
+      "income": 8800,
+      "rate": 18.833600856072767
+    }
+  },
+  "600573": {
+    "code": "600573",
+    "params": {
+      "prices": {
+        "high": 8.65,
+        "low": 5.36,
+        "middle": 7.01,
+        "average": 6.77,
+        "current": 7.21,
+        "sechigh": 7.48
+      },
+      "step": {
+        "price": 0.16666666666666669,
+        "volume": 600
+      }
+    },
+    "points": {
+      "5.44": false,
+      "5.61": false,
+      "5.78": false,
+      "5.95": false,
+      "6.12": false,
+      "6.29": false,
+      "6.46": false,
+      "6.63": false,
+      "6.8": false,
+      "6.97": false,
+      "7.14": true,
+      "7.31": true,
+      "7.48": false
+    },
+    "income": {
+      "buyCount": 84,
+      "saleCount": 82,
+      "capital": 45900,
+      "income": 8200,
+      "rate": 17.864923747276688
+    }
+  },
+  "600575": {
+    "code": "600575",
+    "params": {
+      "prices": {
+        "high": 3.23,
+        "low": 2.04,
+        "middle": 2.64,
+        "average": 2.46,
+        "current": 2.16,
+        "sechigh": 2.99
+      },
+      "step": {
+        "price": 0.061538461538461535,
+        "volume": 1300
+      }
+    },
+    "points": {
+      "2.09": false,
+      "2.15": true,
+      "2.21": true,
+      "2.27": true,
+      "2.33": true,
+      "2.39": true,
+      "2.45": true,
+      "2.51": true,
+      "2.57": true,
+      "2.63": true,
+      "2.69": true,
+      "2.75": true,
+      "2.81": true,
+      "2.87": true,
+      "2.93": true,
+      "2.99": false
+    },
+    "income": {
+      "buyCount": 93,
+      "saleCount": 79,
+      "capital": 48945,
+      "income": 6319.999999999999,
+      "rate": 12.912452753090202
+    }
+  },
+  "600576": {
+    "code": "600576",
+    "params": {
+      "prices": {
+        "high": 6.27,
+        "low": 3.46,
+        "middle": 4.87,
+        "average": 4.65,
+        "current": 4.38,
+        "sechigh": 5.27
+      },
+      "step": {
+        "price": 0.11428571428571428,
+        "volume": 700
+      }
+    },
+    "points": {
+      "3.51": false,
+      "3.62": false,
+      "3.73": false,
+      "3.84": false,
+      "3.95": false,
+      "4.06": false,
+      "4.17": false,
+      "4.28": false,
+      "4.39": true,
+      "4.5": true,
+      "4.61": true,
+      "4.72": true,
+      "4.83": true,
+      "4.94": true,
+      "5.05": true,
+      "5.16": true,
+      "5.27": false
+    },
+    "income": {
+      "buyCount": 124,
+      "saleCount": 116,
+      "capital": 48552,
+      "income": 9280,
+      "rate": 19.113527764046797
+    }
+  },
+  "600577": {
+    "code": "600577",
+    "params": {
+      "prices": {
+        "high": 4.36,
+        "low": 2.28,
+        "middle": 3.32,
+        "average": 3.2,
+        "current": 3.52,
+        "sechigh": 3.6
+      },
+      "step": {
+        "price": 0.08000000000000002,
+        "volume": 1000
+      }
+    },
+    "points": {
+      "2.32": false,
+      "2.4": false,
+      "2.48": false,
+      "2.56": false,
+      "2.64": false,
+      "2.72": false,
+      "2.8": false,
+      "2.88": false,
+      "2.96": false,
+      "3.04": false,
+      "3.12": false,
+      "3.2": false,
+      "3.28": false,
+      "3.36": false,
+      "3.44": false,
+      "3.52": true,
+      "3.6": false
+    },
+    "income": {
+      "buyCount": 95,
+      "saleCount": 94,
+      "capital": 46720,
+      "income": 7520.000000000001,
+      "rate": 16.095890410958905
+    }
+  },
+  "600578": {
+    "code": "600578",
+    "params": {
+      "prices": {
+        "high": 3.53,
+        "low": 2.54,
+        "middle": 3.04,
+        "average": 3.04,
+        "current": 3.18
+      },
+      "step": {
+        "price": 0.07692307692307693,
+        "volume": 1300
+      }
+    },
+    "points": {
+      "2.58": false,
+      "2.66": false,
+      "2.74": false,
+      "2.82": false,
+      "2.9": false,
+      "2.98": false,
+      "3.06": false,
+      "3.14": false,
+      "3.22": true,
+      "3.3": true,
+      "3.38": true,
+      "3.46": false
+    },
+    "income": {
+      "buyCount": 39,
+      "saleCount": 36,
+      "capital": 42614,
+      "income": 3600,
+      "rate": 8.44792791101516
+    }
+  },
+  "600579": {
+    "code": "600579",
+    "params": {
+      "prices": {
+        "high": 12.85,
+        "low": 4.77,
+        "middle": 8.81,
+        "average": 7.72,
+        "current": 5.86,
+        "sechigh": 7.92
+      },
+      "step": {
+        "price": 0.19999999999999998,
+        "volume": 500
+      }
+    },
+    "points": {
+      "4.92": false,
+      "5.12": false,
+      "5.32": false,
+      "5.52": false,
+      "5.72": true,
+      "5.92": true,
+      "6.12": true,
+      "6.32": true,
+      "6.52": true,
+      "6.72": true,
+      "6.92": true,
+      "7.12": true,
+      "7.32": true,
+      "7.52": true,
+      "7.72": true,
+      "7.92": false
+    },
+    "income": {
+      "buyCount": 100,
+      "saleCount": 89,
+      "capital": 47400,
+      "income": 8899.999999999998,
+      "rate": 18.776371308016873
+    }
+  },
+  "600580": {
+    "code": "600580",
+    "params": {
+      "prices": {
+        "high": 16.05,
+        "low": 7.79,
+        "middle": 11.92,
+        "average": 11.64,
+        "current": 12.08,
+        "sechigh": 12.23
+      },
+      "step": {
+        "price": 0.26666666666666666,
+        "volume": 300
+      }
+    },
+    "points": {
+      "7.91": false,
+      "8.18": false,
+      "8.45": false,
+      "8.72": false,
+      "8.99": false,
+      "9.26": false,
+      "9.53": false,
+      "9.8": false,
+      "10.07": false,
+      "10.34": false,
+      "10.61": false,
+      "10.88": false,
+      "11.15": false,
+      "11.42": false,
+      "11.69": false,
+      "11.96": true,
+      "12.23": false
+    },
+    "income": {
+      "buyCount": 100,
+      "saleCount": 99,
+      "capital": 47688,
+      "income": 7920,
+      "rate": 16.60795168595873
+    }
+  },
+  "600581": {
+    "code": "600581",
+    "params": {
+      "prices": {
+        "high": 4.49,
+        "low": 2.6,
+        "middle": 3.55,
+        "average": 3.46,
+        "current": 3.79,
+        "sechigh": 4.1
+      },
+      "step": {
+        "price": 0.08888888888888888,
+        "volume": 900
+      }
+    },
+    "points": {
+      "2.66": false,
+      "2.75": false,
+      "2.84": false,
+      "2.93": false,
+      "3.02": false,
+      "3.11": false,
+      "3.2": false,
+      "3.29": false,
+      "3.38": false,
+      "3.47": false,
+      "3.56": false,
+      "3.65": false,
+      "3.74": true,
+      "3.83": true,
+      "3.92": true,
+      "4.01": true,
+      "4.1": false
+    },
+    "income": {
+      "buyCount": 120,
+      "saleCount": 116,
+      "capital": 48024,
+      "income": 9279.999999999998,
+      "rate": 19.323671497584535
+    }
+  },
+  "600582": {
+    "code": "600582",
+    "params": {
+      "prices": {
+        "high": 3.69,
+        "low": 2.67,
+        "middle": 3.18,
+        "average": 3.17,
+        "current": 3.09
+      },
+      "step": {
+        "price": 0.08,
+        "volume": 1000
+      }
+    },
+    "points": {
+      "2.69": false,
+      "2.77": false,
+      "2.85": false,
+      "2.93": false,
+      "3.01": false,
+      "3.09": true,
+      "3.17": true,
+      "3.25": true,
+      "3.33": true,
+      "3.41": true,
+      "3.49": true,
+      "3.57": true,
+      "3.65": false
+    },
+    "income": {
+      "buyCount": 69,
+      "saleCount": 62,
+      "capital": 37560,
+      "income": 4960,
+      "rate": 13.205537806176784
+    }
+  },
+  "600583": {
+    "code": "600583",
+    "params": {
+      "prices": {
+        "high": 8.2,
+        "low": 4.5,
+        "middle": 6.35,
+        "average": 5.66,
+        "current": 4.81,
+        "sechigh": 6.34
+      },
+      "step": {
+        "price": 0.14285714285714288,
+        "volume": 700
+      }
+    },
+    "points": {
+      "4.52": false,
+      "4.66": false,
+      "4.8": true,
+      "4.94": true,
+      "5.08": true,
+      "5.22": true,
+      "5.36": true,
+      "5.5": true,
+      "5.64": true,
+      "5.78": true,
+      "5.92": true,
+      "6.06": true,
+      "6.2": true,
+      "6.34": false
+    },
+    "income": {
+      "buyCount": 70,
+      "saleCount": 59,
+      "capital": 48776,
+      "income": 5900.000000000002,
+      "rate": 12.096112842381505
+    }
+  },
+  "600584": {
+    "code": "600584",
+    "params": {
+      "prices": {
+        "high": 53.43,
+        "low": 11.52,
+        "middle": 32.48,
+        "average": 25.59,
+        "current": 44.53,
+        "sechigh": 30.39
+      },
+      "step": {
+        "price": 0.7999999999999999,
+        "volume": 100
+      }
+    },
+    "points": {
+      "11.99": false,
+      "12.79": false,
+      "13.59": false,
+      "14.39": false,
+      "15.19": false,
+      "15.99": false,
+      "16.79": false,
+      "17.59": false,
+      "18.39": false,
+      "19.19": false,
+      "19.99": false,
+      "20.79": false,
+      "21.59": false,
+      "22.39": false,
+      "23.19": false,
+      "23.99": false,
+      "24.79": false,
+      "25.59": false,
+      "26.39": false,
+      "27.19": false,
+      "27.99": false,
+      "28.79": false,
+      "29.59": false,
+      "30.39": false
+    },
+    "income": {
+      "buyCount": 120,
+      "saleCount": 120,
+      "capital": 47817,
+      "income": 9599.999999999998,
+      "rate": 20.076541815672247
+    }
+  },
+  "600586": {
+    "code": "600586",
+    "params": {
+      "prices": {
+        "high": 4.3,
+        "low": 2.31,
+        "middle": 3.31,
+        "average": 3.33,
+        "current": 3.61,
+        "sechigh": 3.45
+      },
+      "step": {
+        "price": 0.08333333333333334,
+        "volume": 1200
+      }
+    },
+    "points": {
+      "2.33": false,
+      "2.41": false,
+      "2.49": false,
+      "2.57": false,
+      "2.65": false,
+      "2.73": false,
+      "2.81": false,
+      "2.89": false,
+      "2.97": false,
+      "3.05": false,
+      "3.13": false,
+      "3.21": false,
+      "3.29": false,
+      "3.37": false,
+      "3.45": false
+    },
+    "income": {
+      "buyCount": 76,
+      "saleCount": 76,
+      "capital": 47880,
+      "income": 7600.000000000001,
+      "rate": 15.873015873015875
+    }
+  },
+  "600587": {
+    "code": "600587",
+    "params": {
+      "prices": {
+        "high": 20.65,
+        "low": 12.45,
+        "middle": 16.55,
+        "average": 17.03,
+        "current": 19.85,
+        "sechigh": 18.63
+      },
+      "step": {
+        "price": 0.4,
+        "volume": 200
+      }
+    },
+    "points": {
+      "12.63": false,
+      "13.03": false,
+      "13.43": false,
+      "13.83": false,
+      "14.23": false,
+      "14.63": false,
+      "15.03": false,
+      "15.43": false,
+      "15.83": false,
+      "16.23": false,
+      "16.63": false,
+      "17.03": false,
+      "17.43": false,
+      "17.83": false,
+      "18.23": false,
+      "18.63": false
+    },
+    "income": {
+      "buyCount": 154,
+      "saleCount": 154,
+      "capital": 46290,
+      "income": 12320,
+      "rate": 26.614819615467702
+    }
+  },
+  "600588": {
+    "code": "600588",
+    "params": {
+      "prices": {
+        "high": 54.85,
+        "low": 24.95,
+        "middle": 39.9,
+        "average": 37.62,
+        "current": 47.02,
+        "sechigh": 40.62
+      },
+      "step": {
+        "price": 1,
+        "volume": 100
+      }
+    },
+    "points": {
+      "25.62": false,
+      "26.62": false,
+      "27.62": false,
+      "28.62": false,
+      "29.62": false,
+      "30.62": false,
+      "31.62": false,
+      "32.62": false,
+      "33.62": false,
+      "34.62": false,
+      "35.62": false,
+      "36.62": false,
+      "37.62": false,
+      "38.62": false,
+      "39.62": false,
+      "40.62": false
+    },
+    "income": {
+      "buyCount": 65,
+      "saleCount": 65,
+      "capital": 48930,
+      "income": 6500,
+      "rate": 13.284283670549765
+    }
+  },
+  "600589": {
+    "code": "600589",
+    "params": {
+      "prices": {
+        "high": 8.3,
+        "low": 4.08,
+        "middle": 6.19,
+        "average": 5.84,
+        "current": 4.36,
+        "sechigh": 6.09
+      },
+      "step": {
+        "price": 0.14285714285714285,
+        "volume": 700
+      }
+    },
+    "points": {
+      "4.13": false,
+      "4.27": false,
+      "4.41": true,
+      "4.55": true,
+      "4.69": true,
+      "4.83": true,
+      "4.97": true,
+      "5.11": true,
+      "5.25": true,
+      "5.39": true,
+      "5.53": true,
+      "5.67": true,
+      "5.81": true,
+      "5.95": true,
+      "6.09": false
+    },
+    "income": {
+      "buyCount": 125,
+      "saleCount": 113,
+      "capital": 49392,
+      "income": 11300,
+      "rate": 22.87819889860706
+    }
+  },
+  "600590": {
+    "code": "600590",
+    "params": {
+      "prices": {
+        "high": 6.96,
+        "low": 4.63,
+        "middle": 5.8,
+        "average": 6.02,
+        "current": 6.27
+      },
+      "step": {
+        "price": 0.16,
+        "volume": 500
+      }
+    },
+    "points": {
+      "4.74": false,
+      "4.9": false,
+      "5.06": false,
+      "5.22": false,
+      "5.38": false,
+      "5.54": false,
+      "5.7": false,
+      "5.86": false,
+      "6.02": false,
+      "6.18": true,
+      "6.34": true,
+      "6.5": true,
+      "6.66": true,
+      "6.82": false
+    },
+    "income": {
+      "buyCount": 109,
+      "saleCount": 105,
+      "capital": 37050,
+      "income": 8400,
+      "rate": 22.672064777327936
+    }
+  },
+  "600592": {
+    "code": "600592",
+    "params": {
+      "prices": {
+        "high": 19.2,
+        "low": 10.14,
+        "middle": 14.67,
+        "average": 14.09,
+        "current": 10.48,
+        "sechigh": 17.29
+      },
+      "step": {
+        "price": 0.39999999999999997,
+        "volume": 200
+      }
+    },
+    "points": {
+      "10.49": true,
+      "10.89": true,
+      "11.29": true,
+      "11.69": true,
+      "12.09": true,
+      "12.49": true,
+      "12.89": true,
+      "13.29": true,
+      "13.69": true,
+      "14.09": true,
+      "14.49": true,
+      "14.89": true,
+      "15.29": true,
+      "15.69": true,
+      "16.09": true,
+      "16.49": true,
+      "16.89": true,
+      "17.29": false
+    },
+    "income": {
+      "buyCount": 163,
+      "saleCount": 146,
+      "capital": 46546,
+      "income": 11680,
+      "rate": 25.09345593606325
+    }
+  },
+  "600593": {
+    "code": "600593",
+    "params": {
+      "prices": {
+        "high": 48.13,
+        "low": 34,
+        "middle": 41.07,
+        "average": 40.77,
+        "current": 40.94,
+        "sechigh": 46.77
+      },
+      "step": {
+        "price": 1,
+        "volume": 100
+      }
+    },
+    "points": {
+      "34.77": false,
+      "35.77": false,
+      "36.77": false,
+      "37.77": false,
+      "38.77": false,
+      "39.77": false,
+      "40.77": true,
+      "41.77": true,
+      "42.77": true,
+      "43.77": true,
+      "44.77": true,
+      "45.77": true,
+      "46.77": false
+    },
+    "income": {
+      "buyCount": 84,
+      "saleCount": 78,
+      "capital": 48324,
+      "income": 7800,
+      "rate": 16.14104792649615
+    }
+  },
+  "600594": {
+    "code": "600594",
+    "params": {
+      "prices": {
+        "high": 7.95,
+        "low": 4.55,
+        "middle": 6.25,
+        "average": 5.86,
+        "current": 7.83,
+        "sechigh": 6.39
+      },
+      "step": {
+        "price": 0.14285714285714288,
+        "volume": 700
+      }
+    },
+    "points": {
+      "4.57": false,
+      "4.71": false,
+      "4.85": false,
+      "4.99": false,
+      "5.13": false,
+      "5.27": false,
+      "5.41": false,
+      "5.55": false,
+      "5.69": false,
+      "5.83": false,
+      "5.97": false,
+      "6.11": false,
+      "6.25": false,
+      "6.39": false
+    },
+    "income": {
+      "buyCount": 86,
+      "saleCount": 86,
+      "capital": 49231,
+      "income": 8600.000000000002,
+      "rate": 17.46866811561821
+    }
+  },
+  "600595": {
+    "code": "600595",
+    "params": {
+      "prices": {
+        "high": 2.43,
+        "low": 1.27,
+        "middle": 1.85,
+        "average": 1.75,
+        "current": 1.72,
+        "sechigh": 1.83
+      },
+      "step": {
+        "price": 0.043478260869565216,
+        "volume": 2300
+      }
+    },
+    "points": {
+      "1.27": false,
+      "1.31": false,
+      "1.35": false,
+      "1.39": false,
+      "1.43": false,
+      "1.47": false,
+      "1.51": false,
+      "1.55": false,
+      "1.59": false,
+      "1.63": false,
+      "1.67": false,
+      "1.71": true,
+      "1.75": true,
+      "1.79": true,
+      "1.83": false
+    },
+    "income": {
+      "buyCount": 89,
+      "saleCount": 86,
+      "capital": 49266,
+      "income": 8600,
+      "rate": 17.456257865465027
+    }
+  },
+  "600596": {
+    "code": "600596",
+    "params": {
+      "prices": {
+        "high": 11.2,
+        "low": 7.82,
+        "middle": 9.51,
+        "average": 9.48,
+        "current": 9.08
+      },
+      "step": {
+        "price": 0.25,
+        "volume": 400
+      }
+    },
+    "points": {
+      "7.98": false,
+      "8.23": false,
+      "8.48": false,
+      "8.73": false,
+      "8.98": true,
+      "9.23": true,
+      "9.48": true,
+      "9.73": true,
+      "9.98": true,
+      "10.23": true,
+      "10.48": true,
+      "10.73": true,
+      "10.98": false
+    },
+    "income": {
+      "buyCount": 76,
+      "saleCount": 68,
+      "capital": 44904,
+      "income": 6800,
+      "rate": 15.143417067521824
+    }
+  },
+  "600597": {
+    "code": "600597",
+    "params": {
+      "prices": {
+        "high": 19.4,
+        "low": 9.8,
+        "middle": 14.6,
+        "average": 13.1,
+        "current": 18.86,
+        "sechigh": 14.39
+      },
+      "step": {
+        "price": 0.3333333333333333,
+        "volume": 300
+      }
+    },
+    "points": {
+      "10.1": false,
+      "10.43": false,
+      "10.76": false,
+      "11.09": false,
+      "11.42": false,
+      "11.75": false,
+      "12.08": false,
+      "12.41": false,
+      "12.74": false,
+      "13.07": false,
+      "13.4": false,
+      "13.73": false,
+      "14.06": false,
+      "14.39": false
+    },
+    "income": {
+      "buyCount": 65,
+      "saleCount": 65,
+      "capital": 47112,
+      "income": 6499.999999999999,
+      "rate": 13.796909492273729
+    }
+  },
+  "600598": {
+    "code": "600598",
+    "params": {
+      "prices": {
+        "high": 20.88,
+        "low": 8.82,
+        "middle": 14.85,
+        "average": 13.94,
+        "current": 19.17,
+        "sechigh": 13.56
+      },
+      "step": {
+        "price": 0.3333333333333333,
+        "volume": 300
+      }
+    },
+    "points": {
+      "8.94": false,
+      "9.27": false,
+      "9.6": false,
+      "9.93": false,
+      "10.26": false,
+      "10.59": false,
+      "10.92": false,
+      "11.25": false,
+      "11.58": false,
+      "11.91": false,
+      "12.24": false,
+      "12.57": false,
+      "12.9": false,
+      "13.23": false,
+      "13.56": false
+    },
+    "income": {
+      "buyCount": 70,
+      "saleCount": 70,
+      "capital": 46557,
+      "income": 7000,
+      "rate": 15.035333032626673
+    }
+  },
+  "600599": {
+    "code": "600599",
+    "params": {
+      "prices": {
+        "high": 16.89,
+        "low": 4.93,
+        "middle": 10.91,
+        "average": 10.01,
+        "current": 5.12,
+        "sechigh": 9.26
+      },
+      "step": {
+        "price": 0.25,
+        "volume": 400
+      }
+    },
+    "points": {
+      "5.01": true,
+      "5.26": true,
+      "5.51": true,
+      "5.76": true,
+      "6.01": true,
+      "6.26": true,
+      "6.51": true,
+      "6.76": true,
+      "7.01": true,
+      "7.26": true,
+      "7.51": true,
+      "7.76": true,
+      "8.01": true,
+      "8.26": true,
+      "8.51": true,
+      "8.76": true,
+      "9.01": true,
+      "9.26": false
+    },
+    "income": {
+      "buyCount": 101,
+      "saleCount": 84,
+      "capital": 47668,
+      "income": 8400,
+      "rate": 17.621884702525804
+    }
+  },
+  "600601": {
+    "code": "600601",
+    "params": {
+      "prices": {
+        "high": 4.68,
+        "low": 2.78,
+        "middle": 3.73,
+        "average": 3.62,
+        "current": 4.6,
+        "sechigh": 3.97
+      },
+      "step": {
+        "price": 0.09090909090909091,
+        "volume": 1100
+      }
+    },
+    "points": {
+      "2.8": false,
+      "2.89": false,
+      "2.98": false,
+      "3.07": false,
+      "3.16": false,
+      "3.25": false,
+      "3.34": false,
+      "3.43": false,
+      "3.52": false,
+      "3.61": false,
+      "3.7": false,
+      "3.79": false,
+      "3.88": false,
+      "3.97": false
+    },
+    "income": {
+      "buyCount": 125,
+      "saleCount": 125,
+      "capital": 47762,
+      "income": 12500,
+      "rate": 26.1714333570621
+    }
+  },
+  "600602": {
+    "code": "600602",
+    "params": {
+      "prices": {
+        "high": 9.85,
+        "low": 6.7,
+        "middle": 8.28,
+        "average": 8.24,
+        "current": 7.53,
+        "sechigh": 9.24
+      },
+      "step": {
+        "price": 0.2,
+        "volume": 500
+      }
+    },
+    "points": {
+      "6.84": false,
+      "7.04": false,
+      "7.24": false,
+      "7.44": true,
+      "7.64": true,
+      "7.84": true,
+      "8.04": true,
+      "8.24": true,
+      "8.44": true,
+      "8.64": true,
+      "8.84": true,
+      "9.04": true,
+      "9.24": false
+    },
+    "income": {
+      "buyCount": 138,
+      "saleCount": 129,
+      "capital": 47640,
+      "income": 12900,
+      "rate": 27.07808564231738
+    }
+  },
+  "600603": {
+    "code": "600603",
+    "params": {
+      "prices": {
+        "high": 6.5,
+        "low": 4.46,
+        "middle": 5.48,
+        "average": 5.31,
+        "current": 5.6,
+        "sechigh": 6.46
+      },
+      "step": {
+        "price": 0.13333333333333336,
+        "volume": 600
+      }
+    },
+    "points": {
+      "4.51": false,
+      "4.64": false,
+      "4.77": false,
+      "4.9": false,
+      "5.03": false,
+      "5.16": false,
+      "5.29": false,
+      "5.42": false,
+      "5.55": true,
+      "5.68": true,
+      "5.81": true,
+      "5.94": true,
+      "6.07": true,
+      "6.2": true,
+      "6.33": true,
+      "6.46": false
+    },
+    "income": {
+      "buyCount": 124,
+      "saleCount": 117,
+      "capital": 48780,
+      "income": 9360.000000000002,
+      "rate": 19.188191881918822
+    }
+  },
+  "600604": {
+    "code": "600604",
+    "params": {
+      "prices": {
+        "high": 13.96,
+        "low": 6.56,
+        "middle": 10.26,
+        "average": 9.14,
+        "current": 9.32,
+        "sechigh": 10.14
+      },
+      "step": {
+        "price": 0.25,
+        "volume": 400
+      }
+    },
+    "points": {
+      "6.64": false,
+      "6.89": false,
+      "7.14": false,
+      "7.39": false,
+      "7.64": false,
+      "7.89": false,
+      "8.14": false,
+      "8.39": false,
+      "8.64": false,
+      "8.89": false,
+      "9.14": false,
+      "9.39": true,
+      "9.64": true,
+      "9.89": true,
+      "10.14": false
+    },
+    "income": {
+      "buyCount": 126,
+      "saleCount": 123,
+      "capital": 46284,
+      "income": 12300,
+      "rate": 26.575058335493907
+    }
+  },
+  "600605": {
+    "code": "600605",
+    "params": {
+      "prices": {
+        "high": 14.42,
+        "low": 9.55,
+        "middle": 11.99,
+        "average": 11.51,
+        "current": 13.52,
+        "sechigh": 13.42
+      },
+      "step": {
+        "price": 0.26666666666666666,
+        "volume": 300
+      }
+    },
+    "points": {
+      "9.64": false,
+      "9.91": false,
+      "10.18": false,
+      "10.45": false,
+      "10.72": false,
+      "10.99": false,
+      "11.26": false,
+      "11.53": false,
+      "11.8": false,
+      "12.07": false,
+      "12.34": false,
+      "12.61": false,
+      "12.88": false,
+      "13.15": false,
+      "13.42": false
+    },
+    "income": {
+      "buyCount": 80,
+      "saleCount": 80,
+      "capital": 47859,
+      "income": 6400,
+      "rate": 13.372615391044526
+    }
+  },
+  "600606": {
+    "code": "600606",
+    "params": {
+      "prices": {
+        "high": 9.49,
+        "low": 5.18,
+        "middle": 7.34,
+        "average": 7.05,
+        "current": 8.17,
+        "sechigh": 7.69
+      },
+      "step": {
+        "price": 0.16,
+        "volume": 500
+      }
+    },
+    "points": {
+      "5.29": false,
+      "5.45": false,
+      "5.61": false,
+      "5.77": false,
+      "5.93": false,
+      "6.09": false,
+      "6.25": false,
+      "6.41": false,
+      "6.57": false,
+      "6.73": false,
+      "6.89": false,
+      "7.05": false,
+      "7.21": false,
+      "7.37": false,
+      "7.53": false,
+      "7.69": false
+    },
+    "income": {
+      "buyCount": 66,
+      "saleCount": 66,
+      "capital": 48075,
+      "income": 5280,
+      "rate": 10.982839313572542
+    }
+  },
+  "600608": {
+    "code": "600608",
+    "params": {
+      "prices": {
+        "high": 5.28,
+        "low": 4.01,
+        "middle": 4.64,
+        "average": 4.53,
+        "current": 4.49
+      },
+      "step": {
+        "price": 0.1142857142857143,
+        "volume": 700
+      }
+    },
+    "points": {
+      "4.07": false,
+      "4.18": false,
+      "4.29": false,
+      "4.4": false,
+      "4.51": true,
+      "4.62": true,
+      "4.73": true,
+      "4.84": true,
+      "4.95": true,
+      "5.06": true,
+      "5.17": true,
+      "5.28": false
+    },
+    "income": {
+      "buyCount": 107,
+      "saleCount": 100,
+      "capital": 35574,
+      "income": 8000,
+      "rate": 22.488334176645864
+    }
+  },
+  "600609": {
+    "code": "600609",
+    "params": {
+      "prices": {
+        "high": 9.78,
+        "low": 3.16,
+        "middle": 6.47,
+        "average": 5.56,
+        "current": 7.58,
+        "sechigh": 5.51
+      },
+      "step": {
+        "price": 0.14285714285714288,
+        "volume": 700
+      }
+    },
+    "points": {
+      "3.27": false,
+      "3.41": false,
+      "3.55": false,
+      "3.69": false,
+      "3.83": false,
+      "3.97": false,
+      "4.11": false,
+      "4.25": false,
+      "4.39": false,
+      "4.53": false,
+      "4.67": false,
+      "4.81": false,
+      "4.95": false,
+      "5.09": false,
+      "5.23": false,
+      "5.37": false,
+      "5.51": false
+    },
+    "income": {
+      "buyCount": 104,
+      "saleCount": 104,
+      "capital": 48384,
+      "income": 10400.000000000002,
+      "rate": 21.494708994709
+    }
+  },
+  "600611": {
+    "code": "600611",
+    "params": {
+      "prices": {
+        "high": 4.75,
+        "low": 3.23,
+        "middle": 3.99,
+        "average": 3.97,
+        "current": 3.99,
+        "sechigh": 4.47
+      },
+      "step": {
+        "price": 0.1,
+        "volume": 1000
+      }
+    },
+    "points": {
+      "3.27": false,
+      "3.37": false,
+      "3.47": false,
+      "3.57": false,
+      "3.67": false,
+      "3.77": false,
+      "3.87": false,
+      "3.97": true,
+      "4.07": true,
+      "4.17": true,
+      "4.27": true,
+      "4.37": true,
+      "4.47": false
+    },
+    "income": {
+      "buyCount": 47,
+      "saleCount": 42,
+      "capital": 45840,
+      "income": 4200,
+      "rate": 9.162303664921465
+    }
+  },
+  "600613": {
+    "code": "600613",
+    "params": {
+      "prices": {
+        "high": 10.18,
+        "low": 6.12,
+        "middle": 8.15,
+        "average": 7.61,
+        "current": 8.32,
+        "sechigh": 8.81
+      },
+      "step": {
+        "price": 0.2,
+        "volume": 500
+      }
+    },
+    "points": {
+      "6.21": false,
+      "6.41": false,
+      "6.61": false,
+      "6.81": false,
+      "7.01": false,
+      "7.21": false,
+      "7.41": false,
+      "7.61": false,
+      "7.81": false,
+      "8.01": false,
+      "8.21": true,
+      "8.41": true,
+      "8.61": true,
+      "8.81": false
+    },
+    "income": {
+      "buyCount": 115,
+      "saleCount": 112,
+      "capital": 48165,
+      "income": 11200.000000000002,
+      "rate": 23.2533997716184
+    }
+  },
+  "600615": {
+    "code": "600615",
+    "params": {
+      "prices": {
+        "high": 12.74,
+        "low": 6.6,
+        "middle": 9.67,
+        "average": 9.46,
+        "current": 9.19,
+        "sechigh": 10.21
+      },
+      "step": {
+        "price": 0.25,
+        "volume": 400
+      }
+    },
+    "points": {
+      "6.71": false,
+      "6.96": false,
+      "7.21": false,
+      "7.46": false,
+      "7.71": false,
+      "7.96": false,
+      "8.21": false,
+      "8.46": false,
+      "8.71": false,
+      "8.96": false,
+      "9.21": true,
+      "9.46": true,
+      "9.71": true,
+      "9.96": true,
+      "10.21": false
+    },
+    "income": {
+      "buyCount": 146,
+      "saleCount": 142,
+      "capital": 46676,
+      "income": 14200,
+      "rate": 30.42248693118519
+    }
+  },
+  "600616": {
+    "code": "600616",
+    "params": {
+      "prices": {
+        "high": 6.64,
+        "low": 4.07,
+        "middle": 5.36,
+        "average": 5.23,
+        "current": 4.76,
+        "sechigh": 6.24
+      },
+      "step": {
+        "price": 0.13333333333333333,
+        "volume": 600
+      }
+    },
+    "points": {
+      "4.16": false,
+      "4.29": false,
+      "4.42": false,
+      "4.55": false,
+      "4.68": false,
+      "4.81": true,
+      "4.94": true,
+      "5.07": true,
+      "5.2": true,
+      "5.33": true,
+      "5.46": true,
+      "5.59": true,
+      "5.72": true,
+      "5.85": true,
+      "5.98": true,
+      "6.11": true,
+      "6.24": false
+    },
+    "income": {
+      "buyCount": 92,
+      "saleCount": 81,
+      "capital": 49296,
+      "income": 6480,
+      "rate": 13.14508276533593
+    }
+  },
+  "600617": {
+    "code": "600617",
+    "params": {
+      "prices": {
+        "high": 5.83,
+        "low": 3.35,
+        "middle": 4.59,
+        "average": 4.5,
+        "current": 5.01,
+        "sechigh": 4.82
+      },
+      "step": {
+        "price": 0.1111111111111111,
+        "volume": 900
+      }
+    },
+    "points": {
+      "3.39": false,
+      "3.5": false,
+      "3.61": false,
+      "3.72": false,
+      "3.83": false,
+      "3.94": false,
+      "4.05": false,
+      "4.16": false,
+      "4.27": false,
+      "4.38": false,
+      "4.49": false,
+      "4.6": false,
+      "4.71": false,
+      "4.82": false
+    },
+    "income": {
+      "buyCount": 51,
+      "saleCount": 51,
+      "capital": 47385,
+      "income": 5099.999999999999,
+      "rate": 10.762899651788539
+    }
+  },
   "603993": {
     "code": "603993",
     "params": {
