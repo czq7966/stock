@@ -8,7 +8,7 @@
     "@types/lowdb": "^1.0.9",
     "@types/request": "^2.48.5",
     "bufferhelper": "^0.2.1",
-    "copy-webpack-plugin": "^6.0.3",
+    "copy-webpack-plugin": "^4.6.0",
     "cross-env": "^7.0.2",
     "css-loader": "^3.6.0",
     "global-tunnel-ng": "^2.7.1",
