@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="cache-control" content="no-cache,no-store">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="apple-touch-fullscreen" content="yes">
+  <meta name="renderer" content="webkit">
+  <title>.......</title>
+  <style>
+    .full, #root {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+
+<body class="full">
+  <div id="root">
+      <div>
+        <span>Signal Server:</span>
+        <input  id="server-url" style="width: 350px" value="https://adhoc-cast-signaler-product.k8s.101.com" ></input>
+        <span>Enter Device ID:</span>
+        <input  id="device-id" style="width: 300px" value="123456" ></input>
+        <button id="btnConnect" onclick="startConnect()" >start connect</button>
+      </div>      
+    <video autoPlay playsInline ></video>
+    <video autoPlay playsInline ></video>
+  </div>
+
+    
+</body>
+</html>

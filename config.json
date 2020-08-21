@@ -1,0 +1,18 @@
+{
+	"version": "2.13",
+	"configUrl": "config.json",
+	"updateUrl": "",
+	"autoUpdateConfig": false,
+
+	"websites": {
+		"": "/../desktop",
+		"database": "/../../../../database"
+	},
+	"http": [
+		{
+			"port": 8080
+		}
+	],
+	"https": []
+
+}

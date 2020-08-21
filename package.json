@@ -27,15 +27,17 @@
     "webpack-node-externals": "^2.5.0"
   },
   "devDependencies": {
-    "@types/node": "^14.0.24"
+    "@types/node": "^14.0.24",
+    "express": "^4.17.1"
   },
   "scripts": {
     "test": "tsc && node ./dist/src/test.js",
     "clean": "rimraf dist",
-    "watch": "npm run clean && cross-env NODE_MODULE=stock webpack --progress --env.cjs --watch ",
-    "dev": "npm run clean && cross-env NODE_MODULE=stock webpack --progress --env.cjs",
-    "build": "npm run clean && cross-env NODE_MODULE=stock webpack --progress --env.cjs --env.production",
+    "watch": "npm run clean && tsc && cross-env NODE_MODULE=stock webpack --progress --env.cjs --watch ",
+    "dev": "npm run clean && tsc && cross-env NODE_MODULE=stock webpack --progress --env.cjs",
+    "build": "npm run clean && tsc && cross-env NODE_MODULE=stock webpack --progress --env.cjs --env.production",
     "compile": "npm run clean && tsc",
+    "web:dev": "cross-env NODE_MODULE=stock-web webpack --progress --env.umd",
     "collect-proxy": "tsc && node ./dist/src/entries/collect-proxy.js",
     "check-proxy": "tsc && node ./dist/src/entries/check-proxy.js",
     "update-transhis": "tsc && node  --max-old-space-size=16308 ./dist/src/entries/update-transhis.js",
