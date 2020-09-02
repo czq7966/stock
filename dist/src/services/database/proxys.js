@@ -247,8 +247,8 @@ var Proxys = /** @class */ (function () {
                 switch (_a.label) {
                     case 0:
                         URL = "http://www.kuaidaili.com/free/inha/{page}/";
-                        startCount = 200;
-                        endCount = 2000;
+                        startCount = 1;
+                        endCount = 3600;
                         count = 0;
                         page = startCount;
                         _a.label = 1;

@@ -209,8 +209,8 @@ export class Proxys {
 
     static async collectProxyFromKDL(proxys: Modules.Database.Proxys): Promise<any> {
         let URL =  "http://www.kuaidaili.com/free/inha/{page}/";
-        let startCount = 200;
-        let endCount = 2000;
+        let startCount = 1;
+        let endCount = 3600;
         let count = 0;
         let page = startCount;
         while(page <= endCount) {
