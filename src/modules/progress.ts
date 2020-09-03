@@ -19,7 +19,8 @@ export class Progress {
         let dates = {};
         let chddata = Database.database.chddata.getData(code);
         Object.keys(chddata).forEach(date => {
-            let exists = Database.database.transhis.existTransHisDB(code, new Date(date))            
+            let record = chddata[date];
+            let exists = Database.database.transhis.existTransHisDB(code, new Date(date)) || (record.high == 0 && record.low == 0)
             dates[date] = exists;
         })
         return dates;
