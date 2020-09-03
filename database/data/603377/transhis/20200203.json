@@ -1,0 +1,60 @@
+{
+  "transhis": [
+    {
+      "time": "15:00:00",
+      "price": 16,
+      "change": 0,
+      "voturnover": 0,
+      "vaturnover": 0
+    },
+    {
+      "time": "15:00:00",
+      "price": 16,
+      "change": 0.5,
+      "voturnover": 12500,
+      "vaturnover": 20000
+    },
+    {
+      "time": "14:58:19",
+      "price": 15.5,
+      "change": 0,
+      "voturnover": 0,
+      "vaturnover": 0
+    },
+    {
+      "time": "14:58:13",
+      "price": 15.5,
+      "change": 0,
+      "voturnover": 0,
+      "vaturnover": 0
+    },
+    {
+      "time": "14:57:01",
+      "price": 15.5,
+      "change": 15.5,
+      "voturnover": 0,
+      "vaturnover": 0
+    },
+    {
+      "time": "14:45:28",
+      "price": 15.5,
+      "change": 15.5,
+      "voturnover": 7,
+      "vaturnover": 10850
+    },
+    {
+      "time": "14:27:43",
+      "price": 15.5,
+      "change": 0,
+      "voturnover": 1,
+      "vaturnover": 1550
+    },
+    {
+      "time": "14:25:16",
+      "price": 15.5,
+      "change": 15.5,
+      "voturnover": 3,
+      "vaturnover": 4650
+    }
+  ]
+}
