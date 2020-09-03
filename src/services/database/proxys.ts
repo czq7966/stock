@@ -65,30 +65,35 @@ export class Proxys {
 
     static async checkProxy(host: string, port: number, logBody?: boolean, checkKey?: string): Promise<boolean>  {
         return new Promise((resolve, reject) => {
-            request({
-              'url':'http://www.baidu.com',
-              'method': "GET",
-              'proxy':`http://${host}:${port}`,
-              'timeout': 10 * 1000
-            },function (error, response, body) {
-              if (!error && response.statusCode == 200) {
-                if (logBody) console.log(body);
-
-                if ((body as string).indexOf('百度首页') >= 0) {
-                    resolve(true)
-                } else {
-                    resolve(false)
-                }                
+            try {
+                request({
+                    'url':'http://www.baidu.com',
+                    'method': "GET",
+                    'proxy':`http://${host}:${port}`,
+                    'timeout': 10 * 1000
+                    },function (error, response, body) {
+                    if (!error && response.statusCode == 200) {
+                        if (logBody) console.log(body);
+    
+                        if ((body as string).indexOf('百度首页') >= 0) {
+                            resolve(true)
+                        } else {
+                            resolve(false)
+                        }                
+                        
+                    } else {
+                        if (!error && response) {
+                            reject(new Error(response.statusCode as any))
+                        } else {
+                            reject(error)
+                        }
+                    }
+                })                   
+            } catch (error) {
+                reject(error)
                 
-              } else {
-                  if (!error && response) {
-                      reject(new Error(response.statusCode as any))
-                  } else {
-                      reject(error)
-                  }
-              }
-            })        
-        })    
+            }
+        })
     }
 
     static async checkValid(proxys: Modules.Database.Proxys): Promise<{[host: string]: number}> {

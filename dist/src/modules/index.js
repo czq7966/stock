@@ -12,7 +12,7 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Dts = exports.Database = void 0;
 __exportStar(require("./transhis"), exports);
-// export * from './codes'
+__exportStar(require("./global-exception"), exports);
 __exportStar(require("./progress"), exports);
 var Database = require("./database");
 exports.Database = Database;

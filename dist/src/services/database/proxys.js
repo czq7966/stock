@@ -92,31 +92,36 @@ var Proxys = /** @class */ (function () {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
                 return [2 /*return*/, new Promise(function (resolve, reject) {
-                        request({
-                            'url': 'http://www.baidu.com',
-                            'method': "GET",
-                            'proxy': "http://" + host + ":" + port,
-                            'timeout': 10 * 1000
-                        }, function (error, response, body) {
-                            if (!error && response.statusCode == 200) {
-                                if (logBody)
-                                    console.log(body);
-                                if (body.indexOf('百度首页') >= 0) {
-                                    resolve(true);
+                        try {
+                            request({
+                                'url': 'http://www.baidu.com',
+                                'method': "GET",
+                                'proxy': "http://" + host + ":" + port,
+                                'timeout': 10 * 1000
+                            }, function (error, response, body) {
+                                if (!error && response.statusCode == 200) {
+                                    if (logBody)
+                                        console.log(body);
+                                    if (body.indexOf('百度首页') >= 0) {
+                                        resolve(true);
+                                    }
+                                    else {
+                                        resolve(false);
+                                    }
                                 }
                                 else {
-                                    resolve(false);
+                                    if (!error && response) {
+                                        reject(new Error(response.statusCode));
+                                    }
+                                    else {
+                                        reject(error);
+                                    }
                                 }
-                            }
-                            else {
-                                if (!error && response) {
-                                    reject(new Error(response.statusCode));
-                                }
-                                else {
-                                    reject(error);
-                                }
-                            }
-                        });
+                            });
+                        }
+                        catch (error) {
+                            reject(error);
+                        }
                     })];
             });
         });

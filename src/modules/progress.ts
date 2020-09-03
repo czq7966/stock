@@ -36,7 +36,9 @@ export class Progress {
             if (!dates[date]) {
                 dates[date] = true;
                 return new Date(date)
-            }            
+            } else {
+                console.log(`${code} ${date} exist!`)
+            }           
         }
         return null
     }

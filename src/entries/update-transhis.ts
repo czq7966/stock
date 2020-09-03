@@ -9,7 +9,7 @@ let transHis = new Modules.TransHis();
 
 
 let progress = new Modules.Progress()
-let threadCount = 400;
+let threadCount = 200;
 
 
 
@@ -25,6 +25,8 @@ async function  start() {
         }   
     }
 }
+
+global
 
 for (let i = 0; i < threadCount; i++) {
     start();    
